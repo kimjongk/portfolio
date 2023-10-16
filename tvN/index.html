@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/css/layout.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="./asset/js/masony.js" defer></script>
+    <script src="./asset/js/main.js" defer></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-flex">
+                <h1 class="logo"><a href=""><span class="blind">티비엔 로고</span></a></h1>
+                <div class="util-area">
+                    <div class="menu-group">
+                        <div class="search-flex">
+                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <div class="search-wrap">
+                                <fieldset>
+                                    <legend>프로그램 검색창</legend>
+                                    <input type="text" placeholder="프로그램을 검색해보세요">
+                                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </fieldset>
+                                <button class="close-btn"><i class="fa-solid fa-xmark"></i></i></button>
+                            </div>
+                        </div>
+                        <!-- 메인창 메뉴버튼 -->
+                        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <nav class="snb">
+                        <div class="snb-top">
+                            <div class="top-group">
+                                <h2 class="logo"><a href=""><span class="blind">티비엔 로고</span></a></h2>
+                                <div class="sub-flex">
+                                    <div class="search-area">
+                                        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                    <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                            <div class="login-wrap">
+                                <a href="" class="login">로그인</a>
+                                <a href="" class="join">회원가입</a>
+                            </div>
+                        </div>
+
+                        <div class="snb-bottom">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="">About tvN</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">골드핑거 14기</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">편성표</a>
+                                </li>
+                                <li class="item">
+                                    <div class="item-wrap">
+                                        <a href="">드라마<i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+
+                                    <div class="sub-box">
+                                        <div class="sub-top">
+                                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                            <h3 class="part-name">드라마</h3>
+                                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                        <ul class="sub-list">
+                                            <li class="sub-item">
+                                                <a href="" class="title">[예정] 반짝이는 워터멜론</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[예정] 아라문의 검</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[월화] 소용없어 거짓말</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[토일] 경이로운 소문2: 카운터 펀치</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[일] O'PENing(오프닝) 2023</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 이번 생도 잘 부탁해</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[예정] 이로운 사기</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-wrap">
+                                        <a href="">연애오락<i class="fa-solid fa-chevron-right"></i></a>
+                                        
+                                    </div>
+
+                                    <div class="sub-box">
+                                        <div class="sub-top">
+                                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                            <h3 class="part-name">연애오락</h3>
+                                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                        <ul class="sub-list">
+                                            <li class="sub-item">
+                                                <a href="" class="title">[예정] 골든일레븐: 언리미티드</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[월] 프리한 닥터</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[화] 벌거벗은 세계사</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[수] 유 퀴즈 온 더 블럭</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[수] 코미디빅리그</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[수] 명의들의 경고</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[목] 알쓸별잡</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[목] 70억의 선택</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[금] 형따라 마야로: 아홉 개의 열쇠</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[토] 놀라운 토요일</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[일] 2억 9천의:결혼전쟁</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 댄스가수 유랑단</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 홍진경의 영화로운 덕후생활</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 뿅뿅 지구오락실2</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="item-wrap">
+                                        <a href="">인사이트<i class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+   
+                                    <div class="sub-box">
+                                        <div class="sub-top">
+                                            <button class="back-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                                            <h3 class="part-name">인사이트</h3>
+                                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                        <ul class="sub-list">
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 류준열과 교복 입은 사진가들</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 월간커넥트2</a>
+                                            </li>
+                                            <li class="sub-item">
+                                                <a href="" class="title">[종영] 그때 나는 내가 되기로 했다</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="">동영상</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">이벤트</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">프로그램</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <nav class="gnb">
+                <ul class="list">
+                    <li class="item on" data-ch="#tvn"><a href="">tvN</a></li>
+                    <li class="item" data-ch="#story"><a href="">tvN STORY</a></li>
+                    <li class="item" data-ch="#drama"><a href="">tvN DRAMA</a></li>
+                    <li class="item" data-ch="#show"><a href="">tvN SHOW</a></li>
+                    <li class="item" data-ch="#sports"><a href="https://tvnsports.cjenm.com/ko/" target="_blank">tvN SPORTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="sc-visual">
+                <h2 class="blind">메인비쥬얼</h2>
+                <div class="swiper">
+                    <ul class="swiper-wrapper" id="tvn">
+                        <li class="swiper-slide">
+                            <a href=""><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/tvN%EC%A6%90%EA%B1%B0%EC%9B%80%EC%86%A1%EB%8C%80%ED%91%9C%EC%9D%B4%EB%AF%B8%EC%A7%80banner960_1688949810474.jpg?v=1688950215" alt="안유진 이미지"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href=""><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/%EB%86%80%EB%9D%BC%EC%9A%B4%ED%86%A0%EC%9A%94%EC%9D%BC_banner_750.jpg?v=1687844224" alt="놀라운 토요일 포스터"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href=""><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/%EC%95%84%EB%9D%BC%EB%AC%B8%EC%9D%98%EA%B2%80banner960.jpg?v=1692852399" alt="아라문의 검 포스터"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href=""><img src="https://poc-cf-image.cjenm.com/public/share/menumng/%EC%95%8C%EC%93%B8%EB%B3%84%EC%9E%A1banner960_1690765379338.jpg?v=1690765379" alt="알쓸별잡 포스터"></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href=""><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/%EA%B2%BD%EC%9D%B4%EB%A1%9C%EC%9A%B4%EC%86%8C%EB%AC%B82BANNER960.jpgRE.jpg?v=1688524515" alt="경이로운소문2 포스터"></a>
+                        </li>
+                    </ul>
+                    <div class="pagination"></div>
+                    <div class="control-box">
+                        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i><span class="blind">이전</span></button>
+                        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i><span class="blind">다음</span></button>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="sc-marqee">
+                <h2 class="blind">marqee</h2>
+                <a href="https://tvn.cjenm.com/ko/tvNXOGQ-tvnfriends-sticker/">
+                    <div class="slide-wrap">
+                        <ul class="list">
+                            <li class="item">
+                                <span class="desc">tvN 최초 블로그 스티커 출시!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming14.png" alt="스티커 일러스트"></div>
+                                <span class="text">안녕하세요~</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming16.png" alt="스티커 일러스트"></div>
+                                <span class="text">소개합니다!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming21.png" alt="스티커 일러스트"></div>
+                                <span class="text">인생작 등극♥️</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming16.png" alt="스티커 일러스트"></div>
+                                <span class="text">입덕 완~</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming4.png" alt="스티커 일러스트"></div>
+                                <span class="text">서사 미쳤네(주룩)</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming9.png" alt="스티커 일러스트"></div>
+                                <span class="text">정주행 갈겨!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming19.png" alt="스티커 일러스트"></div>
+                                <span class="text">강추강추!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming24.png" alt="스티커 일러스트"></div>
+                                <span class="text">(웅성웅성)!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming11.png" alt="스티커 일러스트"></div>
+                                <span class="text">갓벽한 엔딩~!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming20.png" alt="스티커 일러스트"></div>
+                                <span class="text">그럼 이만… ★</span>
+                            </li>
+                        </ul>
+                        <ul class="list">
+                            <li class="item">
+                                <span class="desc">tvN 최초 블로그 스티커 출시!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming14.png" alt="스티커 일러스트"></div>
+                                <span class="text">안녕하세요~</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming16.png" alt="스티커 일러스트"></div>
+                                <span class="text">소개합니다!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming21.png" alt="스티커 일러스트"></div>
+                                <span class="text">인생작 등극♥️</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming16.png" alt="스티커 일러스트"></div>
+                                <span class="text">입덕 완~</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming4.png" alt="스티커 일러스트"></div>
+                                <span class="text">서사 미쳤네(주룩)</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming9.png" alt="스티커 일러스트"></div>
+                                <span class="text">정주행 갈겨!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming19.png" alt="스티커 일러스트"></div>
+                                <span class="text">강추강추!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming24.png" alt="스티커 일러스트"></div>
+                                <span class="text">(웅성웅성)!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming11.png" alt="스티커 일러스트"></div>
+                                <span class="text">갓벽한 엔딩~!</span>
+                            </li>
+                            <li class="item">
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/zulming20.png" alt="스티커 일러스트"></div>
+                                <span class="text">그럼 이만… ★</span>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </section>
+
+            <div class="common-inner">
+                <section class="sc-pairing">
+                    <div class="title-box">
+                        <a href="">
+                            <h3 class="subtitle">편성표</h3>
+                            <h2 class="title">오늘 TV 뭐 보지?<i class="fa-solid fa-arrow-right red-arrow"></i></h2>
+                        </a>
+                    </div>
+                    <div class="time-flex">
+                        <div class="swiper-guard">
+                            <a href="">
+                                <img src="https://poc-cf-image.cjenm.com/public/share/metamng/channel/tvn_color_118x50_1676538488111.png" alt="로고">
+                                <i class="fa-solid fa-arrow-right red-arrow"></i>
+                            </a>
+                        </div>
+                        <div class="swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide on">
+                                    <a href=""></a>
+                                    <span class="time">17:30</span>
+                                    <div class="pro-wrap">
+                                        <p class="name">[예능]알쓸별잡</p>
+                                        <span class="sect">알쓸별잡 4회</span>
+                                    </div>
+                                    <div class="badge re ing">재</div>
+                                    
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href=""></a>
+                                    <span class="time">19:40 -<br>21:20</span>
+                                    <div class="pro-wrap">
+                                        <p class="name">2억9천:결혼전쟁</p>
+                                        <span class="sect">2억9천9회(최종회)</span>
+                                    </div>
+                                    <div class="badge">본</div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href=""></a>
+                                    <span class="time">21:20</span>
+                                    <div class="pro-wrap">
+                                        <p class="name">[토일]경이로운 소문2</p>
+                                        <span class="sect">경이로운 소문2:카운터 펀치</span>
+                                    </div>
+                                    <div class="badge">본</div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href=""></a>
+                                    <span class="time">22:40</span>
+                                    <div class="pro-wrap">
+                                        <p class="name">O'PENing</p>
+                                        <span class="sect">O'PENing 2023 7화</span>
+                                    </div>
+                                    <div class="badge">본</div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href=""></a>
+                                    <span class="time">23:50</span>
+                                    <div class="pro-wrap">
+                                        <p class="name">UFC FIGHT NIGHT</p>
+                                        <span class="sect">[39회] 정찬성 vs 맥스할리갈리</span>
+                                    </div>
+                                    <div class="badge re">재</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="live-wrap">
+                            <div class="live-clip"><span>Live Now</span></div>
+                        </div>
+                    </div>
+                    
+                </section>
+    
+                <section class="sc-new">
+                    <h2 class="sc-title">최신 컨텐츠</h2>
+
+                    <ul class="grid" id="newList">
+                        <!-- json을 활용해 data 삽입위치 -->
+                    </ul>
+                    
+                </section>
+                <section class="sc-curr">
+                    <h2 class="sc-title">방영 중 프로그램<i class="fa-solid fa-arrow-right red-arrow"></i></h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/crop/459x661/public/share/metamng/programs/%EB%93%B1%EB%A1%9D%EC%9A%A9%ED%8F%AC%EC%8A%A4%ED%84%B0_1695097427168.jpg?v=1695097427" alt="포스터"></div>
+                                <div class="text-wrap">
+                                    <span class="title">반짝이는 워터멜론</span>
+                                    <span class="time">10/2[월]저녁 8:50 첫 방송</span>
+                                    <div class="clip"><span>드라마</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/crop/459x661/public/share/metamng/programs/%EB%93%B1%EB%A1%9D%EC%9A%A9%ED%8F%AC%EC%8A%A4%ED%84%B0_1691473556739.jpg?v=1691507113" alt="포스터"></div>
+                                <div class="text-wrap">
+                                    <span class="title">아라문의 검</span>
+                                    <span class="time">9/9 [토] 밤 9:20 첫 방송</span>
+                                    <div class="clip"><span>드라마</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/crop/459x661/public/share/metamng/programs/%EB%93%B1%EB%A1%9D%EC%9A%A9%ED%8F%AC%EC%8A%A4%ED%84%B0_1691992076203.jpg?v=1692320809" alt="포스터"></div>
+                                <div class="text-wrap">
+                                    <span class="title">300만 년 전 야생탐험:손둥동굴</span>
+                                    <span class="time">매주 [목] 저녁 8:40 방송</span>
+                                    <div class="clip"><span>예능</span></div>
+                                </div>
+                               
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/crop/459x661/public/share/metamng/programs/%EB%93%B1%EB%A1%9D%EC%9A%A9%ED%8F%AC%EC%8A%A4%ED%84%B0_1690272440326.jpg?v=1691113758" alt="포스터"></div>
+                                <div class="text-wrap">
+                                    <span class="title">알쓸별잡</span>
+                                    <span class="time">매주 [목] 밤 10:30 방송</span>
+                                    <div class="clip"><span>예능</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap"><img src="https://poc-cf-image.cjenm.com/crop/459x661/public/share/metamng/programs/%EB%93%B1%EB%A1%9D%EC%9A%A9%ED%8F%AC%EC%8A%A4%ED%84%B0_1688971030931.jpg?v=1691679906" alt="포스터"></div>
+                                <div class="text-wrap">
+                                    <span class="title">형따라 마야로:아홉 개의 열쇠</span>
+                                    <span class="time">매주 [금] 저녁 8:40 방송</span>
+                                    <div class="clip"><span>예능</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="sc-clip">
+                    <h2 class="sc-title">최신 동영상<i class="fa-solid fa-arrow-right red-arrow"></i></h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://cocosimage.pip.cjenm.com/CLIP/COCOS/B120239311/1714694/a60eb14e-efa9-471a-8c69-17ab8c52e5ed_B.jpg/dims/resize/732" alt="경이로운소문2 유투브 이미지">
+                                    <div class="time">00:01:04</div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[10화 선공개] 땅의 힘을 받는 진선규?! 코마에서 깨어난 조병규와 본격 피 튀기는 액션💥</span>
+                                    <span class="subtitle">경이로운 소문2: 카운터 펀치</span>
+                                    <div class="clip"><span>기획클립</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://cocosimage.pip.cjenm.com/CLIP/COCOS/B120224923/1715423/4561c6f4-834b-4c24-958f-830a10d9ea77_B.jpg/dims/resize/732" alt="나를쏘다 유투브 이미지">
+                                    <div class="time">00:02:23</div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[선공개] 사격선수와 코치로 마주한 배강희X김히어라!? 꿈을 향한 한 발을 쏘다! #나를쏘다</span>
+                                    <span class="subtitle">O'PENing</span>
+                                    <div class="clip"><span>기획클립</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://cocosimage.pip.cjenm.com/CLIP/COCOS/B120188696/1715444/d8846e7c-b50d-4f17-90f8-d24cd4291507_B.jpg/dims/resize/732" alt="놀라운토요일 유투브 이미지">
+                                    <div class="time">00:18:21</div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[간식 게임] 한국인의 소울 푸드 '치킨🍗'의 초성을 맞혀라! #highlight</span>
+                                    <span class="subtitle">놀라운 토요일</span>
+                                    <div class="clip"><span>하이라이트</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://cocosimage.pip.cjenm.com/CLIP/COCOS/B120238462/1715495/8e0a73c3-9660-40e1-9216-3b637c6adefc_B.jpg/dims/resize/732" alt="2억9천 유투브 이미지">
+                                    <div class="time">00:02:00</div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">500쌍 중 단💓3커플💓결혼자금 2억9천을 거머쥘 주인공은?</span>
+                                    <span class="subtitle">2억9천:결혼전쟁</span>
+                                    <div class="clip"><span>기획클립</span></div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://cocosimage.pip.cjenm.com/CLIP/COCOS/B120238462/1715492/001b326c-d339-4d3c-aef4-dd4d27728e0b_B.jpg/dims/resize/732" alt="2억9천 유투브 이미지">
+                                    <div class="time">00:02:00</div>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">역전커플 몽골결혼식💗뭉클찡행복💗겁내지 않길, 이 영상을 본 당신도 함께 행복해지길💗</span>
+                                    <span class="subtitle">2억9천:결혼전쟁</span>
+                                    <div class="clip"><span>기획클립</span></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>   
+                </section>
+
+                <section class="sc-event">
+                    <h2 class="sc-title">진행 중 이벤트<i class="fa-solid fa-arrow-right red-arrow"></i></h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://poc-cf-image.cjenm.com/crop/908x510/public/share/eventmng/eventregmng/kr/%EC%BD%94%EB%B9%85+%EB%B0%A9%EC%B2%AD%EC%8B%A0%EC%B2%AD_1676951977409.jpg?v=1692838081" alt="코빅 방청신청 이미지">
+                                    <span class="situ">진행중</span>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[코미디빅리그] 방청신청 - 3Q10R</span>
+                                    <span class="date"><strong>기간</strong>2023.08.25 00:00 - 2023.09.01 00:00</span>
+                                    <span class="check"><strong>조회</strong>3,527</span>
+                                    <span class="parti"><strong>참여</strong>435</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://poc-cf-image.cjenm.com/crop/908x510/public/share/eventmng/eventregmng/kr/%EB%B0%B0%EB%84%88648x364_1694508068928.jpg?v=1694683591" alt="김창옥쇼 이미지">
+                                    <span class="situ">진행중</span>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[김창옥쇼 리부트] 2-3회차 방청신청 </span>
+                                    <span class="date"><strong>기간</strong>2023.08.16 - 2023.08.30</span>
+                                    <span class="check"><strong>조회</strong>19,719</span>
+                                    <span class="parti"><strong>참여</strong>2,220</span>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href=""></a>
+                                <div class="img-wrap">
+                                    <img src="https://poc-cf-image.cjenm.com/crop/908x510/public/share/eventmng/eventregmng/kr/648x364.jpg?v=1689239384" alt="경이로운 소문 2 이벤트 이미지">
+                                    <span class="situ">진행중</span>
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="title">[경이로운 소문2: 카운터 펀치] 경이로운 '찐팬' 인증 시험</span>
+                                    <span class="date"><strong>기간</strong>2023.07.10 - 2023.09.03</span>
+                                    <span class="check"><strong>대상</strong>회원/비회원 전체</span>
+                                    <span class="parti"><strong>조회</strong>25,200</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+    
+            <section class="sc-banner">
+                <h2 class="blind">배너</h2>
+                <div class="img-wrap"><a href=""><img src="https://poc-cf-image.cjenm.com/public/share/contentsmng/kr/%ED%8E%B8%EC%84%B1%ED%91%9C%20%ED%95%98%EB%8B%A8_01_MO_1661213633974.png" alt="tvN배너"></a></div>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <h2 class="blind">푸터</h2>
+            <span class="route">HOME</span>
+            <nav class="fnb">
+                <ul class="fnb-list">
+                    <li class="fnb-item"><a href="">회사소개</a></li>
+                    <li class="fnb-item"><a href="">광고/제휴문의</a></li>
+                    <li class="fnb-item"><a href="">이용약관</a></li>
+                    <li class="fnb-item"><a href="">개인정보 처리방침</a></li>
+                    <li class="fnb-item"><a href="">청소년보호정책</a></li>
+                    <li class="fnb-item"><a href="">법적고지</a></li>
+                    <li class="fnb-item"><a href="">이메일무단수집거부</a></li>
+                    <li class="fnb-item"><a href="">큐톤표</a></li>
+                    <li class="fnb-item"><a href="">고객센터</a></li>
+                    <li class="fnb-item"><a href="">공지사항</a></li>
+                </ul>
+                <div class="link-group">
+                    <div class="link-flex">
+                        <button class="link-btn">브랜드 바로가기<i class="fa-solid fa-chevron-right"></i></button>
+                        <ul class="list">
+                            <li class="item top">
+                                브랜드 바로가기
+                            </li>
+                            <li class="item">
+                                <a href="">MNET</a>
+                            </li>
+                            <li class="item">
+                                <a href="">MWAVE</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN SPORTS</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN STORY</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN DRAMA</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN OCN</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN 중화 TV</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN UXN</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN CATCHON</a>
+                            </li>
+                            <li class="item">
+                                <a href="">tvN Tooniverse</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-flex">
+                        <button class="link-btn">계열사 바로가기<i class="fa-solid fa-chevron-right"></i></button>
+                        <ul class="list">
+                            <li class="item top">
+                                계열사 바로가기
+                            </li>
+                            <li class="item">
+                                <strong>CJ 그룹</strong>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">CJ주식회사</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <strong>엔터테인먼트 & 미디어</strong>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">CJ주식회사</a></li>
+                                    <li class="sub-item"><a href="">TVING</a></li>
+                                    <li class="sub-item"><a href="">CJ CGV</a></li>
+                                    <li class="sub-item"><a href="">CJ파워캐스트</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <strong>식품 & 식품 서비스</strong>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">CJ제일제당</a></li>
+                                    <li class="sub-item"><a href="">CJ푸드빌</a></li>
+                                    <li class="sub-item"><a href="">CJ프레시웨이</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <strong>생명공학</strong>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">CJ제일제당 BIO사업부문</a></li>
+                                    <li class="sub-item"><a href="">CJ Feed & Care</a></li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <strong>물류 & 신유통</strong>
+                                <ul class="sub-list">
+                                    <li class="sub-item"><a href="">CJ대한통운</a></li>
+                                    <li class="sub-item"><a href="">CJ대한통운 건설부문</a></li>
+                                    <li class="sub-item"><a href="">CJ올리브영</a></li>
+                                    <li class="sub-item"><a href="">CJ올리브네트웍스</a></li>
+                                    <li class="sub-item"><a href="">CJ ENM 커머스부문</a></li>
+                                    <li class="sub-item"><a href="">CJ텔레닉스</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>   
+                </div>
+            </nav>
+
+            <div class="f-main-area">
+                <h3 class="logo"><a href=""><span class="blind">티비엔로고</span></a></h3>
+                <address>
+                    <span>시청자 상담실(편성 문의 및 시청자 의견): <a href="tel:+0800800780">080-080-0780</a></span>
+                    <span>(주)씨제이이엔엠 대표이사:구창근,윤상현</span>
+                    <a href="" class="info">사업자정보확인</a>
+                    <span>본점:(06761)서울시 서초구 과천대로 870-13</span>
+                    <p>사업장 : (03926) 서울시 마포구 상암산로 66<span>사업자 등록번호 : 106-81-51510</span><span>개인정보 보호책임자:강봉관</span></p>
+                </address>
+                <div class="sns-flex">
+                    <ul class="list">
+                        <li class="item"><a href=""><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9767 29C14.8577 29.002 12.7829 28.4118 11 27.3C11.3088 27.3348 11.6195 27.352 11.9304 27.3516C13.6859 27.3543 15.3914 26.7839 16.7728 25.732C15.9591 25.717 15.1706 25.4554 14.5175 24.9839C13.8644 24.5124 13.3794 23.8545 13.1302 23.1023C13.3716 23.1477 13.617 23.1706 13.8629 23.1707C14.2102 23.1707 14.5559 23.126 14.8909 23.0375C14.0084 22.8644 13.2146 22.4003 12.6444 21.7237C12.0741 21.0471 11.7625 20.1999 11.7624 19.3257C11.7624 19.3089 11.7624 19.2933 11.7624 19.2777C12.3036 19.5702 12.909 19.7327 13.5281 19.7516C12.7025 19.2161 12.1183 18.3952 11.8945 17.4561C11.6706 16.517 11.824 15.5304 12.3233 14.6972C13.3015 15.8668 14.522 16.8237 15.9056 17.5057C17.2892 18.1878 18.8051 18.5797 20.3548 18.6562C20.1575 17.8434 20.2424 16.99 20.5964 16.2289C20.9503 15.4678 21.5534 14.8415 22.3119 14.4477C23.0703 14.0538 23.9416 13.9144 24.7901 14.0511C25.6386 14.1878 26.4168 14.5929 27.0036 15.2035C27.875 15.0353 28.7107 14.7246 29.4749 14.2845C29.1837 15.1612 28.5748 15.9056 27.7611 16.3792C28.534 16.2885 29.2886 16.0863 30 15.7794C29.4763 16.5398 28.8173 17.2036 28.0539 17.7397C28.0626 17.9016 28.0663 18.0648 28.0663 18.2291C28.0663 23.2307 24.1432 29 16.9717 29" fill="black"></path>
+                        </svg></a></li>
+                        <li class="item"><a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 25.6594C18 21.4292 21.4292 18 25.6594 18H38.7897C43.0198 18 46.449 21.4292 46.449 25.6594V38.7897C46.449 43.0198 43.0198 46.449 38.7897 46.449H25.6594C21.4292 46.449 18 43.0198 18 38.7897V25.6594ZM27.7355 32.6594C27.7355 35.3787 29.94 37.5832 32.6594 37.5832C35.3787 37.5832 37.5832 35.3787 37.5832 32.6594C37.5832 29.94 35.3787 27.7355 32.6594 27.7355C29.94 27.7355 27.7355 29.94 27.7355 32.6594ZM32.6594 25C28.4292 25 25 28.4292 25 32.6594C25 36.8895 28.4292 40.3187 32.6594 40.3187C36.8895 40.3187 40.3187 36.8895 40.3187 32.6594C40.3187 28.4292 36.8895 25 32.6594 25ZM40.6413 22C39.7348 22 39 22.7348 39 23.6413C39 24.5477 39.7348 25.2826 40.6413 25.2826C41.5477 25.2826 42.2826 24.5477 42.2826 23.6413C42.2826 22.7348 41.5477 22 40.6413 22Z" fill="black"></path>
+                        </svg></a></li>
+                        <li class="item"><a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M33.0821 46.3548H29.3519C29.0086 46.3548 28.7302 46.0765 28.7302 45.7331V34.5425H25.6217C25.2783 34.5425 25 34.2642 25 33.9208V30.1906C25 29.8473 25.2783 29.5689 25.6217 29.5689H28.7302V22.7302C28.7302 20.6701 30.4003 19 32.4604 19H38.0557C38.3991 19 38.6774 19.2783 38.6774 19.6217V23.3519C38.6774 23.6953 38.3991 23.9736 38.0557 23.9736H34.9472C34.2605 23.9736 33.7038 24.5303 33.7038 25.217V29.5689H38.5029C38.9073 29.5689 39.2041 29.949 39.106 30.3414L38.1734 34.0716C38.1043 34.3484 37.8556 34.5425 37.5703 34.5425H33.7038V45.7331C33.7038 46.0765 33.4255 46.3548 33.0821 46.3548Z" fill="black"></path>
+                        </svg></a></li>
+                        <li class="item"><a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9009 21.0413C17.5496 21.3821 15 24.2041 15 27.5727V36.7294C15 39.9676 17.4508 42.6803 20.6724 43.0079C27.633 43.7157 34.6469 43.7273 41.6098 43.0424L41.9485 43.0091C45.2836 42.6811 47.8258 39.8765 47.8258 36.5254V27.5924C47.8258 24.2155 45.264 21.3894 41.9033 21.0588L39.8533 20.8572C34.0584 20.2872 28.2212 20.2968 22.4283 20.8859L20.9009 21.0413ZM35.7177 32.2113C36.2876 31.8823 36.2876 31.0597 35.7177 30.7307L30.0758 27.4733C29.5059 27.1443 28.7935 27.5556 28.7935 28.2137V34.7284C28.7935 35.3865 29.5059 35.7977 30.0758 35.4687L35.7177 32.2113Z" fill="black"></path>
+                        </svg></a></li>
+                        <li class="item"><a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.082 19H42.918C44.0679 19 45 19.9321 45 21.082V42.918C45 44.0679 44.0679 45 42.918 45H21.082C19.9321 45 19 44.0679 19 42.918V21.082C19 19.9321 19.9321 19 21.082 19ZM36.2248 24.5872H27.775C27.7153 24.5892 27.6585 24.6138 27.6162 24.6561C27.574 24.6983 27.5493 24.7551 27.5473 24.8149V24.8636V24.9206V24.9694V25.0344V25.075V25.1239V25.1727V25.2296V25.2783V25.3272V25.3841V25.4329V25.4895V25.4898V25.5386V33.2646V33.3215V33.3703V33.4191V33.4923V33.5248V33.5737V33.6306V33.6794V33.7525V33.7526V33.8339V33.8827V33.9396V33.9884C27.5473 34.0488 27.5713 34.1067 27.614 34.1494C27.6567 34.1921 27.7146 34.2161 27.775 34.2161H31.2106C30.7313 35.6596 29.8117 36.9246 28.572 37.8271C28.5446 37.8452 28.5216 37.8692 28.5048 37.8973C28.4879 37.9254 28.4775 37.957 28.4744 37.9897C28.4744 38.0034 28.4754 38.017 28.4775 38.0304C28.4761 38.0384 28.475 38.0465 28.4744 38.0547C28.4744 38.066 28.4751 38.0772 28.4765 38.0883C28.4757 38.0934 28.475 38.0984 28.4744 38.1035C28.4744 38.1131 28.4749 38.1226 28.4759 38.1321C28.4753 38.1361 28.4748 38.1401 28.4744 38.1442C28.4738 38.1611 28.4751 38.178 28.4781 38.1946C28.4765 38.2021 28.4753 38.2097 28.4744 38.2174C28.4742 38.2279 28.4746 38.2383 28.4756 38.2487L28.4744 38.258C28.4744 38.2676 28.4749 38.2771 28.4759 38.2866C28.4753 38.2906 28.4748 38.2947 28.4744 38.2987C28.4744 38.3124 28.4754 38.326 28.4775 38.3394C28.4761 38.3475 28.475 38.3556 28.4744 38.3638C28.4744 38.3751 28.4751 38.3863 28.4765 38.3974C28.4761 38.4 28.4757 38.4026 28.4753 38.4052C28.475 38.4077 28.4747 38.4101 28.4744 38.4126C28.4744 38.4268 28.4755 38.4409 28.4778 38.4549C28.4763 38.4624 28.4751 38.4699 28.4744 38.4776C28.4741 38.4858 28.4743 38.4941 28.4749 38.5022C28.4756 38.514 28.4771 38.5257 28.4795 38.5372C28.4772 38.547 28.4755 38.557 28.4744 38.5671C28.4744 38.5767 28.4749 38.5862 28.4759 38.5957C28.4753 38.5997 28.4748 38.6037 28.4744 38.6078C28.4744 38.6207 28.4753 38.6337 28.4772 38.6464C28.476 38.6525 28.4751 38.6585 28.4744 38.6646C28.4741 38.6783 28.4749 38.6919 28.4767 38.7054C28.4757 38.7107 28.475 38.7161 28.4744 38.7216C28.4743 38.7547 28.4806 38.7876 28.4932 38.8183C28.5057 38.849 28.5242 38.8769 28.5476 38.9005L30.9874 41.3403C31.0283 41.3815 31.0838 41.405 31.1419 41.4053C31.1883 41.4044 31.2334 41.3903 31.272 41.3647C32.8608 40.3029 34.1632 38.8658 35.064 37.1806C35.9145 35.5894 36.3822 33.8234 36.4318 32.0228C36.4459 31.7868 36.4529 31.55 36.4525 31.3128M36.2248 24.5872C36.281 24.5911 36.3336 24.6158 36.3727 24.6563L36.2248 24.5872ZM36.3727 24.6563C36.4117 24.6969 36.4344 24.7505 36.4363 24.8067L36.3727 24.6563ZM36.4363 24.8067V24.8222V24.8067ZM36.4363 24.8222C36.4398 24.8413 36.4408 24.8607 36.4394 24.8801L36.4363 24.8222ZM36.4394 24.8801C36.4434 24.907 36.4423 24.9346 36.4363 24.9612L36.4394 24.8801ZM36.4363 24.9612V24.9679V24.9612ZM36.4363 24.9679L36.4363 24.9694L36.4363 24.9679ZM36.4363 24.9694V24.9851V24.9694ZM36.4363 24.9851C36.4409 25.0061 36.4425 25.0275 36.4411 25.0489L36.4363 24.9851ZM36.4411 25.0489L36.4427 25.0536L36.4411 25.0489ZM36.4427 25.0536C36.4526 25.0841 36.456 25.1164 36.4525 25.1483L36.4427 25.0536Z" fill="black"></path>
+                        </svg></a></li>
+                        <li class="item"><a href=""><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_554_20149)">
+                                <path d="M30.1164 41.3843C30.1164 41.8516 30.0243 42.3143 29.8455 42.746C29.6667 43.1777 29.4046 43.5699 29.0742 43.9004C28.7438 44.2308 28.3516 44.4929 27.9199 44.6717C27.4882 44.8505 27.0255 44.9425 26.5582 44.9425C26.0909 44.9425 25.6282 44.8505 25.1965 44.6717C24.7648 44.4929 24.3726 44.2308 24.0422 43.9004C23.7118 43.5699 23.4497 43.1777 23.2708 42.746C23.092 42.3143 23 41.8516 23 41.3843V22.61C23 22.1427 23.092 21.68 23.2708 21.2483C23.4497 20.8166 23.7118 20.4243 24.0422 20.0939C24.3726 19.7635 24.7648 19.5014 25.1965 19.3226C25.6282 19.1438 26.0909 19.0518 26.5582 19.0518C27.0255 19.0518 27.4882 19.1438 27.9199 19.3226C28.3516 19.5014 28.7438 19.7635 29.0742 20.0939C29.4046 20.4243 29.6667 20.8166 29.8455 21.2483C30.0243 21.68 30.1164 22.1427 30.1164 22.61V41.3843Z" fill="black"></path>
+                                <path d="M28.5412 44.4375C28.1455 44.6861 27.7048 44.8543 27.2441 44.9326C26.7834 45.0108 26.3119 44.9976 25.8563 44.8936C24.9363 44.6836 24.1373 44.1168 23.6352 43.3177C23.1332 42.5186 22.9691 41.5529 23.1791 40.6328C23.3891 39.7128 23.9559 38.9139 24.755 38.4118L39.5608 29.1113C39.9565 28.8627 40.3972 28.6945 40.8579 28.6162C41.3186 28.5379 41.7901 28.5512 42.2457 28.6551C42.7013 28.7591 43.1319 28.9518 43.513 29.2222C43.8941 29.4926 44.2182 29.8354 44.4668 30.2311C44.7154 30.6267 44.8836 31.0675 44.9619 31.5281C45.0401 31.9888 45.0269 32.4604 44.9229 32.9159C44.819 33.3715 44.6263 33.8021 44.3559 34.1832C44.0855 34.5643 43.7427 34.8884 43.347 35.137L28.5412 44.4375Z" fill="black"></path>
+                                <path d="M28.5259 19.5463C28.1302 19.2977 27.6894 19.1295 27.2287 19.0512C26.7679 18.973 26.2963 18.9862 25.8407 19.0903C25.3851 19.1943 24.9545 19.387 24.5734 19.6575C24.1922 19.9279 23.8681 20.2708 23.6195 20.6665C23.3709 21.0622 23.2027 21.503 23.1245 21.9637C23.0462 22.4245 23.0595 22.8961 23.1635 23.3517C23.2675 23.8073 23.4603 24.2379 23.7307 24.619C24.0012 25.0002 24.344 25.3243 24.7397 25.5729L39.5375 34.8707C39.9332 35.1193 40.3739 35.2875 40.8346 35.3658C41.2953 35.444 41.7668 35.4308 42.2224 35.3268C42.678 35.2229 43.1086 35.0302 43.4897 34.7598C43.8708 34.4894 44.1949 34.1466 44.4435 33.7509C44.6921 33.3553 44.8603 32.9145 44.9386 32.4538C45.0168 31.9932 45.0036 31.5216 44.8996 31.066C44.7957 30.6105 44.603 30.1799 44.3326 29.7988C44.0622 29.4177 43.7194 29.0936 43.3237 28.845L28.5259 19.5463Z" fill="black"></path>
+                            </g>
+                        </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../font/NotoSansKR-Light.woff2) format(woff2);
+    font-style: light;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../font/NotoSansKR-Regular.woff2) format(woff2);
+    font-style: regular;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../font/NotoSansKR-Medium.woff2) format(woff2);
+    font-style: medium;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../font/NotoSansKR-Bold.woff2) format(woff2);
+    font-style: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto-v30-latin-700.woff2) format(woff2);
+    font-style: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto-v30-latin-900.woff2) format(woff2);
+    font-style: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/roboto-v30-latin-regular.woff2) format(woff2);
+    font-style: bold;
+    font-display: swap;
+}
