@@ -1,0 +1,33 @@
+.blind{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.common-inner{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+@keyframes vibration {
+    from {
+      transform: rotate(1.5deg);
+    }
+    to {
+      transform: rotate(-1.5deg);
+    }
+  }
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg); 
+      }
+      100% {
+        transform: rotate(360deg); 
+      }
+  }
+
+
+
