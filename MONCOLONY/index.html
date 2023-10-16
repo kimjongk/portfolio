@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./asset/css/layout.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/main.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <nav class="gnb">
+                <h1 class="logo"><a href=""><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="Navbar_logo__RsJHS"><path d="M30 0V60H0L30 0ZM30 60H60V0L30 60Z" fill="white"></path></svg></a></h1>
+                <ul class="list">
+                    <li class="item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="">About</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Work</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Jobs</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Community</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Lunar Academy</a>
+                    </li>
+                    <li class="item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="snb">
+                <div class="btn-flex">
+                    <button class="sub-btn">
+                        <svg viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">className=<path d="M24 11.25H0V12.75H24V11.25ZM24 0H0V1.5H24V0Z" fill="white"></path></svg>
+                    </button>
+                    <h2 class="logo">
+                        <a href=""><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="Navbar_logo__RsJHS"><path d="M30 0V60H0L30 0ZM30 60H60V0L30 60Z" fill="white"></path></svg></a>
+                    </h2>
+                </div>
+                <div class="list-flex">
+                    <div class="btn-flex">
+                        <button class="close-btn">
+                            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M19 1L1 19" stroke="white" stroke-width="2"></path><path d="M1 1L19 19" stroke="white" stroke-width="2"></path></svg>
+                        </button>
+                        <h2 class="logo">
+                            <a href=""><svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="Navbar_logo__RsJHS"><path d="M30 0V60H0L30 0ZM30 60H60V0L30 60Z" fill="white"></path></svg></a>
+                        </h2>
+                    </div>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Home</a>
+                        </li>
+                        <li class="item">
+                            <a href="">About</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Work</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Jobs</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Community</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Lunar Academy</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Contact</a>
+                        </li>
+                        <div class="sns-area">
+                            <ul class="sns-list">
+                                <li class="sns-item"><a href="" aria-label="인스타그램 로고"><svg viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_instagramIcon__nD_2f"><path d="M5.93103 0.860962C4.32042 0.860962 4.11851 0.871204 3.48597 0.897239C2.85473 0.926077 2.42447 1.02487 2.04727 1.17156C1.65727 1.3231 1.32519 1.52682 0.995497 1.85658C0.665797 2.18635 0.46401 2.51667 0.312474 2.90672C0.165829 3.28402 0.0651587 3.71611 0.0363643 4.34745C0.00743901 4.9801 0 5.18205 0 6.79293C0 8.40389 0.00743664 8.60575 0.0363643 9.2384C0.0651966 9.86975 0.165829 10.3001 0.312474 10.6774C0.46401 11.0674 0.665797 11.3977 0.995497 11.7275C1.32519 12.0573 1.65727 12.2608 2.04727 12.4124C2.42447 12.559 2.85473 12.6598 3.48597 12.6886C4.11851 12.7175 4.32042 12.723 5.93103 12.723C7.54165 12.723 7.74355 12.7137 8.3761 12.6886C9.00733 12.6598 9.43941 12.559 9.81661 12.4124C10.2066 12.2608 10.5369 12.0573 10.8666 11.7275C11.1963 11.3977 11.3981 11.0674 11.5496 10.6774C11.6962 10.3001 11.7969 9.86975 11.8257 9.2384C11.8546 8.60575 11.8621 8.40389 11.8621 6.79293C11.8621 5.18205 11.8546 4.9801 11.8257 4.34745C11.7969 3.71611 11.6962 3.28402 11.5496 2.90672C11.3981 2.51667 11.1963 2.18635 10.8666 1.85658C10.5369 1.52682 10.2066 1.3231 9.81661 1.17156C9.43941 1.02487 9.00733 0.926077 8.3761 0.897239C7.74356 0.868402 7.54165 0.860962 5.93103 0.860962ZM5.93103 1.92923C7.51453 1.92923 7.70168 1.93853 8.32705 1.96365C8.90524 1.9897 9.22071 2.08774 9.42969 2.16895C9.70652 2.27658 9.90338 2.40477 10.1109 2.6123C10.3184 2.81983 10.4466 3.01676 10.5541 3.2936C10.6353 3.50262 10.733 3.81815 10.7594 4.39638C10.7879 5.02187 10.7939 5.20912 10.7939 6.79283C10.7939 8.37664 10.7874 8.56389 10.7594 9.18928C10.733 9.76761 10.6353 10.0813 10.5541 10.2903C10.4466 10.5671 10.3184 10.7657 10.1109 10.9734C9.90338 11.1809 9.70652 11.3091 9.42969 11.4167C9.22071 11.4976 8.90524 11.5939 8.32705 11.6202C7.70177 11.6491 7.51467 11.6547 5.93103 11.6547C4.3474 11.6547 4.1603 11.6454 3.53502 11.6202C2.95683 11.5942 2.64317 11.4979 2.43419 11.4167C2.15737 11.3091 1.95869 11.1809 1.75118 10.9734C1.54368 10.7657 1.41553 10.5671 1.30795 10.2903C1.22675 10.0813 1.13089 9.76761 1.10449 9.18928C1.07603 8.56389 1.06999 8.37664 1.06999 6.79283C1.06999 5.20912 1.0765 5.02187 1.10449 4.39638C1.13091 3.81815 1.22675 3.50262 1.30795 3.2936C1.41553 3.01676 1.54368 2.81983 1.75118 2.6123C1.95869 2.40477 2.15737 2.27658 2.43419 2.16895C2.64317 2.08802 2.95683 1.99007 3.53502 1.96365C4.16039 1.93482 4.34754 1.92923 5.93103 1.92923ZM9.09727 2.91397C8.70426 2.91397 8.38518 3.23304 8.38518 3.62615C8.38518 4.01927 8.70426 4.33834 9.09727 4.33834C9.49032 4.33834 9.80935 4.01927 9.80935 3.62615C9.80935 3.23304 9.49032 2.91397 9.09727 2.91397ZM5.93103 3.74606C4.24915 3.74606 2.88651 5.1108 2.88651 6.79293C2.88651 8.47515 4.24915 9.83793 5.93103 9.83793C7.61292 9.83793 8.97737 8.47515 8.97737 6.79293C8.97737 5.1108 7.61292 3.74606 5.93103 3.74606ZM5.93103 4.8162C7.0228 4.8162 7.90743 5.70103 7.90743 6.79293C7.90743 7.88492 7.0228 8.76966 5.93103 8.76966C4.83927 8.76966 3.95464 7.88492 3.95464 6.79293C3.95464 5.70103 4.83927 4.8162 5.93103 4.8162Z" fill="white"></path></svg></a></li>
+                                <li class="sns-item"><a href="" aria-label="아트스테이션 로고"><svg viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_artstationIcon__Gs9c_"><path d="M0.310303 8.6114L1.30798 10.3308C1.50974 10.7216 1.91327 10.9896 2.37287 10.9896H9.02031L7.65278 8.6114H0.310303ZM12.1703 8.62253C12.1703 8.38796 12.1029 8.16466 11.9797 7.9749L8.0787 1.23098C7.87694 0.851307 7.48455 0.594482 7.02495 0.594482H4.96238L10.982 10.9785L11.9349 9.33707C12.1142 9.02446 12.1703 8.89048 12.1703 8.62253ZM6.66623 6.91422L3.97598 2.28054L1.28558 6.91422H6.66623Z" fill="white"></path></svg></a></li>
+                                <li class="sns-item"><a href="" aria-label="링크드인 로고"><svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_linkedinIcon__3bDCn"><path d="M3.04756 2.15032C3.04756 2.86256 2.49894 3.43967 1.82181 3.43967C1.14469 3.43967 0.596067 2.86256 0.596067 2.15032C0.596067 1.43859 1.14469 0.860962 1.82181 0.860962C2.49894 0.860962 3.04756 1.43859 3.04756 2.15032ZM3.05745 4.47116H0.586182V12.723H3.05745V4.47116ZM7.00257 4.47116H4.54712V12.723H7.00307V8.39131C7.00307 5.9828 9.98292 5.78578 9.98292 8.39131V12.723H12.4483V7.49805C12.4483 3.434 8.03853 3.58202 7.00257 5.58258V4.47116Z" fill="white"></path></svg></a></li>
+                                <li class="sns-item"><a href="" aria-label="트위터 로고"><svg viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_twitterIcon__ASiNE"><path d="M11.8903 2.11394C11.4538 2.3078 10.9848 2.43825 10.4927 2.4971C10.9953 2.19605 11.3808 1.71938 11.5623 1.15104C11.0925 1.42974 10.5716 1.63226 10.0169 1.74173C9.5731 1.26872 8.9409 0.973145 8.24118 0.973145C6.89741 0.973145 5.80815 2.06285 5.80815 3.40618C5.80815 3.59684 5.83005 3.78294 5.8711 3.96038C3.84905 3.85912 2.05643 2.89029 0.85588 1.41788C0.64697 1.77731 0.527006 2.19513 0.527006 2.64169C0.527006 3.48554 0.95623 4.23041 1.60896 4.66648C1.2103 4.65371 0.834898 4.54424 0.506936 4.36224C0.506936 4.37273 0.506936 4.38231 0.506936 4.3928C0.506936 5.57191 1.34531 6.55534 2.45874 6.77839C2.25485 6.83404 2.03955 6.86369 1.81742 6.86369C1.66096 6.86369 1.50815 6.84818 1.35991 6.82036C1.66963 7.78691 2.56822 8.49073 3.63284 8.51034C2.80039 9.16307 1.75128 9.55216 0.610935 9.55216C0.414796 9.55216 0.220938 9.54075 0.0302734 9.51795C1.10721 10.2081 2.38576 10.6108 3.7601 10.6108C8.23571 10.6108 10.6824 6.90337 10.6824 3.68807C10.6824 3.5827 10.6801 3.47779 10.6756 3.37333C11.1513 3.02986 11.5641 2.60155 11.8903 2.11394Z" fill="white"></path></svg></a></li>
+                                <li class="sns-item"><a href="" aria-label="디스코드 로고"><svg viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_discordIcon__WeSfu"><path d="M17.9419 7.34C16.6473 6.714 15.263 6.25905 13.8157 6C13.638 6.33209 13.4304 6.77877 13.2872 7.1341C11.7487 6.89499 10.2245 6.89499 8.7143 7.1341C8.57116 6.77877 8.3588 6.33209 8.17947 6C6.73067 6.25905 5.3448 6.71567 4.05016 7.34331C1.43887 11.4214 0.730991 15.3981 1.08493 19.3184C2.81688 20.655 4.49534 21.467 6.14548 21.9984C6.55291 21.4189 6.91628 20.8028 7.22931 20.1536C6.63313 19.9195 6.06211 19.6306 5.52256 19.2952C5.6657 19.1856 5.80571 19.071 5.94098 18.9531C9.23183 20.5438 12.8074 20.5438 16.0589 18.9531C16.1958 19.071 16.3358 19.1856 16.4774 19.2952C15.9362 19.6322 15.3637 19.9211 14.7675 20.1553C15.0805 20.8028 15.4423 21.4205 15.8513 22C17.503 21.4687 19.183 20.6567 20.915 19.3184C21.3303 14.7738 20.2056 10.8336 17.9419 7.34ZM7.67765 16.9075C6.68977 16.9075 5.87963 15.9543 5.87963 14.7937C5.87963 13.6331 6.67247 12.6783 7.67765 12.6783C8.68285 12.6783 9.49297 13.6314 9.47567 14.7937C9.47723 15.9543 8.68285 16.9075 7.67765 16.9075ZM14.3223 16.9075C13.3344 16.9075 12.5243 15.9543 12.5243 14.7937C12.5243 13.6331 13.3171 12.6783 14.3223 12.6783C15.3275 12.6783 16.1376 13.6314 16.1203 14.7937C16.1203 15.9543 15.3275 16.9075 14.3223 16.9075Z" fill="white"></path></svg></a></li>
+                                <li class="sns-item"><a href="" aria-label="트위치 로고"><svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_twitchIcon__8jVu9"><g clip-path="url(#clip0_225_1749)"><path d="M1.69917 0.584045L0.890381 2.74089V11.3673H3.85457V12.9857H5.4729L7.08962 11.3673H9.51538L12.7504 8.13341V0.584045H1.69917ZM2.77671 1.66179H11.6724V7.59311L9.78503 9.4806H6.82038L5.20412 11.0968V9.4806H2.77671V1.66179ZM5.74209 7.05462H6.82037V3.81978H5.74209V7.05462ZM8.70695 7.05462H9.78502V3.81978H8.70695V7.05462Z" fill="white"></path></g><defs><clipPath id="clip0_225_1749"><rect width="11.86" height="12.4159" fill="white" transform="translate(0.890381 0.584045)"></rect></clipPath></defs></svg></a></li>
+                            </ul>
+                        </div> 
+                    </ul>
+                </div> 
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="sc-visual">
+                <h2 class="blind">메인비쥬얼</h2>
+                <figure class="img-wrap">
+                    <img src="https://www.datocms-assets.com/84325/1683132544-hearthstone_raid_on_onyxia_11.jpg?auto=format&fit=crop&fm=jpg&h=1125&q=90&w=2000" alt="메인이미지">
+                </figure>
+                <p class="visual-text"><span>Adventures</span> await.<span> Are</span><span> you in?</span></p>
+                <div class="project-wrap">
+                    <div class="project-box">
+                        <p class="title">Featured Project</p>
+                        <p class="subtitle">Hearthstone Cinematic: Onyxia's Lair <span>Blizzard Entertainment</span></p>
+                    </div>
+                    <div class="btn-box">
+                        <a href="" class="view-btn">View project
+                            <div class="arrow">
+                                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon_arrowIcon__esxxq"><path d="M4.50063 10.1693C4.47832 10.3012 4.51645 10.4376 4.60489 10.5425C4.70447 10.6604 4.85521 10.7291 5.01805 10.7291C5.11951 10.7291 5.21816 10.7022 5.30286 10.6511L9.34375 8.22737C9.61552 8.064 9.77835 7.792 9.77835 7.49959C9.77835 7.20718 9.61552 6.93522 9.34375 6.7718L5.30286 4.34803C5.0767 4.21252 4.77053 4.25982 4.60489 4.45663C4.51645 4.56149 4.47832 4.698 4.50063 4.82978C4.52387 4.96623 4.60763 5.08694 4.73232 5.16116L8.63074 7.49964L4.73232 9.83795C4.60762 9.91224 4.52387 10.0329 4.50063 10.1693V10.1693Z" fill="black"></path></svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-about">
+                <h2 class="content" data-up="">About Us</h2>
+                <div class="text-group">
+                    <div class="title-text">
+                        <p><span data-up="">Mooncolony is a concept art and </span> </p>
+                        <p><span data-up="">illustration studio that brings together </span></p>
+                        <p><span data-up="">the galaxy’s leading artists and </span></p>
+                        <p><span data-up="">visionaries to provide premium 2D art </span></p>
+                        <p><span data-up="">outsourcing services to the video game </span></p>
+                        <p><span data-up="">industry.</span></p>
+                    </div>
+                </div>
+                <div class="img-group">
+                    <div class="img-flex">
+                        <ul class="list">
+                            <li class="item">
+                                <a href=""  data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1682699029-gk_5040_5070_2_final_v1_a.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="월드오브워크래프트">
+                                    </figure>
+                                    <p class="title">World of Warcraft Dragonflight: Legacies Chapter 1</p>
+                                    <span class="subtitle">Blizzard Entertainment</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1675157741-tes-legends.jpg?auto=format&crop=focalpoint&dpr=1.5&fit=crop&fm=jpg&fp-x=0.12&fp-y=0.28&h=953&q=70&w=1395" alt="엘더스크롤스">
+                                    </figure>
+                                    <p class="title">The Elder Scrolls: Legends</p>
+                                    <span class="subtitle">Bethesda</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="img-flex">
+                        <ul class="list">
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1675158324-scholomance-academy-hearthstone-6.jpg?auto=format&dpr=1.5&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Hearthstone Cinematic: Scholomance Academy</p>
+                                    <span class="subtitle">Blizzard Entertainment</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1682684866-legendary_angelicpegasusrider.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Legendary: Game of Heroes</p>
+                                    <span class="subtitle">N3twork</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="img-flex">
+                        <ul class="list">
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1682701161-hearthstone_barrens_01.jpg?auto=format&dpr=1.5&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Hearthstone Cinematic: Forged in the Barrens</p>
+                                    <span class="subtitle">Blizzard Entertainment</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1675720505-hearthstone_sc_shot04_a_final.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Hearthstone Cinematic: Voyage to the Sunken City</p>
+                                    <span class="subtitle">Blizzard Entertainment</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1683733129-web_mooncolony_cr_final-key-art_phoenix.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Clash Royale</p>
+                                    <span class="subtitle">Supercell</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="" data-up="-50% 100%">
+                                    <figure class="img-wrap" >
+                                        <img src="https://www.datocms-assets.com/84325/1682703003-hearthstone_alteracvalley_17.jpg?auto=format&dpr=2&fit=crop&fm=jpg&h=953&q=70&w=1395" alt="게임이미지">
+                                    </figure>
+                                    <p class="title">Hearthstone Cinematic: Fractured in Alterac Valley</p>
+                                    <span class="subtitle">Blizzard Entertainment</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn-box">
+                            <a href="" class="view-btn">View project
+                                <div class="arrow">
+                                    <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon_arrowIcon__esxxq"><path d="M4.50063 10.1693C4.47832 10.3012 4.51645 10.4376 4.60489 10.5425C4.70447 10.6604 4.85521 10.7291 5.01805 10.7291C5.11951 10.7291 5.21816 10.7022 5.30286 10.6511L9.34375 8.22737C9.61552 8.064 9.77835 7.792 9.77835 7.49959C9.77835 7.20718 9.61552 6.93522 9.34375 6.7718L5.30286 4.34803C5.0767 4.21252 4.77053 4.25982 4.60489 4.45663C4.51645 4.56149 4.47832 4.698 4.50063 4.82978C4.52387 4.96623 4.60763 5.08694 4.73232 5.16116L8.63074 7.49964L4.73232 9.83795C4.60762 9.91224 4.52387 10.0329 4.50063 10.1693V10.1693Z" fill="black"></path></svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-clients">
+                <div class="text-group">
+                    <hr class="line">
+                    <h2 class="content" ><span data-up="">Our Clients</span></h2>
+                    <div class="title-text">
+                        <p><span data-up="">We set out to work with the best </span></p>
+                        <p><span data-up="">studios globally, and are </span></p>
+                        <p><span data-up="">proud to say that’s exactly what we do.</span></p>
+                    </div>
+                    <figure class="img-wrap">
+                        <img src="https://www.datocms-assets.com/84325/1682595678-supercell_clashroyale_phoenix_mooncolony.png?auto=format&fit=crop&fm=jpg&h=317&q=70&w=326" alt="이동하는 부엉이">
+                    </figure>
+                </div>
+                <div class="clients-group">
+                    <ul class="list">
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356894-hirez.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드1">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356959-jagex.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드2">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1675158497-n3twork.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드3">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356988-supercell.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드4">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1675158547-wizards-of-the-coast.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드5">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356968-riot.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드6">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1675158527-zenimax-online.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드7">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356906-yotta.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드8">
+                        </li>
+                        <li class="item" data-up="">
+                            <img src="https://www.datocms-assets.com/84325/1673356922-blizzard.png?auto=format&fm=png&h=278&q=70&w=526" alt="클라이언트 브랜드9">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sc-service">
+                <div class="text-group">
+                    <hr class="line">
+                    <h2 class="content"><span data-up="">Our Services</span></h2>
+                    <div class="title-text">
+                        <p><span data-up="">Let's go on an adventure.</span></p>
+                    </div>
+                    <figure class="img-wrap">
+                        <img src="https://www.datocms-assets.com/84325/1682594242-e-p_priestess_celidana_mooncolony.png?auto=format&fit=crop&fm=jpg&h=317&q=70&w=326" alt="">
+                    </figure>
+                </div>
+                <div class="text-wrap">
+                    <p class="text" data-up="">
+                        Mooncolony offers a wide range of art outsourcing services including concept art, illustration, character design, marketing art and art direction. Our versatile team's extensive experience and commitment to excellence will ensure that your project reaches our high standards and allows you to connect with your audience through effective visual storytelling.<br><br>
+                        From concept to completion, we provide outstanding project management with an emphasis on collaboration and communication. Artists are handpicked for each project, with an Art Director and Producer taking ownership of the creative and project management responsibilities, building a team that fits seamlessly within your production pipeline.<br><br>
+                        Got the taste for adventure? Discover more about what we can do below.
+                    </p>
+                </div>
+            </section>
+
+            <section class="sc-works">
+                <div class="pc-works">
+                    <div class="department-group">
+                        <ul class="list">
+                            <li class="item">
+                                <button class="btn on" data-depart="#concept on">Concept Art</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#direction">Art Direction</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#character">Character Design</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#illust">Illustration</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#marketing">Marketing Art</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#emotes">Emotes and Avatars</button>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#cinemaitc">Cinematic Illustrations</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="desc-group">
+                        <ul class="list">
+                            <li class="item on" id="concept">
+                                <p>Transport yourself to another world with our concept art services creating memorable characters, epic environments and impactful props.<br><br>
+                                    Effective concept art assembles ideas into a visual showcase to inspire product development. Using the latest intergalactic technology at our disposal, we turn your brainwaves into world-building concepts that are ready to jump off the page.<br><br>
+                                    As a game developer, you want to powerfully communicate the epic potential of your project by sparking curiosity and excitement. That’s where we come in.<br><br>
+                                    As part of this process, concepts can embody an existing distinctive style by following a precise look and feel or we can explore new visual possibilities with first-class art direction. No matter the level of creative direction required, we continuously pursue an outstanding degree of imagination, quality and design. So, are you ready to transport yourself to another world?</p>
+                            </li>
+                            <li class="item" id="direction">
+                                <p>Make your IP stand out with impactful art direction.<br><br>
+                                    Art direction establishes a project's overall aesthetics and mood, a visual identity that perfectly aligns with the goals and expectations of the project. Once established, art direction ensures style consistency, precise implementation of artistic vision, and the highest quality delivery of assets.<br><br> 
+                                    An experienced and passionate art director supervises each project we take on from start to completion. Art direction is also offered as a standalone consultation service, providing visual direction and guidance to achieve a unique, effective art style for your project. As part of this service, we will also develop an art bible to compliment your project. This art bible will equip you and your team with a set of clear artistic guidelines to follow, ensuring consistent implementation of the art direction, even when we’re away saving Earth from another alien invasion.</p>
+                            </li>
+                            <li class="item" id="character">
+                                <p>Since Mooncolony’s inception, our clients have trusted us to design remarkable and memorable characters across a variety of genres, game styles, and platforms. That's why we’re confident in delivering beautiful results, no matter if it's casual, stylised, cartoon or realistic.<br><br> 
+                                    Our extensive experience and in-depth understanding of 2D character design allows us to create characters with complexity. We don't just create beautiful designs – we go the extra lightyear by taking into consideration the wider context: their backstories, relationships, personalities, and more. You can have complete confidence that our characters will knock your space boots off.</p>
+                            </li>
+                            <li class="item" id="illust">
+                                <p>
+                                    Digital illustration is the bread to our butter, the fuel to our rocket, the sun to our stars, the–. You get the point.<br><br> 
+                                    We love telling stories through dynamic illustrations, and creating versatile artwork that makes an impact. We collaborate with game studios on an extensive range of styles and genres to create card art, splash art, and illustrations for cinematic animations or promotional material.<br><br>
+                                    Get ready to explore the endless potential of illustration and let’s create something truly cosmic.
+                                </p>
+                            </li>
+                            <li class="item" id="marketing">
+                                <p>Captivate your audience with striking marketing art. Turn heads as you promote your IP and stake a solid claim in today’s crowded gaming market. Our marketing art services are intended to help you generate buzz before your game hits the shelves (be that a physical or digital shelf). We create all marketing art, including key art and splash art, with flexibility in mind so that it can easily be utilised across a variety of platforms, from billboards to web banners.<br><br> 
+                                    Elevate your audience’s expectations and wrestle attention away from the competition with marketing art that packs a punch!</p>
+                            </li>
+                            <li class="item" id="emotes">
+                                <p>As the way we communicate continues to evolve, the significance of emojis, icons and avatars remains ever-present. You can show gratitude to a teammate with a 🙏 or tell someone they’re playing like 💩. You can see why emotes are integrated across many video game interfaces (UI).<br><br>
+                                    At Mooncolony, we create fun and eye-catching illustrated emotes that show off personality and emotion for that  ✨ perfect ✨ reaction. Say a lot, with a little.</p>
+                            </li>
+                            <li class="item" id="cinemaitc">
+                                <p>Some of our best work has been collaborating with game studios to create animated 2.5D cinematics. 2.5D sits between 2D and 3D animation, bringing an extra dimension to flat images. These are usually large-scale projects that have many moving parts, requiring clients to have a reliable and effective art outsourcing team.<br><br>
+                                    As that team, our goal is to provide you with world-class solutions at every stage of the process to create complex, layered illustrations optimised for animation. Together, let’s break the mould and tell compelling stories utilising high-end visuals.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mo-works">
+                    <div class="department-group">
+                        <ul class="list">
+                            <li class="item">
+                                <button class="btn" data-depart="#concept on">Concept Art</button>
+                                <div class="text-box" id="concept">
+                                    <p>Transport yourself to another world with our concept art services creating memorable characters, epic environments and impactful props.<br><br>
+                                        Effective concept art assembles ideas into a visual showcase to inspire product development. Using the latest intergalactic technology at our disposal, we turn your brainwaves into world-building concepts that are ready to jump off the page.<br><br>
+                                        As a game developer, you want to powerfully communicate the epic potential of your project by sparking curiosity and excitement. That’s where we come in.<br><br>
+                                        As part of this process, concepts can embody an existing distinctive style by following a precise look and feel or we can explore new visual possibilities with first-class art direction. No matter the level of creative direction required, we continuously pursue an outstanding degree of imagination, quality and design. So, are you ready to transport yourself to another world?</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#direction">Art Direction</button>
+                                <div class="text-box" id="direction">
+                                    <p>Make your IP stand out with impactful art direction.<br><br>
+                                        Art direction establishes a project's overall aesthetics and mood, a visual identity that perfectly aligns with the goals and expectations of the project. Once established, art direction ensures style consistency, precise implementation of artistic vision, and the highest quality delivery of assets.<br><br> 
+                                        An experienced and passionate art director supervises each project we take on from start to completion. Art direction is also offered as a standalone consultation service, providing visual direction and guidance to achieve a unique, effective art style for your project. As part of this service, we will also develop an art bible to compliment your project. This art bible will equip you and your team with a set of clear artistic guidelines to follow, ensuring consistent implementation of the art direction, even when we’re away saving Earth from another alien invasion.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#character">Character Design</button>
+                                <div class="text-box" id="character">
+                                    <p>Since Mooncolony’s inception, our clients have trusted us to design remarkable and memorable characters across a variety of genres, game styles, and platforms. That's why we’re confident in delivering beautiful results, no matter if it's casual, stylised, cartoon or realistic.<br><br> 
+                                        Our extensive experience and in-depth understanding of 2D character design allows us to create characters with complexity. We don't just create beautiful designs – we go the extra lightyear by taking into consideration the wider context: their backstories, relationships, personalities, and more. You can have complete confidence that our characters will knock your space boots off.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#illust">Illustration</button>
+                                <div class="text-box" id="illust">
+                                    <p>
+                                        Digital illustration is the bread to our butter, the fuel to our rocket, the sun to our stars, the–. You get the point.<br><br> 
+                                        We love telling stories through dynamic illustrations, and creating versatile artwork that makes an impact. We collaborate with game studios on an extensive range of styles and genres to create card art, splash art, and illustrations for cinematic animations or promotional material.<br><br>
+                                        Get ready to explore the endless potential of illustration and let’s create something truly cosmic.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#marketing">Marketing Art</button>
+                                <div class="text-box" id="marketing">
+                                    <p>Captivate your audience with striking marketing art. Turn heads as you promote your IP and stake a solid claim in today’s crowded gaming market. Our marketing art services are intended to help you generate buzz before your game hits the shelves (be that a physical or digital shelf). We create all marketing art, including key art and splash art, with flexibility in mind so that it can easily be utilised across a variety of platforms, from billboards to web banners.<br><br> 
+                                        Elevate your audience’s expectations and wrestle attention away from the competition with marketing art that packs a punch!</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#emotes">Emotes and Avatars</button>
+                                <div class="text-box" id="emotes">
+                                    <p>As the way we communicate continues to evolve, the significance of emojis, icons and avatars remains ever-present. You can show gratitude to a teammate with a 🙏 or tell someone they’re playing like 💩. You can see why emotes are integrated across many video game interfaces (UI).<br><br>
+                                        At Mooncolony, we create fun and eye-catching illustrated emotes that show off personality and emotion for that  ✨ perfect ✨ reaction. Say a lot, with a little.</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <button class="btn " data-depart="#cinemaitc">Cinematic Illustrations</button>
+                                <div class="text-box" id="cinemaitc">
+                                    <p>Some of our best work has been collaborating with game studios to create animated 2.5D cinematics. 2.5D sits between 2D and 3D animation, bringing an extra dimension to flat images. These are usually large-scale projects that have many moving parts, requiring clients to have a reliable and effective art outsourcing team.<br><br>
+                                        As that team, our goal is to provide you with world-class solutions at every stage of the process to create complex, layered illustrations optimised for animation. Together, let’s break the mould and tell compelling stories utilising high-end visuals.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="sc-commu">
+                <div class="content-group">
+                    <div class="img-area">
+                        <figure class="img-wrap">
+                            <div class="sidebg">
+                                <div class="leftbg"></div>
+                                <div class="rightbg"></div>
+                            </div>
+                            <img src="https://www.datocms-assets.com/84325/1675157149-hearthstone-raid-on-onyxia-mooncolony.jpg?auto=format&fm=jpg&h=2000&q=70&w=2000" alt="커뮤니티 백그라운드">
+                        </figure>
+                    </div>
+                    <div class="text-wrap">
+                        <h3 class="title"><span data-up="">COMMUNITY</span></h3>
+                        <div class="desc-box">
+                            <p class="desc" ><span data-up="">Join the Mooncolony Discord, an online community for digital artists<br>
+                                and illustrators united by the drive to create exceptional art.</span> </p>
+                            <div class="btn-box">
+                                <a href="" class="view-btn">Join here!
+                                    <div class="arrow">
+                                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon_arrowIcon__esxxq"><path d="M4.50063 10.1693C4.47832 10.3012 4.51645 10.4376 4.60489 10.5425C4.70447 10.6604 4.85521 10.7291 5.01805 10.7291C5.11951 10.7291 5.21816 10.7022 5.30286 10.6511L9.34375 8.22737C9.61552 8.064 9.77835 7.792 9.77835 7.49959C9.77835 7.20718 9.61552 6.93522 9.34375 6.7718L5.30286 4.34803C5.0767 4.21252 4.77053 4.25982 4.60489 4.45663C4.51645 4.56149 4.47832 4.698 4.50063 4.82978C4.52387 4.96623 4.60763 5.08694 4.73232 5.16116L8.63074 7.49964L4.73232 9.83795C4.60762 9.91224 4.52387 10.0329 4.50063 10.1693V10.1693Z" fill="black"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-find">
+                <div class="find-group">
+                    <p class="text-title">
+                        <span data-up="">Looking for a reliable</span>
+                        <span data-up="">partner for your game</span>
+                        <span data-up="">art outsourcing?</span>
+                        <span data-up="">Schedule a call with</span>
+                        <span data-up="">Emrah!</span>
+                    </p>
+                    <div class="ceo">
+                        <figure class="img-wrap">
+                            <img src="https://www.datocms-assets.com/84325/1676539751-emrah.png?auto=format&fit=crop&fm=jpg&h=434&q=70&w=434" alt="사람일러스트">
+                        </figure>
+                        <div class="name-wrap">
+                            <span class="name">Emrah Elmasli</span>
+                            <span class="job">Founder & Creative Director</span>
+                            <div class="btn-box">
+                                <a href="" class="view-btn">Schedule a call
+                                    <div class="arrow">
+                                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="Icon_arrowIcon__esxxq"><path d="M4.50063 10.1693C4.47832 10.3012 4.51645 10.4376 4.60489 10.5425C4.70447 10.6604 4.85521 10.7291 5.01805 10.7291C5.11951 10.7291 5.21816 10.7022 5.30286 10.6511L9.34375 8.22737C9.61552 8.064 9.77835 7.792 9.77835 7.49959C9.77835 7.20718 9.61552 6.93522 9.34375 6.7718L5.30286 4.34803C5.0767 4.21252 4.77053 4.25982 4.60489 4.45663C4.51645 4.56149 4.47832 4.698 4.50063 4.82978C4.52387 4.96623 4.60763 5.08694 4.73232 5.16116L8.63074 7.49964L4.73232 9.83795C4.60762 9.91224 4.52387 10.0329 4.50063 10.1693V10.1693Z" fill="black"></path></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="sc-time">
+                <div class="time-group">
+                    <p class="text-title">
+                        <span data-up="">Adventures await. </span>
+                        <span data-up="">Are you in?</span>
+                    </p>
+                    <div class="time-area">
+                        <p class="desc" data-up="">Whilst we’re lunar-bound physically, our partners and artists come from all corners of the world, and together we create unique projects that unite people across the galaxy.</p>
+                        <div class="time-wrap">
+                            <ul class="list">
+                                <li class="item" data-up="">
+                                    <span class="city">Los Angeles, USA</span>
+                                    <span class="us-time" ></span>
+                                </li>
+                                <li class="item" data-up="">
+                                    <span class="city">São Paulo, Brazil</span>
+                                    <span class="br-time" ></span>
+                                </li>
+                                <li class="item" data-up="">
+                                    <span class="city">Cambridge, UK</span>
+                                    <span class="uk-time" ></span>
+                                </li>
+                                <li class="item" data-up="">
+                                    <span class="city">Beijing, China</span>
+                                    <span class="ch-time" ></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h2 class="blind">000 푸터</h2>
+            <div class="footer-flex">
+                <div class="logo-area">
+                    <svg class="Footer_logo__By_cG" viewBox="0 0 208 64" fill="none" xmlns="http://www.w3.org/2000/svg"><clipPath id="a"><path d="m0 .029297h208v63.6797h-208z"></path></clipPath><g clip-path="url(#a)"><g fill="#fff"><path d="m160.688 32.166 15.772 15.7702v15.7726h15.77v-15.7726l15.771-15.7702z"></path><path d="m15.1523 47.9392 11.678-11.2383c-2.847-2.8019-6.7516-4.532-11.0601-4.532-8.70973-.0023-15.7702 7.0581-15.7702 15.7679 0 8.7097 7.06047 15.7702 15.7702 15.7702 8.7098 0 15.7702-7.0605 15.7702-15.7702h-16.3881z"></path><path d="m96.2141.0292969v15.7702031l-15.7703-15.7702031v31.5404031h31.5402v-31.5404031z"></path><path d="m15.7702 15.7995-15.7702-15.7702031v31.5404031h31.5404v-31.5404031z"></path><path d="m80.0471 47.9362v-15.7702h-15.7702v31.5428h31.5404v-15.7726z"></path><path d="m47.9067 31.5697c-8.7098 0-15.7702-7.0604-15.7702-15.7702 0-8.70973 7.0604-15.7702031 15.7702-15.7702031 8.7097 0 15.7702 7.0604731 15.7702 15.7702031 0 8.7098-7.0605 15.7702-15.7702 15.7702zm31.9397-15.7702c0-8.70973-7.0605-15.7702031-15.7702-15.7702031-8.7098 0-15.7703 7.0604731-15.7703 15.7702031 0 8.7098 7.0605 15.7702 15.7703 15.7702 8.7097 0 15.7702-7.0604 15.7702-15.7702z"></path><path d="m47.9067 63.7064c8.7096 0 15.7702-7.0605 15.7702-15.7702 0-8.7096-7.0606-15.7702-15.7702-15.7702-8.7097 0-15.7702 7.0606-15.7702 15.7702 0 8.7097 7.0605 15.7702 15.7702 15.7702z"></path><path d="m112.184 63.7064c8.709 0 15.77-7.0605 15.77-15.7702 0-8.7096-7.061-15.7702-15.77-15.7702-8.71 0-15.7707 7.0606-15.7707 15.7702 0 8.7097 7.0607 15.7702 15.7707 15.7702z"></path><path d="m144.32 32.166v15.7702l-15.77-15.7702v31.5428h31.543v-31.5428z"></path></g><path d="m187.301 57.3903c-.768 0-1.39.625-1.39 1.3902 0 .7653.625 1.3903 1.39 1.3903.539 0 1.031-.3137 1.259-.8009h.504c-.252.751-.967 1.269-1.763 1.269-1.024 0-1.859-.8341-1.859-1.8584 0-1.0242.835-1.8584 1.859-1.8584.796 0 1.511.5205 1.763 1.2691h-.504c-.228-.4872-.72-.8009-1.259-.8009zm2.956 1.3902c0 1.6303-1.326 2.9564-2.956 2.9564s-2.957-1.3261-2.957-2.9564c0-1.6302 1.327-2.9563 2.957-2.9563s2.956 1.3261 2.956 2.9563zm-.468 0c0-1.3736-1.117-2.4881-2.488-2.4881s-2.488 1.1169-2.488 2.4881c0 1.3713 1.117 2.4882 2.488 2.4882s2.488-1.1169 2.488-2.4882z" fill="#000"></path></g></svg>
+                </div>
+                <address><p>Mooncolony Ltd.<br>17 The Granary Chesterton Mill<br>CB4 3NP<br>Cambridge, UK</p></address>
+                <div class="policy">
+                    <a href=""><span>Privacy Policy</span></a>
+                    <a href=""><span>Cookie Policy</span></a>
+                </div>
+                <div class="link-wrap">
+                    <small class="link">
+                        <a href="mailto:"info@mooncolony.com">info@mooncolony.co</a>
+                        <span>Copyright 2023 Mooncolony</span>
+                    </small>
+                    <div class="sns-area">
+                        <ul class="list">
+                            <li class="item"><a href="" aria-label="인스타그램 로고"><svg viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_instagramIcon__nD_2f"><path d="M5.93103 0.860962C4.32042 0.860962 4.11851 0.871204 3.48597 0.897239C2.85473 0.926077 2.42447 1.02487 2.04727 1.17156C1.65727 1.3231 1.32519 1.52682 0.995497 1.85658C0.665797 2.18635 0.46401 2.51667 0.312474 2.90672C0.165829 3.28402 0.0651587 3.71611 0.0363643 4.34745C0.00743901 4.9801 0 5.18205 0 6.79293C0 8.40389 0.00743664 8.60575 0.0363643 9.2384C0.0651966 9.86975 0.165829 10.3001 0.312474 10.6774C0.46401 11.0674 0.665797 11.3977 0.995497 11.7275C1.32519 12.0573 1.65727 12.2608 2.04727 12.4124C2.42447 12.559 2.85473 12.6598 3.48597 12.6886C4.11851 12.7175 4.32042 12.723 5.93103 12.723C7.54165 12.723 7.74355 12.7137 8.3761 12.6886C9.00733 12.6598 9.43941 12.559 9.81661 12.4124C10.2066 12.2608 10.5369 12.0573 10.8666 11.7275C11.1963 11.3977 11.3981 11.0674 11.5496 10.6774C11.6962 10.3001 11.7969 9.86975 11.8257 9.2384C11.8546 8.60575 11.8621 8.40389 11.8621 6.79293C11.8621 5.18205 11.8546 4.9801 11.8257 4.34745C11.7969 3.71611 11.6962 3.28402 11.5496 2.90672C11.3981 2.51667 11.1963 2.18635 10.8666 1.85658C10.5369 1.52682 10.2066 1.3231 9.81661 1.17156C9.43941 1.02487 9.00733 0.926077 8.3761 0.897239C7.74356 0.868402 7.54165 0.860962 5.93103 0.860962ZM5.93103 1.92923C7.51453 1.92923 7.70168 1.93853 8.32705 1.96365C8.90524 1.9897 9.22071 2.08774 9.42969 2.16895C9.70652 2.27658 9.90338 2.40477 10.1109 2.6123C10.3184 2.81983 10.4466 3.01676 10.5541 3.2936C10.6353 3.50262 10.733 3.81815 10.7594 4.39638C10.7879 5.02187 10.7939 5.20912 10.7939 6.79283C10.7939 8.37664 10.7874 8.56389 10.7594 9.18928C10.733 9.76761 10.6353 10.0813 10.5541 10.2903C10.4466 10.5671 10.3184 10.7657 10.1109 10.9734C9.90338 11.1809 9.70652 11.3091 9.42969 11.4167C9.22071 11.4976 8.90524 11.5939 8.32705 11.6202C7.70177 11.6491 7.51467 11.6547 5.93103 11.6547C4.3474 11.6547 4.1603 11.6454 3.53502 11.6202C2.95683 11.5942 2.64317 11.4979 2.43419 11.4167C2.15737 11.3091 1.95869 11.1809 1.75118 10.9734C1.54368 10.7657 1.41553 10.5671 1.30795 10.2903C1.22675 10.0813 1.13089 9.76761 1.10449 9.18928C1.07603 8.56389 1.06999 8.37664 1.06999 6.79283C1.06999 5.20912 1.0765 5.02187 1.10449 4.39638C1.13091 3.81815 1.22675 3.50262 1.30795 3.2936C1.41553 3.01676 1.54368 2.81983 1.75118 2.6123C1.95869 2.40477 2.15737 2.27658 2.43419 2.16895C2.64317 2.08802 2.95683 1.99007 3.53502 1.96365C4.16039 1.93482 4.34754 1.92923 5.93103 1.92923ZM9.09727 2.91397C8.70426 2.91397 8.38518 3.23304 8.38518 3.62615C8.38518 4.01927 8.70426 4.33834 9.09727 4.33834C9.49032 4.33834 9.80935 4.01927 9.80935 3.62615C9.80935 3.23304 9.49032 2.91397 9.09727 2.91397ZM5.93103 3.74606C4.24915 3.74606 2.88651 5.1108 2.88651 6.79293C2.88651 8.47515 4.24915 9.83793 5.93103 9.83793C7.61292 9.83793 8.97737 8.47515 8.97737 6.79293C8.97737 5.1108 7.61292 3.74606 5.93103 3.74606ZM5.93103 4.8162C7.0228 4.8162 7.90743 5.70103 7.90743 6.79293C7.90743 7.88492 7.0228 8.76966 5.93103 8.76966C4.83927 8.76966 3.95464 7.88492 3.95464 6.79293C3.95464 5.70103 4.83927 4.8162 5.93103 4.8162Z" fill="white"></path></svg></a></li>
+                            <li class="item"><a href="" aria-label="아트스테이션 로고"><svg viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_artstationIcon__Gs9c_"><path d="M0.310303 8.6114L1.30798 10.3308C1.50974 10.7216 1.91327 10.9896 2.37287 10.9896H9.02031L7.65278 8.6114H0.310303ZM12.1703 8.62253C12.1703 8.38796 12.1029 8.16466 11.9797 7.9749L8.0787 1.23098C7.87694 0.851307 7.48455 0.594482 7.02495 0.594482H4.96238L10.982 10.9785L11.9349 9.33707C12.1142 9.02446 12.1703 8.89048 12.1703 8.62253ZM6.66623 6.91422L3.97598 2.28054L1.28558 6.91422H6.66623Z" fill="white"></path></svg></a></li>
+                            <li class="item"><a href="" aria-label="링크드인 로고"><svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_linkedinIcon__3bDCn"><path d="M3.04756 2.15032C3.04756 2.86256 2.49894 3.43967 1.82181 3.43967C1.14469 3.43967 0.596067 2.86256 0.596067 2.15032C0.596067 1.43859 1.14469 0.860962 1.82181 0.860962C2.49894 0.860962 3.04756 1.43859 3.04756 2.15032ZM3.05745 4.47116H0.586182V12.723H3.05745V4.47116ZM7.00257 4.47116H4.54712V12.723H7.00307V8.39131C7.00307 5.9828 9.98292 5.78578 9.98292 8.39131V12.723H12.4483V7.49805C12.4483 3.434 8.03853 3.58202 7.00257 5.58258V4.47116Z" fill="white"></path></svg></a></li>
+                            <li class="item"><a href="" aria-label="트위터 로고"><svg viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_twitterIcon__ASiNE"><path d="M11.8903 2.11394C11.4538 2.3078 10.9848 2.43825 10.4927 2.4971C10.9953 2.19605 11.3808 1.71938 11.5623 1.15104C11.0925 1.42974 10.5716 1.63226 10.0169 1.74173C9.5731 1.26872 8.9409 0.973145 8.24118 0.973145C6.89741 0.973145 5.80815 2.06285 5.80815 3.40618C5.80815 3.59684 5.83005 3.78294 5.8711 3.96038C3.84905 3.85912 2.05643 2.89029 0.85588 1.41788C0.64697 1.77731 0.527006 2.19513 0.527006 2.64169C0.527006 3.48554 0.95623 4.23041 1.60896 4.66648C1.2103 4.65371 0.834898 4.54424 0.506936 4.36224C0.506936 4.37273 0.506936 4.38231 0.506936 4.3928C0.506936 5.57191 1.34531 6.55534 2.45874 6.77839C2.25485 6.83404 2.03955 6.86369 1.81742 6.86369C1.66096 6.86369 1.50815 6.84818 1.35991 6.82036C1.66963 7.78691 2.56822 8.49073 3.63284 8.51034C2.80039 9.16307 1.75128 9.55216 0.610935 9.55216C0.414796 9.55216 0.220938 9.54075 0.0302734 9.51795C1.10721 10.2081 2.38576 10.6108 3.7601 10.6108C8.23571 10.6108 10.6824 6.90337 10.6824 3.68807C10.6824 3.5827 10.6801 3.47779 10.6756 3.37333C11.1513 3.02986 11.5641 2.60155 11.8903 2.11394Z" fill="white"></path></svg></a></li>
+                            <li class="item"><a href="" aria-label="디스코드 로고"><svg viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_discordIcon__WeSfu"><path d="M17.9419 7.34C16.6473 6.714 15.263 6.25905 13.8157 6C13.638 6.33209 13.4304 6.77877 13.2872 7.1341C11.7487 6.89499 10.2245 6.89499 8.7143 7.1341C8.57116 6.77877 8.3588 6.33209 8.17947 6C6.73067 6.25905 5.3448 6.71567 4.05016 7.34331C1.43887 11.4214 0.730991 15.3981 1.08493 19.3184C2.81688 20.655 4.49534 21.467 6.14548 21.9984C6.55291 21.4189 6.91628 20.8028 7.22931 20.1536C6.63313 19.9195 6.06211 19.6306 5.52256 19.2952C5.6657 19.1856 5.80571 19.071 5.94098 18.9531C9.23183 20.5438 12.8074 20.5438 16.0589 18.9531C16.1958 19.071 16.3358 19.1856 16.4774 19.2952C15.9362 19.6322 15.3637 19.9211 14.7675 20.1553C15.0805 20.8028 15.4423 21.4205 15.8513 22C17.503 21.4687 19.183 20.6567 20.915 19.3184C21.3303 14.7738 20.2056 10.8336 17.9419 7.34ZM7.67765 16.9075C6.68977 16.9075 5.87963 15.9543 5.87963 14.7937C5.87963 13.6331 6.67247 12.6783 7.67765 12.6783C8.68285 12.6783 9.49297 13.6314 9.47567 14.7937C9.47723 15.9543 8.68285 16.9075 7.67765 16.9075ZM14.3223 16.9075C13.3344 16.9075 12.5243 15.9543 12.5243 14.7937C12.5243 13.6331 13.3171 12.6783 14.3223 12.6783C15.3275 12.6783 16.1376 13.6314 16.1203 14.7937C16.1203 15.9543 15.3275 16.9075 14.3223 16.9075Z" fill="white"></path></svg></a></li>
+                            <li class="item"><a href="" aria-label="트위치 로고"><svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="Social_icon__fuQgy Icon_twitchIcon__8jVu9"><g clip-path="url(#clip0_225_1749)"><path d="M1.69917 0.584045L0.890381 2.74089V11.3673H3.85457V12.9857H5.4729L7.08962 11.3673H9.51538L12.7504 8.13341V0.584045H1.69917ZM2.77671 1.66179H11.6724V7.59311L9.78503 9.4806H6.82038L5.20412 11.0968V9.4806H2.77671V1.66179ZM5.74209 7.05462H6.82037V3.81978H5.74209V7.05462ZM8.70695 7.05462H9.78502V3.81978H8.70695V7.05462Z" fill="white"></path></g><defs><clipPath id="clip0_225_1749"><rect width="11.86" height="12.4159" fill="white" transform="translate(0.890381 0.584045)"></rect></clipPath></defs></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
