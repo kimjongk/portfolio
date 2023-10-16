@@ -1,0 +1,716 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+
+
+.banner-box .swiper{}
+.banner-box .swiper-wrapper{}
+.banner-box .swiper-slide{
+    background: #000;
+    width: 100%;
+    height: 40px;
+}
+.banner-box .swiper-slide a{
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+}
+.banner-box .swiper-slide a::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 16px;
+    background: url(https://m.andar.co.kr/iv/arrow_wh.png) no-repeat center ;
+}
+.banner-box .swiper-slide a.event1::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 16px;
+    background: url(https://m.andar.co.kr/iv/arrow_wh.png) no-repeat 20px center ,url(https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/37f64fbfc314ed5d0d9d8cef21abf2c2.png) no-repeat 5px 0px ;;
+}
+.banner-box .swiper-slide .event1{}
+.banner-box .swiper-slide .event2{}
+
+.banner-box .swiper-slide .event2 span{
+    color: #ee5728;
+}
+.banner-box .swiper-slide .event3{}
+.banner-box .swiper-slide span{
+    font-weight: 700;
+}
+
+
+.header-inner{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.header-inner .group-flex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* background: #00f; */
+    padding: 0 3px;
+    height: 56px;
+}
+.header-inner .group-flex .logo{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-inner .group-flex .logo a{
+    display: block;
+}
+.header-inner .group-flex .btn-area{
+    display: flex;
+}
+.header-inner .group-flex .btn-area [class*="btn-"]{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.header-inner .gnb{
+    display: none;
+}
+
+.header-inner .group-nav {
+    background: #fff;
+    position: relative;
+    height: 45px;
+}
+.header-inner .group-nav .list{
+    display: flex;
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    padding: 11px 0 11px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    gap: 20px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.header-inner .group-nav .list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.header-inner .group-nav .item{
+    position: relative;
+}
+.header-inner .group-nav .item .point:after{
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -8px;
+    width: 6px;
+    height: 6px;
+    background: #f00;
+    border-radius: 50%;
+}
+.header-inner .group-all .item{
+    position: relative;
+}
+.header-inner .group-all .item .point:after{
+    position: absolute;
+    content: '';
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background: #f00;
+    border-radius: 50%;
+}
+.header-inner .group-nav #btnAll{
+    position: absolute;
+    top: 0;
+    /* transform: translateY(-50%); */
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background: url(https://m.andar.co.kr/common/mo/btn_open_middle_bk.png) no-repeat 50% ;
+}
+.header-inner .group-nav .all-text{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+}
+.header-inner .btn-basket{
+    display: block;
+    position: relative;
+}
+.header-inner .btn-basket::after{
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    content: '0';
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.header-inner .group-all{
+    background: #f6f6f6;
+    display: none;
+    border-top: 1px solid #dcdcdc;
+}
+
+.header-inner .group-all .sub{
+    padding: 9px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.header-inner .group-all .item{}
+.header-inner .group-all a{
+    display: block;
+    padding: 8px 17px;
+    border: 1px solid #ebebeb;
+    border-radius: 100px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    letter-spacing: -0.05em;
+}
+
+
+/* fixed됬을대 */
+
+.header-inner.fixed{
+    top: 0;
+}
+.header-inner.fixed .group-flex{
+    background: #fff;
+}
+.header-inner.fixed .group-flex svg path{fill:#000}
+.header-inner.fixed .gnb{ display: block; }
+
+.header-inner .gnb.on{}
+.header-inner .gnb.on .group-nav .list{ visibility: hidden; }
+.header-inner .gnb.on .group-nav .all-text{display: flex;}
+.header-inner .gnb.on .group-nav #btnAll{ transform: rotate(-180deg);}
+
+
+
+.footer{
+    background: #fafafa;
+    padding: 30px 16px 30px;
+    color: #555;
+    line-height: 20px;
+}
+.footer .brand-area{}
+.footer .brand-area .f-logo a{
+    display: block;
+    width: 90px;
+    height: 23.56px;
+    background: #f00;
+    background: url(../images/f-logo.svg) no-repeat;
+    margin-bottom: 10px;
+}
+.footer .brand-area .desc{
+    font-size: 14px;
+}
+
+
+.footer .custom-area{
+    padding-bottom: 20px;
+}
+.footer .custom-area .customer{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 24px 0 5px;
+}
+.footer .custom-area .tel{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.footer .custom-area .date{
+    font-size: 13px;
+}
+
+
+.footer .sns-area{}
+.footer .sns-area .list{
+    display: flex;
+    gap: 25px;
+}
+.footer .sns-area .item{
+}
+.footer .sns-area .item a{
+    display: block;
+    width: 22px;
+    height: 22px;
+}
+.footer .sns-area .facebook{
+    background: url(https://m.andar.co.kr/common/mo/icon_facebook.png) no-repeat center / 12px auto;
+}
+.footer .sns-area .youtube{
+    background: url(https://m.andar.co.kr/common/mo/icon_YouTube.png) no-repeat center / 100% auto;
+}
+.footer .sns-area .insta{
+    background: url(https://m.andar.co.kr/common/mo/icon_Instagram.png) no-repeat center / 100% auto;
+}
+
+
+.footer .link-area{
+    padding: 20px 0;
+}
+.footer .link-area .list{
+    display: flex;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #777;
+    font-weight: 700;
+}
+.footer .link-area .item{
+    position: relative;
+
+    /* padding-right: 10px; */
+    /* margin-right: 6px; */
+}
+.footer .link-area .item+.item{
+    padding-left: 20px;
+}
+.footer .link-area .item+.item::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+}
+
+
+
+.footer .info-area{
+    font-size: 11px;
+    line-height: 21px;
+    color: #777;
+}
+.footer .info-area .first{}
+.footer .info-area .company{
+    font-weight: 400;
+}
+.footer .info-area .name{
+    font-weight: 400;
+}
+.footer .info-area span::after{
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 0 8px 0 10px;
+}
+
+.footer .info-area .buisness{}
+.footer .info-area .addr{}
+.footer .info-area .tel{}
+
+.footer .info-area .use,
+.footer .info-area .marketing,
+.footer .info-area .export{
+    font-weight: 700;
+}
+
+.footer .info-area .use a,
+.footer .info-area .marketing a,
+.footer .info-area .export a{
+    font-weight: 100;
+}
+
+.footer .copy-area{
+    font-size: 11px;
+    padding-top: 30px;
+    color: #777;
+    font-family: var(--font-en);
+}
+.footer .copy-area em{
+    font-weight: 700;
+}
+.footer .copy-area .copy-area{}
+
+
+.footer .mark-area{
+    margin-top: 24px;
+}
+.footer .mark-area .list{
+    display: flex;
+    align-items: center;
+}
+.footer .mark-area .item{
+    margin-right: 22px;
+}
+.footer .mark-area .trans{
+    display: block;
+    width: 45px;
+    height: 34px;
+    background: url(https://m.andar.co.kr/common/mo/icon_ftc.png) no-repeat center / 45px auto;
+}
+.footer .mark-area .symantec{
+    display: block;
+    width: 36px;
+    height: 38px;
+    background: url(https://m.andar.co.kr/common/mo/icon_symantec.png) no-repeat center / 36px auto;
+}
+.footer .mark-area .kg{
+    display: block;
+    width: 27px;
+    height: 31px;
+    background: url(https://m.andar.co.kr/common/mo/icon_kg.png) no-repeat center / 27px auto;
+}
+
+.side-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 52px;
+    height: 118px;
+    border: 1px solid #e9e9e9;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 10;
+    opacity: 0;
+    transition: 1s;
+}
+.side-btn.show{
+    opacity: 1;
+}
+.side-btn .kakao-btn{
+    width: 50px;
+    height: 67px;
+    padding: 5px;
+}
+.side-btn .kakao-btn .kakao{
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-top: 4px;
+    background: url(https://m.andar.co.kr/common/mo/kakao_chat.png) no-repeat center / 35px 30px;
+}
+.side-btn .kakao-btn span{
+    display: block;
+    padding-top: 10px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    color: #595959;
+    text-align: center;
+}
+.side-btn .arrow-btn{
+    border-top: 1px solid #e9e9e9;
+    padding: 5px;
+}
+.side-btn .arrow-btn a{
+    display: block;
+    width: 40px;
+    height: 38px;
+    background:url(https://m.andar.co.kr/common/mo/btn_top.png) no-repeat center / 19px auto;
+}
+
+.side-nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 81.94vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 500;
+    overflow: auto;
+    transform: translateX(-100%);
+    transition: .3s;
+    z-index: 500;
+    padding-bottom: 50px;
+}
+
+.side-nav.on{
+    transform: translateX(0%);
+}
+
+.side-nav .group-login{
+    display: block;
+    position: relative;
+    text-align-last: left;
+    padding: 32px 16px 14px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.side-nav .group-login .link-login{
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    background: #000;
+    padding: 10px 26px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.side-nav .group-login .link-join{
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 26px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+.side-nav .close-btn{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background: url(https://m.andar.co.kr/common/mo/icon_close.png) no-repeat center / 100%;
+}
+.side-nav .desc{
+    color: #77797E;
+    font-size: 13px;
+    padding-top: 15px;
+}
+.side-nav .bold{
+    font-weight: bold;
+}
+.side-nav .group-list{
+    display: block;
+    padding: 0 16px;
+}
+.side-nav .nav-list{
+    display: block;
+    height: auto;
+    padding: 11px 0;
+}
+.side-nav .nav-item .title-btn.point span{
+    position: relative;
+}
+
+.side-nav .nav-item .title-btn.point span::after{
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+.side-nav .nav-item .title-btn{
+    display: block;
+    position: relative;
+    color: #333;
+    width: 100%;
+    text-align-last: left;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.side-nav .nav-item .title-btn::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 30px;
+    height: 28px;
+    background: url(https://m.andar.co.kr/common/mo/btn_open.png) no-repeat;
+}
+.side-nav .nav-item .title-btn.on::after{
+    transform: rotate(-180deg) translateY(50%);
+}
+.side-nav .nav-item .list{
+    display: none;
+    width: 100%;
+    top: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.side-nav .nav-item .list .item{}
+.side-nav .nav-item .list .item a{
+    display: block;
+    padding: 11px 0;
+    color: #848484;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+}
+
+
+.side-nav .nav-list{
+    padding: 18px 0 11px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.side-nav .nav-list .list{
+    display: none;
+}
+.side-nav .nav-list .list.on{
+    display: block;
+}
+
+.side-nav .nav-list .title{
+    display: block;
+    position: relative;
+    color: #333;
+    width: 100%;
+    text-align-last: left;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 15px 0;
+}
+.side-nav .nav-list .list a{
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 9px 0;
+    color: #888;
+}
+
+.side-nav .group-list .group-link{
+    display: flex;
+    text-align: center;
+    height: 44px;
+}
+.side-nav .group-list .group-link a{
+    display: block;
+    position: relative;
+    flex: 1;
+    background: #F2F2F2;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #777;
+    padding: 14px 0;
+}
+.side-nav .group-list .group-link a+a::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background: #ccc;
+}
+
+
+.side-nav .event-list{
+    padding-bottom: 30px;
+}
+.side-nav .event-list .item{
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #333;
+    font-weight: 500;
+    padding: 20px 0 16px;
+}
+.side-nav .event-list .shop-list{}
+.side-nav .event-list .shop-item{
+    margin-bottom: 30px;
+}
+.side-nav .event-list .shop-item a{
+    display: block;
+}
+.side-nav .event-list .shop-item .img-wrap{}
+.side-nav .event-list .shop-item .img-wrap img{
+    border-radius: 3px;
+}
+.side-nav .event-list .shop-item .text-wrap{
+    position: relative;
+}
+.side-nav .event-list .shop-item .text-wrap .title{
+    display: block;
+    margin: 12px 0 6px;
+}
+.side-nav .event-list .shop-item .text-wrap .more-link{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: #777;
+}
+.side-nav .event-list .shop-item .text-wrap .desc{
+    display: block;
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #777;
+}
+
+.side-nav .brand-list{
+    display: flex;
+    text-align: center;
+    background: #F2F2F2;
+    border-radius: 3px;
+}
+.side-nav .brand-list .item{
+    padding: 14px 0;
+    font-size: 14px;
+    width: 50%;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #777;
+    position: relative;
+}
+.side-nav .brand-list .item::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 16px;
+    background: #ccc;
+}
