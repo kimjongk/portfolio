@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc'teryx</title>
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVR4AZWSAWeCURSGg0SpVFCgfkGkfxCVIhAQBCVAEjCiaL8hlCAAFQopAAWkQICUGhuloCqpZzvYaOuu7eHjwz3Pvec9RwOkgRfucDqdkE/BG/CkURUL9XqdRqMBalYaFGw2G0KhEOFwmO12iwqloNPpYLFYsFqtdLvd/wmOxyOJRAKdTodWqyWVSimyUAiGwyFOp5NoNIrf75d/RqPR3wSXy4VcLofNZpM2qNVqGAwGCoUC1+v1sWA6neJ2uwkGgxIey+USr9eLx+NhNps9FpRKJUwmE5VKBUFuLRaL6PV6yuXy74LVaoXP55PbmM/nfDIej3G5XAQCAdbrtVrQbDZldOTzecniZiNlEmazmXa7fV+w2+2IxWLKxHu9nuwE8Xicw+HwU9Dv97Hb7TJ/2QO+I4FGIhEcDgeDweBWsN/vSSaTGI1GWq0WKqrVqiyXtCM1X4JXGU8mkyGdTrNYLFAxmUyQ4mw2+xnyRgRP5/N5LX3J02VsKiRYOSNnP2q2wPM7i5h367hhge0AAAAASUVORK5CYII=">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9a1fbb0624.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+
+    <script src="./assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="loader">
+            <i class='bx bx-loader-circle bx-spin bx-flip-horizontal' ></i>
+        </div> -->
+
+
+        <header class="header">
+            <div class="header-menu">
+                <h1 class="logo"><a href=""><img src="./assets/images/logoimg.png" alt="로고"></a></h1>
+                <div class="buy-group">
+                    <button class="buy-btn">
+                        <span>Buy</span>
+                    </button>
+                    <button class="btn-box" data-action="">
+                        <span class="menu-up"></span>
+                        <span class="menu-down"></span>
+                    </button>
+                    <!-- buy modal page -->
+                    <div class="buy-flex">
+                        <div class="bg">
+                            <figure class="img-wrap">
+                                <img src="./assets/images/butflex.png" alt="캡슐 난사 이미지">
+                            </figure>
+                        </div>
+                        <div class="content-wrap">
+                            <div class="left-box">
+                                <h2 class="title">Buy the<br>Arc'Teryx</h2>
+                            </div>
+                            <div class="right-box">
+                                <button class="country-btn">Select country<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 23.7157c0-2.7614 2.2386-5 5-5M21 23.7157c0-2.7614-2.2386-5-5-5" stroke="currentColor" fill="none" stroke-linecap="round"></path></svg></button>
+                            
+                                <ul class="list">
+                                    <li class="item"><a href="">Korean</a></li>
+                                    <li class="item"><a href="">English</a></li>
+                                    <li class="item"><a href="">Chinese</a></li>
+                                    <li class="item"><a href="">Japanese</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="close-btn"><i class='bx bx-x'></i></button>
+                    </div>
+                </div>
+
+                <div class="menu-group">
+                    <nav class="snb">
+                        <div class="snb-flex">
+                            <ul class="list">
+                                <li class="item">
+                                    <a href="" data-link="#with">With you</a>
+                                    <div class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5cbd24105127227.5f72e14d68ef0.jpg" alt="푸른 밧줄 이미지">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="" data-link="#subvisual">Gore-Tex fabric</a>
+                                    <div class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/507110105127227.5f72e60f6123c.png" alt="룩북 이미지">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="" data-link="#using">Materials</a>
+                                    <div class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/bdecbd105127227.5f72e14d675bb.png" alt="푸른 패브릭 이미지">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="" data-link="#detail">Quality details</a>
+                                    <div class="img-wrap">
+                                        <img src="./assets/images/detail.png" alt="룩북 이미지">
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <a href="" data-link="#review">Review</a>
+                                    <div class="img-wrap">
+                                        <img src="https://z1photorankmedia-a.akamaihd.net/media/a/4/v/a4vqsh4/normal.jpg" alt="리뷰어 사진">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="link-flex">
+                            <small class="mail"><a href="mailto:jongkmin1991@naver.com">jongkmin1991@naver.com</a></small>
+                            <div class="sns-wrap">
+                                <a href="https://arcteryx.com/us/en/" target="_blank" class="vk"><img src="./assets/images/footer-logo.png" width="30px" height="24px" alt="아크테릭스 파비콘 이미지"></i></a>
+                                <a href="https://www.instagram.com/arcteryxkorea/" target="_blank" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="sticky-wrapper1">
+                <div class="minus-height">
+                    <section class="sc-visual">
+                        <h2 class="blind">메인비쥬얼</h2>
+                        <div class="content">
+                            <figure class="img-wrap">
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/de7de7105127227.5f72f29c06f0e.png" alt="메인 이미지">
+                            </figure>
+                            <h3 class="title"><p>Guaranteed<br>To Keep You Dry</p></h3>
+                            <div class="video-area">
+                                <div class="video-wrap">
+                                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f6adb105127227.5f725e1b7cdd0.gif" allow="autoplay; encrypted-media" title="Clingr intro" allowfullscreen="true" data-ready="true"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="sc-appeal">
+                        <h2 class="blind">product appeal</h2>
+                        <div class="wrapper">
+                            <div class="content">
+                                <div class="bg"></div>
+                                <div class="text-area">
+                                    <div class="text-box text1">
+                                        <div class="icon"><i class="fa-solid fa-asterisk"></i></div>
+                                        <span class="title">Leader in Technology & Innovation</span>
+                                        <span class="desc">Arc'teryx focuses on high-quality outdoor products through innovative technology. They prioritize durability, lightweight design, waterproofing, and breathability. The brand is committed to ongoing research, experimenting with new materials, and improving outdoor performance.</span>
+                                    </div>
+                                    <div class="text-box text2">
+                                        <div class="icon"><i class="fa-solid fa-person-hiking"></i></div>
+                                        <span class="title">Emphasis on Mountain Sports & Activities</span>
+                                        <span class="desc">Arc'teryx primarily manufactures products for mountain sports and outdoor activities, including hiking, skiing, snowboarding, and climbing. Their products are designed for use in extreme environments, earning a high level of trust and confidence among adventurers and outdoor enthusiasts.</span>
+                                    </div>
+                                    <div class="text-box text3">
+                                        <div class="icon"><i class="fa-brands fa-pagelines"></i></div>
+                                        <span class="title">Eco-friendly Manufacturing & Sustainability</span>
+                                        <span class="desc">Arc'teryx places a strong emphasis on sustainable manufacturing and environmental responsibility. They use eco-friendly materials and adopt environmentally friendly approaches in their production processes. They also strive to extend the lifespan of their products and minimize waste, contributing to environmental conservation.</span>
+                                    </div>
+                                </div>
+                                <div class="img-area">
+                                    <div class="img-box img1"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/732616105127227.5f725c6002759.png" alt="룩북 이미지"></div>
+                                    <div class="img-box img2"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/62cf45136345851.61f8224ad7578.jpg" alt="룩북 이미지"></div>
+                                    <div class="img-box img3"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e862d8105127227.5f72f29b03d49.png" alt="룩북 이미지"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="sc-withU" id="with">
+                <h2 class="blind">product target</h2>
+               
+                <div class="content-group">
+                    <figure class="img-wrap">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5cbd24105127227.5f72e14d68ef0.jpg" alt="푸른 밧줄 이미지">
+                    </figure>
+                    <div class="text-flex">
+                        <p class="title">Arc'teryx everywhere <span>with you</span></p>
+                        <p class="desc">The Storm Fortress. The iconic Alpha SV has long proven itself in the most severe alpine conditions. Breathable GORE-TEX PRO with Most Rugged Technology is paired with our most durable face fabric – made from 100% recycled materials – for incredibly long-lasting storm protection.</p>
+                    </div>
+                </div>
+
+                <div class="card-flex">
+                    <ul class="list">
+                        <div class="card-box">
+                            <li class="item item1">
+                                <div class="line">
+                                    <svg class="with-you-card__content__header__divider__svg is-hidden--sm-down" width="1500" height="120" preserveAspectRatio="none" viewBox="0 0 740 120" fill="none" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M151 0v89.7151c0 16.4499 13.431 29.7849 30 29.7849h559" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M0 119.5h121c16.569 0 30-13.431 30-30V0v89.7151" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                    </svg>
+                                </div>
+                                <div class="top-wrap">
+                                    <span class="title">Air out</span>
+                                    <p class="desc">
+                                        Ventilation in clothing is crucial for comfort during physical activities and in hot conditions, preventing discomfort and excessive sweating.
+                                    </p>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <figure class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/eab6ac105127227.5f72e14d6e2a2.jpg" alt="소재소개 이미지">
+                                    </figure>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="card-box">
+                            <li class="item item2">
+                                <div class="line">
+                                    <svg class="with-you-card__content__header__divider__svg is-hidden--sm-down" width="1500" height="120" preserveAspectRatio="none" viewBox="0 0 740 120" fill="none" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M151 0v89.7151c0 16.4499 13.431 29.7849 30 29.7849h559" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M0 119.5h121c16.569 0 30-13.431 30-30V0v89.7151" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                    </svg>
+                                </div>
+                                <div class="top-wrap">
+                                    <span class="title">insulation</span>
+                                    <p class="desc">
+                                        The importance of thermal insulation in clothing: It retains body heat, ensuring warmth and comfort in cold weather, making it essential for outdoor activities and winter seasons.
+                                    </p>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <figure class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/6575c6105127227.5f72e14d67fba.jpg" alt="소재 소개 이미지">
+                                    </figure>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="card-box">
+                            <li class="item item3">
+                                <div class="line">
+                                    <svg class="with-you-card__content__header__divider__svg is-hidden--sm-down" width="1500" height="120" preserveAspectRatio="none" viewBox="0 0 740 120" fill="none" opacity="0.2" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M151 0v89.7151c0 16.4499 13.431 29.7849 30 29.7849h559" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M0 119.5h121c16.569 0 30-13.431 30-30V0v89.7151" stroke="#656675" vector-effect="non-scaling-stroke"></path>
+                                    </svg>
+                                </div>
+                                <div class="top-wrap">
+                                    <span class="title">anti<br>pollution</span>
+                                    <p class="desc">
+                                        The importance of pollution prevention in clothing: It safeguards against environmental contaminants, promotes personal health, and contributes to a cleaner and more sustainable environment.
+                                    </p>
+                                </div>
+                                <div class="bottom-wrap">
+                                    <figure class="img-wrap">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/41a9af105127227.5f72e14d6cc66.jpg" alt="소재 소개 이미지">
+                                    </figure>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+
+
+            <div class="sticky-wrapper2">
+                <section class="sc-subvisual" id="subvisual">
+                    <h2 class="blind">sub visual</h2>
+
+                    <div class="contents">
+                        <figure class="img-wrap ">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/507110105127227.5f72e60f6123c.png" alt="룩북 이미지">
+                        </figure>
+        
+                        <div class="content">
+                            <div class="top-group">
+                                <div class="marqee">
+                                    <span> GORE-TEX </span>
+                                    <span> GORE-TEX </span>
+                                    <span> GORE-TEX </span>
+                                </div>
+                            </div>
+                            <div class="bottom-group">
+                                <div class="cont-flex">
+                                    <div class="line-wrap">
+                                        <svg class="is-hidden--sm-down divider-content-top__divider-box__inner__svg col col--md-12" width="1640" height="200" preserveAspectRatio="none" viewBox="0 0 1640 399" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor">
+                                                <path d="M540 400V31C540 14.4315 526.569 1 510 1H0" vector-effect="non-scaling-stroke" data-reveal-old="line" class="" style="--scale: 0.9974864818431713; --line-length: 923.8027691173885px;"></path>
+                                                <path d="M540 400V31c0-16.5685 13.431-30 30-30h1070" style="transition-delay: 0.3s; transition-duration: 1.5s; --scale: 0.9974866832386363; --line-length: 1482.3954982495306px;" vector-effect="non-scaling-stroke" data-reveal-old="line" class=""></path></g>
+                                        </svg>
+                                    </div>
+                                    <div class="cont-area">
+                                        <div class="left-wrap">
+                                            <div class="text-box">
+                                                <p class="text">MOST DURABLE</p>
+                                            </div>
+                                        </div>
+                                        <div class="right-wrap">
+                                            <p>Gore-Tex fabric is renowned for its durability, <br>providing long-lasting performance even in challenging outdoor conditions, <br>while maintaining its waterproof and breathable qualities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="sc-effect">
+                <h2 class="blind">product effect</h2>
+                <div class="top-content">
+                    <div class="top-group">
+                        <p class="title">
+                            Gore-Tex fabric is known for being waterproof
+                            <span class="img-wrap">
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/127a3a105127227.5f725c5f77e7a.png" alt="물 진동 이미지">
+                            </span>
+                            breathable
+                            <span class="img-wrap">
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e58aed105127227.5f7254776dfef.png" alt="구겨진 원단 이미지">
+                            </span>
+                            and durable
+                            <span class="img-wrap">
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/5a9ef0105127227.5f7302b757e76.png" alt="패브릭 디테일 이미지컷">
+                            </span>
+                            making it ideal for various outdoor activities.
+                        </p>
+                        <div class="cont-flex">
+                            <div class="line-wrap">
+                                <svg class="is-hidden--sm-down divider-content-top__divider-box__inner__svg col col--md-12" width="1740" height="200" preserveAspectRatio="none" viewBox="0 0 1640 399" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor">
+                                        <path d="M540 400V31C540 14.4315 526.569 1 510 1H0" vector-effect="non-scaling-stroke" data-reveal-old="line" class="" style="--scale: 0.9974864818431713; --line-length: 923.8027691173885px;"></path>
+                                        <path d="M540 400V31c0-16.5685 13.431-30 30-30h1070" style="transition-delay: 0.3s; transition-duration: 1.5s; --scale: 0.9974866832386363; --line-length: 1482.3954982495306px;" vector-effect="non-scaling-stroke" data-reveal-old="line" class=""></path></g>
+                                </svg>
+                            </div>
+                            <div class="cont-area">
+                                <div class="left-wrap">
+                                    <div class="text-box">
+                                        <p class="text"><br>MOST<br>RUGGED</p>
+                                    </div>
+                                </div>
+                                <div class="right-wrap">
+                                    <p>Gore-Tex, known for its waterproof and breathable properties,<br> is the perfect choice for rugged outdoor adventures, ensuring<br> you stay dry and comfortable in challenging conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-content">
+                    <div class="bottom-group">
+                        <div class="top-flex">
+                            <div class="title-wrap">
+                                <p class="title">New gore-tex pro<br>and new <i>alpha SV<br>jacket</i> launched</p>
+                            </div>
+                        </div>
+                        <div class="mid-flex">
+                            <figure class="img-wrap">
+                                <img src="./assets/images/img1.png" alt="후드쓴 모델 상반신 이미지">
+                            </figure>
+                        </div>
+                        <div class="bottom-flex">
+                            <div class="cont-flex">
+                                <div class="line-wrap">
+                                    <svg class="is-hidden--sm-down divider-content-top__divider-box__inner__svg col col--md-12" width="100%" height="200" preserveAspectRatio="none" viewBox="0 0 1640 399" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor">
+                                            <path d="M540 400V31C540 14.4315 526.569 1 510 1H0" vector-effect="non-scaling-stroke" data-reveal-old="line" class="" style="--scale: 0.9974864818431713; --line-length: 923.8027691173885px;"></path>
+                                            <path d="M540 400V31c0-16.5685 13.431-30 30-30h1070" style="transition-delay: 0.3s; transition-duration: 1.5s; --scale: 0.9974866832386363; --line-length: 1482.3954982495306px;" vector-effect="non-scaling-stroke" data-reveal-old="line" class=""></path></g>
+                                    </svg>
+                                </div>
+                                <div class="cont-area">
+                                    <div class="left-wrap">
+                                        <div class="text-box">
+                                            <p class="text">Alpha SV jacket</p>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrap">
+                                        <p>In the challenging alpine environment, the Gore-Tex Pro Shell Jacket boasts armor-like durability. It's part of the Alpha series designed for climbing and alpine mountaineering. The 'SV' stands for Severe Weather, representing its exceptional weather resistance and robust durability.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="caption-area">
+                            <div class="title-flex">
+                                <div class="title">
+                                    <p>What fabric<br>was used</p>
+                                </div>
+                                <figure class="img-wrap">
+                                    <img src="./assets/images/fabric.png" alt="원단 분해 이미지">
+                                </figure>
+                            </div>
+                            <div class="desc-flex">
+                                <div class="box">
+                                    <p class="text">Gore-Tex fabric is renowned for its exceptional performance in outdoor apparel. It is engineered with a unique combination of properties that make it stand out.
+
+                                        First and foremost, it offers outstanding waterproofing, ensuring that you stay dry in wet and rainy conditions. The fabric effectively repels water,</p>
+                                </div>
+                                <div class="box">
+                                    <p class="text">preventing it from penetrating through, while still allowing moisture vapor to escape. This breathability is crucial as it helps to regulate body temperature and keep you comfortable during physical activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-using" id="using">
+                <h2 class="blind">product use method</h2>
+                <p class="title">Gore-Tex fabric<span>Materials</span></p>
+                <div class="contents">
+                    <div class="sticky-content">
+                        <figure class="img-wrap">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/bdecbd105127227.5f72e14d675bb.png" alt="푸른 원단 이미지">
+                        </figure>
+                
+                        
+                        <div class="bg-wrap">
+                        
+                            <div class="circle-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="content">
+                                            <figure class="pro-box">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ee9c08105127227.5f72e14d6c136.jpg" alt="실리콘 이미지">
+                                            </figure>
+                                            <span class="desc">Expanded PolyTetraFluoroEthylene <i class="text">ePTFE is essential in Gore-Tex, providing waterproofing and breathability.</i></span>
+                                            <div class="num"><span>1</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="content">
+                                            <figure class="pro-box">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f6e7d2105127227.5f72e14d6a771.jpg" alt="등산 밧줄 이미지">
+                                            </figure>
+                                            <span class="desc">Polytetrafluoroethylene<i class="text">PTFE is the technical core of Gore-Tex, offering both waterproofing and breathability.</i></span>
+                                            <div class="num"><span>2</span></div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="content">
+                                            <figure class="pro-box">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/45015a105127227.5f72e14d69676.png" alt="원단 분해 이미지">
+                                            </figure>
+                                            <span class="desc">Textile Layers<i class="text">Gore-Tex products have multiple textile layers for added durability and weather resistance.</i></span>
+                                            <div class="num"><span>3</span></div>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="item">
+                                        <div class="content">
+                                            <figure class="pro-box">
+                                                <img src="./assets/images/materials.png" alt="꼬아진 로프 이미지">
+                                            </figure>
+                                            <span class="desc">Membrane<i class="text">Gore-Tex materials incorporate a functional membrane that regulates waterproofing and breathability.</i></span>
+                                            <div class="num"><span>4</span></div>
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="item">
+                                        <div class="content">
+                                            <figure class="pro-box">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5ce478105127227.5f72e14d66f45.png" alt="원단 이미지">
+                                            </figure>
+                                            <span class="desc">Durable Water<br>Repellent Coating<i class="text">It's a fabric surface coating for lasting waterproofing, making water bead and roll off.</i></span>
+                                            <div class="num"><span>5</span></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="sc-setup">
+                <h2 class="blind">product set up</h2>
+
+                <div class="top-group">
+                    <figure class="img-wrap">
+                        <video id="case_video" src="./assets/images/arcteryx.mp4" muted autoplay></video>
+                        <div class="img-desc">
+                            <p>Pushing Boundaries with Unparalleled Performance, Innovative Design, and Timeless Style.</p>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="bottom-group">
+                    <div class="card-flex">
+                        <div class="card-wrap">
+                            <a href=""></a>
+                            <div class="card-box">
+                                <div class="icon-box">
+                                    <svg class="icon icon-plus btn__icon " width="40" height="40" aria-hidden="true" viewBox="0 0 40 40" style="--icon-width: 40; --icon-height: 40;"><use href="/assets/images/icons.svg?v=1692367698#plus" xlink:href="/assets/images/icons.svg?v=1692367698#plus"></use></svg>
+                                </div>
+                                <div class="text-wrap">
+                                    <p class="title">Technology <br>and Innovation</p>
+                                </div>
+                                <div class="toggle-svg">
+                                    <i class="bx bx-x"></i>
+                                </div>
+                            </div>
+                            <div class="slide-text">
+                                <p class="text"><span>ArcTerics puts high technology and innovation into product development.</span><span> Design and manufacture products using unique technologies and materials,</span><span> delivering exceptional functionality and performance. This technological innovation is very popular with outdoor entrepreneurs.</span></p>
+                            </div>
+                        </div>
+                        <div class="card-wrap">
+                            <a href=""></a>
+                            <div class="card-box">
+                                <div class="icon-box">
+                                    <svg class="icon icon-plus btn__icon " width="40" height="40" aria-hidden="true" viewBox="0 0 40 40" style="--icon-width: 40; --icon-height: 40;"><use href="/assets/images/icons.svg?v=1692367698#plus" xlink:href="/assets/images/icons.svg?v=1692367698#plus"></use></svg>
+                                </div>
+                                <div class="text-wrap">
+                                    <p class="title">High-quality<br>materials</p>
+                                </div>
+                                <div class="toggle-svg">
+                                    <i class="bx bx-x"></i>
+                                </div>
+                            </div>
+                            <div class="slide-text">
+                                <p class="text"><span>ArcTerix manufactures products using high-quality materials.</span><span> The durability and durability of the product are enhanced by utilizing durable and sturdy materials.</span><span>This allows products to perform well in challenging environments.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-video">
+                <h2 class="blind">product video</h2>
+                <div class="video-wrap">
+                    <figur class="img-wrap">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdb7de105127227.5f7254780206d.png" alt="꼬아진 원단 이미지">
+                    </figur>
+                    <button class="play-box">
+                        <i class="fa-solid fa-play"></i>
+                        <p class="title">Find out what makes<br> a Arc'teryx better</p>
+                    </button>
+                </div>
+                
+                <div class="pop-video">
+                    <div class="video-wrapper">
+                        <video class="Video" poster="" muted=false loop="" controls="" autoplay="" playsinline=""><source src="./assets/images/Arcteryx GORE-TEX PRO reel.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                        <button class="close">
+                            <i class='bx bx-x'></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-details" id="detail">
+                <div class="detail-sticky">
+                    <h2 class="blind">product detail</h2>
+                    <p  class="title">Technical specifications <span>The quality<br>comes from <br>the details</span></p>
+                    <figure class="img-wrap">
+                        <img src="./assets/images/detail.png" alt="룩북 이미지">
+                    </figure>
+                    <div class="detail-wrap">
+                        <ul class="list">
+                            <li class="item part1">
+                                <button class="num">01</button>
+                                <div class="content">
+                                    <div class="detail-box">
+                                        <span class="subtitle">WaterTight zippered</span>
+                                        <span class="desc">WaterTight zippered" refers to waterproof zippers used to keep items dry in outdoor gear.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item part2">
+                                <button class="num">02</button>
+                                <div class="content">
+                                    <div class="detail-box">
+                                        <span class="subtitle">1 interior stow</span>
+                                        <span class="desc">An interior pocket that serves as a private and convenient space for storing items like keys, wallets, or other personal belongings.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item part3">
+                                <button class="num">03</button>
+                                <div class="content">
+                                    <div class="detail-box">
+                                        <span class="subtitle">Logo embroidery</span>
+                                        <span class="desc">The Arc'teryx logo has been intricately embroidered onto fabric using high-performance thread to achieve a detailed and precise design.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item part4">
+                                <button class="num">04</button>
+                                <div class="content">
+                                    <div class="detail-box">
+                                        <span class="subtitle">2 zippered side pockets</span>
+                                        <span class="desc">2 zippered side pockets securely store the contents, preventing items from falling out or getting lost, while allowing easy access when needed.</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item part5">
+                                <button class="num">05</button>
+                                <div class="content">
+                                    <div class="detail-box">
+                                        <span class="subtitle">Waterproof</span>
+                                        <span class="desc">Waterproof" indicates that the garment has been completely treated to prevent water from passing through or that technology has been applied to prevent leaks.</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-option">
+                <div class="body-flex">
+                    <h2 class="blind">product options</h2>
+                    <p class="title">Arc'teryx is<br><i>EVERYWHERE</i></p>
+                </div>
+                <div class="slide-flex">
+                    <ul class="list">
+                        <li class="item sect1">
+                            <div class="left-flex">
+                                <figure class="img-wrap">
+                                    <img src="https://cdn.outsideonline.com/wp-content/uploads/2018/11/27/rei-zeta-review_h.jpg?crop=16:9&width=960&enable=upscale&quality=100" alt="비올 때 등산객">
+                                </figure>
+                            </div>
+                            <div class="right-flex">
+                                <div class="text-wrap">
+                                    <h3 class="title">Rain</h3>
+                                    <p class="desc">Your rain jacket must offer a waterproof or water-resistant exterior. Without this, moisture from rain will easily permeate the rain jacket exterior, seep into its lining, and cause you to get cold.
+                                        In addition to the obvious discomfort of a soggy hiking jacket, this can cause your body temperature to drop, which could increase your risk of aforementioned ailments like hypothermia. If your skin stays wet, it could also cause blistering and irritation.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item sect2">
+                            <div class="left-flex">
+                                <figure class="img-wrap">
+                                    <img src="https://www.switchbacktravel.com/sites/default/files/images/articles/Arc%27teryx%20Alpha%20SV%20hardshell%20jacket%20%28in%20snowstorm%29.jpg" alt="눈 올때 등산객">
+                                </figure>
+                            </div>
+                            <div class="right-flex">
+                                <div class="text-wrap">
+                                    <h3 class="title">Snow</h3>
+                                    <p class="desc">Snow is yet another common threat that hikers may face on the trail. In addition to the aforementioned threats of frostbite and hypothermia, snow may increase the risk of injuries that are caused by slipping and falling —which is why it’s essential to pair your warm jacket with a good pair of hiking boots. You need to ensure that your jacket is also equipped to handle snowy weather.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item sect3">
+                            <div class="left-flex">
+                                <figure class="img-wrap">
+                                    <img src="https://embed.cartfulsolutions.com/arc-jacket-en/women.jpg" alt="바람 피하는 등산객">
+                                </figure>
+                            </div>
+                            <div class="right-flex">
+                                <div class="text-wrap">
+                                    <h3 class="title">Wind</h3>
+                                    <p class="desc">Hikers should never overlook the serious havoc that a wind storm can wreak. High winds can easily endanger hikers, contributing to increased cold when temperatures are already low and dramatically increasing the likelihood of cold-related injuries.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="sc-review" id="review">
+                <div class="content">
+                    <h2 class="title">Reviews</h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide" data-img="#gladys">
+                                <img src="https://z1photorankmedia-a.akamaihd.net/media/v/o/s/vosi355/original.jpg" alt="리뷰어">
+                            </li>
+                            <li class="swiper-slide" data-img="#corrine">
+                                <img src="https://z2photorankmedia-a.akamaihd.net/media/b/t/2/bt2qx85/original.jpg" alt="리뷰어">
+                            </li>
+                            <li class="swiper-slide" data-img="#emma">
+                                <img src="https://z1photorankmedia-a.akamaihd.net/media/6/k/9/6k9tz85/original.jpg" alt="리뷰어">
+                            </li>
+                            <li class="swiper-slide" data-img="#carol">
+                                <img src="https://z3photorankmedia-a.akamaihd.net/media/p/w/q/pwqd585/original.jpg" alt="리뷰어">
+                            </li>
+                            <li class="swiper-slide" data-img="#losa">
+                                <img src="https://z1photorankmedia-a.akamaihd.net/media/z/x/x/zxxc395/original.jpg" alt="리뷰어">
+                            </li>
+                            <li class="swiper-slide" data-img="#kevin">
+                                <img src="https://z1photorankmedia-a.akamaihd.net/media/a/4/v/a4vqsh4/normal.jpg" alt="리뷰어">
+                            </li>
+                        </ul>
+                        <div class="control-box">
+                            <button class="btn prev-btn"><i class="fa-solid fa-arrow-left"></i><span class="blind">이전슬라이드</span></button>
+                            <button class="btn next-btn"><i class="fa-solid fa-arrow-right"></i><span class="blind">다음슬라이드</span></button>
+                        </div>
+                    </div>
+                    <div class="text-wrap">
+                        <ul class="list">
+                            <li class="item on" id="gladys">
+                                <h3 class="subtitle">Gladys Beollo</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi impedit libero omnis laudantium, aliquam facere perferendis unde earum voluptates veritatis, dolorum laborum!</p>
+                            </li>
+                            <li class="item" id="corrine">
+                                <h3 class="subtitle">Corrine Bowers</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi impedit libero omnis laudantium, aliquam facere perferendis unde earum voluptates veritatis, dolorum laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates facilis illo. Eveniet quam quod magni repellat blanditiis? Illum expedita tempora iusto quos, eveniet veritatis laboriosam id? Excepturi, placeat temporibus!</p>
+                            </li>
+                            <li class="item" id="emma">
+                                <h3 class="subtitle">Emma Brooks</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi impedit libero omnis laudantium, aliquam facere perferendis unde earum voluptates veritatis, dolorum laborum! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, neque.</p>
+                            </li>
+                            <li class="item" id="carol">
+                                <h3 class="subtitle">Carol Merida</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi</p>
+                            </li>
+                            <li class="item" id="losa">
+                                <h3 class="subtitle">Losa Kim</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi impedit libero omnis laudantium, aliquam facere perferendis unde earum voluptates veritatis, dolorum laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat numquam, nam facere eaque quo ex debitis at minima eius?</p>
+                            </li>
+                            <li class="item" id="kevin">
+                                <h3 class="subtitle">kevin</h3>
+                                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil blanditiis perspiciatis tempora excepturi quibusdam? Veniam, deleniti sunt, ratione officia eligendi optio quas harum architecto aperiam voluptates necessitatibus non dolorem sit qui a recusandae. Dolorem assumenda nisi impedit libero omnis laudantium, aliquam facere perferendis unde earum voluptates veritatis, dolorum laborum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum repellat numquam, nam facere eaque quo ex debitis at minima eius?</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <h2 class="blind">footer</h2>
+            <nav class="fnb">
+                <div class="top-group">
+                    <div class="left-flex">
+                        <h3 class="logo"><a href=""><span class="blind">푸터 로고</span></a></h3>
+                        <div class="sns-wrap">
+                            <a href="https://arcteryx.com/us/en/" target="_blank" class="vk"><img src="./assets/images/footer-logo.png" width="30px" height="24px" alt="푸터 파비콘 로고"></i></a>
+                            <a href="https://www.instagram.com/arcteryxkorea/" target="_blank" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="right-flex">
+                        <a href="mailto:jongkmin1991@naver.com" class="mail">jongkmin1991@naver.com</a>
+                        <small class="copy">© Arc'teryx 2023</small>
+                    </div>
+                </div>
+                <div class="bottom-group">
+                    <a href=""><span class="blind">푸터링크</span></a>
+                </div>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
