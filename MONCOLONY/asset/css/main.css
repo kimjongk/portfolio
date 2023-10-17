@@ -682,7 +682,12 @@ margin: 0 1.0417vw;
         height: 54.6875rem;
     }
     .sc-visual::after{
-        height: 28.75rem;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
         background: linear-gradient(180deg,transparent,#000 95%,#000);
     }
     .sc-visual .img-wrap{
@@ -839,6 +844,10 @@ margin: 0 1.0417vw;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
+    .content{
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
     .sc-clients .text-group{}
     .sc-clients .text-group .content{}
 
@@ -883,7 +892,7 @@ margin: 0 1.0417vw;
     }
     .sc-service .text-wrap .text{
         flex: 1;
-        font-size: 1.125rem;
+        font-size: 0.9rem;
         letter-spacing: -.03em;
         line-height: 120%;
         font-weight: 400;
@@ -897,7 +906,10 @@ margin: 0 1.0417vw;
         width: 100%;
         height: 100%;
     }
-
+    .sc-clients .clients-group {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 
     .sc-works{
         display: flex;
@@ -963,11 +975,11 @@ margin: 0 1.0417vw;
     }
     
     .sc-works .department-group .item p{
-        padding-top: 2.5rem;
+        padding-top: 1rem;
         padding-bottom: 1.5625rem;
-        padding-left: 5.625rem;
         border-top: none;
         width: 100%;
+        font-size: 0.9rem;
     }
     .sc-works .department-group .list{}
     .sc-works .department-group .item{
@@ -997,11 +1009,11 @@ margin: 0 1.0417vw;
     .sc-commu .content-group .text-wrap .desc-box{}
     .sc-commu .content-group .text-wrap .desc{
         width: 20.9375rem;
-        font-size: 1.125rem;
+        font-size: 0.9rem;
         letter-spacing: -.03em;
         line-height: 120%;
         font-weight: 400;
-        padding-top: 2.5rem;
+        padding: 2.5rem;
     }
     .sc-commu .content-group .text-wrap .btn-box{}
     .sc-commu .content-group .text-wrap .btn-box a{
@@ -1015,6 +1027,9 @@ margin: 0 1.0417vw;
         margin: 0;
     }
     .sc-find .text-tilte{}
+    .sc-find .find-group .text-title{
+        margin-bottom: 3rem;
+    }
     .sc-find .find-group .text-title span{
         display: inline-block;
         font-size: 1.875rem;
@@ -1040,18 +1055,23 @@ margin: 0 1.0417vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        margin-top: 20px;
     }
     .sc-find .ceo .name-wrap .arrow{
         right: 20%;
     }
 
-    .sc-time{}
+    .sc-time{
+        padding: 1.25rem;
+    }
     .sc-time .time-group{
         display: flex;
         flex-direction: column; 
     }
     .sc-time .time-group .text-title{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+        font-size: 30px;
+        margin-top: 10px;
     }
     .sc-time .time-group .text-title span{}
 
@@ -1066,58 +1086,10 @@ margin: 0 1.0417vw;
         line-height: 120%;
         width: 68.0555555556vw;
     }
-    
-    .footer{
-        padding: 5rem 1.25rem;
-    }
-    .footer-flex{
-        flex-direction: column;
-    }
-    .footer-flex .logo-area{
-        margin-bottom: 1.875rem;
-        margin-top: 1.25rem;
-    }
-    .footer-flex .logo-area .logo-wrap{}
-    .footer .logo-wrap [class*='logo-'] {
-        width: 2.5vw;
-        height: 2.5vw;
-    }
-    .footer-flex address p{
-        font-size: .9375rem;
-        letter-spacing: -.03em;
-        line-height: 120%;
-        font-weight: 400;
-        margin-bottom: 1.875rem;
-    }
-    .footer-flex .policy{}
-    .footer-flex .policy span{
-        display: inline-block;
-        width: auto;
-        font-size: .9375rem;
-        letter-spacing: -.03em;
-        line-height: 120%;
-        font-weight: 400;
+    .sc-time .time-group .time-area .time-wrap .item{
+        font-size: 1.1rem;
+        margin-bottom: 6.4375vw;
+        padding-right: 5vw;
     }
     
-    .footer-flex .link-wrap{
-        width: 100%;
-    }
-    .footer-flex .link-wrap .link{
-        font-size: .9375rem;
-        letter-spacing: -.03em;
-        line-height: 120%;
-        font-weight: 400;
-        margin-bottom: 1.875rem;
-    }
-    .footer-flex .link-wrap .link a{}
-    .footer-flex .link-wrap .link span{
-        display: inline;
-    }
-    .footer-flex .link-wrap .sns-area{}
-    .footer-flex .link-wrap .sns-area a{}
-    .footer .link-wrap .sns-area .item {
-    width: 1.9vw;
-    height: 1.9vw;
-    margin-right: 2vw;
-
 }

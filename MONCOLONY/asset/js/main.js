@@ -7,14 +7,17 @@ gsap.ticker.add((time)=>{
 })
 
 
+
 history.scrollRestoration = "manual"
 
 $('.snb .sub-btn').click(function(){
     $(this).addClass('off').parent().siblings().addClass('on');
+    lenis.stop();
 })
 
 $('.snb .list-flex .close-btn').click(function(){
     $(this).parents('.list-flex').removeClass('on').siblings().find('.sub-btn').removeClass('off');
+    lenis.start();
 })
 
 /**
