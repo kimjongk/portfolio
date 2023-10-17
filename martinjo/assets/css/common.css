@@ -1,0 +1,51 @@
+.blind{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.common-inner{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.link-btn{
+  color: #0a0b0c;
+  text-align: center;
+  text-transform: none;
+  background-color: #f4f4f1;
+  border-radius: 5rem;
+  padding: 1.25rem 1.625rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-radius 1s;
+}
+.link-btn:hover{
+  animation: vibration .1s infinite;
+}
+
+.link-btn .arrow{
+  padding-left: 10px;
+  font-size: 1rem;
+}
+
+@keyframes vibration {
+    from {
+      transform: rotate(1.5deg);
+    }
+    to {
+      transform: rotate(-1.5deg);
+    }
+  }
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg); 
+      }
+      100% {
+        transform: rotate(360deg); 
+      }
+  }
