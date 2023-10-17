@@ -15,24 +15,13 @@ const visualSwiper = new Swiper ('.sc-visual .swiper',{
     }
 }) 
 
-/**ield
+/**
  * sc-pairing 스와이퍼
  */
 const pairSwiper = new Swiper ('.sc-pairing .swiper',{
     slidesPerView:"auto",
     spaceBetween: 4,
-    // breakpoints:{
-    //     768:{
-    //         slidesPerView: 2,
-    //     },
-    // }
-
 }) 
-
-
-// pairSwiper.on("touchStart",function(){
-//     gsap.set('.live-clip',{x:pairSwiper.getTranslate()})
-// })
 
 
 let a=0;
@@ -54,14 +43,6 @@ pairSwiper.on("touchEnd",function(){
     gsap.to('.live-clip',0.3,{left:0})
 })
 
-
-// pairSwiper.on("touchStart",function(){
-//     console.log('22222'+pairSwiper.getTranslate());
-// })
-
-// pairSwiper.on("touchEnd",function(){
-//     // gsap.to('.live-clip',{x:$('.swiper-slide.on').offset().left})
-// })
 
 /**
  * header 서치버튼시 및 클로즈 버튼 이벤트
