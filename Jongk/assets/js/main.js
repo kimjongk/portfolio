@@ -58,7 +58,6 @@ function animateOnLoad() {
   gsap.set('.sc-visual .content .top-group .title span', {yPercent: 110,opacity: 0});
   gsap.to('.sc-visual .content .top-group .title span', {yPercent: 0,opacity: 1});
 }
-// animateOnLoad();
 
 /**
  * header nav에 마우스 호버시 효과
@@ -92,8 +91,6 @@ $(window).scroll(function(){
         $('.header').removeClass('off');
     }
 
-
- 
     lastScroll = curr;
 })
 
@@ -214,13 +211,13 @@ gsap.set('[data-up]',{
 
 $('[data-up]').each(function(i,el){
   start = $(this).data('up');
-  startVal =(start)?start:"0% 90%";
+  startVal =(start)?start:"0% 100%";
   gsap.to($(this),{
       scrollTrigger:{
           trigger:$(this),
           start:startVal,
           end:"100% 0%",
-          // markers:true,
+          markers:true,
       },
       opacity:1,
       yPercent:0,

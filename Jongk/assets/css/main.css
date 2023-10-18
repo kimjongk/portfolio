@@ -417,7 +417,7 @@
 .sc-project .text-item .title-wrap{
     display: flex;
 }
-.sc-project .text-item .text-wrap .video{
+.sc-project .text-item .text-wrap .img-box{
     display: none;
     width: 90vw;
     height: 150px;
@@ -425,6 +425,11 @@
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
+}
+.sc-project .text-item .text-wrap .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .sc-project .text-item .title-wrap .num{
     font-size: 1rem;
@@ -1050,7 +1055,7 @@
         .sc-project .text-item .text-wrap .bg{
             display: none;
         }
-        .sc-project .text-item .text-wrap .video{
+        .sc-project .text-item .text-wrap .img-box{
             display: block;
             width: 90vw;
             height: 150px;
@@ -1058,9 +1063,6 @@
             margin-bottom: 20px;
             overflow: hidden;
             border-radius: 10px;
-        }
-        .sc-project .text-item .text-wrap .video video{
-
         }
         .sc-project .text-item .link-box .link-bg{
             display: none;
