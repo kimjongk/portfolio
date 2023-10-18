@@ -1,17 +1,12 @@
     
     /**
-     * @언어선택
-     * 
+     * 언어선택
      */
 
     $('#langBtn').click(function(){
         url=$('#langList').val();
         window.open(url)
     })
-
-
-
-
 
     const mainSlide = new Swiper('.main-group .swiper',{
         autoplay:{
@@ -57,8 +52,7 @@
 
 
     /**
-     * 
-     * 
+     * arrob-btn 윈도우 반응 등장
      */
     $(window).scroll(function(){
         curr=$(this).scrollTop();
