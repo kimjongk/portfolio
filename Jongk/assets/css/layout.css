@@ -13,7 +13,7 @@
   }
   
   .progress-container {
-      position: absolute;
+    position: absolute;
     transform: translateY(-50%);
     top: 50%;
     width: 100%;
@@ -25,7 +25,7 @@
   }
   
   .progress-container label {
-    font-size: 1vw;
+    font-size: 1.5vw;
     opacity: 0;
     display:inline-block;
   }
@@ -426,6 +426,7 @@
 
 /* 모바일버전 [768px]까지만잡히면끝. */
 @media (max-width:1024px) {
+
     .header{
         max-width: 1024px;
     }
@@ -488,6 +489,11 @@
 
 /* 모바일버전 [320]까지만잡히면끝. */
 @media (max-width:767px) {
+    .progress-container label {
+        font-size: 5vw;
+        opacity: 0;
+        display:inline-block;
+      }
     .header{
         min-width: 320px;
     }
