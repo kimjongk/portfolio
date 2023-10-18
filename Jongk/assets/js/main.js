@@ -217,7 +217,7 @@ $('[data-up]').each(function(i,el){
           trigger:$(this),
           start:startVal,
           end:"100% 0%",
-          markers:true,
+          // markers:true,
       },
       opacity:1,
       yPercent:0,
