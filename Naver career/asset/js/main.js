@@ -10,12 +10,6 @@ const mainSwiper = new Swiper ('.sc-visual .swiper',{
     loop :true,
     speed: 1000,
     simulateTouch: false, //마우스 드래그 막기
-    // on:{
-    //     slideChange: function(){
-    //         var videoText = $('.sc-visual .swiper-slide .text');
-    //         videoText.addClass('show');
-    //     },
-    // }
 })
 
 /**
@@ -34,21 +28,6 @@ const peopleSwiper = new Swiper ('.sc-cont.people .swiper' ,{
             slidesPerView: 1.1,
         }
     },
-    // on:{
-    //     init:function(){
-    //        console.log(this.slides.length);
-    //     }
-    // }
-    // on:{
-    //      reachBeginning: function() {
-    //             var swiperPrev = $('.swiper .prev-btn');
-    //             swiperPrev.addClass('.swiper-button-disabled');
-    //     },
-    //     reachEnd: function() {
-    //         var swiperNext = $('.swiper .next-btn');
-    //         swiperNext.addClass('swiper-button-disabled');
-    //     }
-    // }
 });
 
 
@@ -72,16 +51,6 @@ const benefitsSwiper = new Swiper('.sc-cont.benefits .swiper', {
             slidesPerView: 3,
         }
     }
-    // on:{
-    //     reachBeginning: function() {
-    //         var swiperPrev = $('.swiper .prev-btn');
-    //         swiperPrev.addClass('.swiper-button-disabled');
-    //     },
-    //     reachEnd: function() {
-    //         var swiperNext = $('.swiper .next-btn');
-    //         swiperNext.addClass('.swiper-button-disabled');
-    //     }
-    // }
     });
 
 
