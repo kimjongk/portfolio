@@ -15,14 +15,19 @@ const visualSwiper = new Swiper ('.sc-visual .swiper',{
     }
 }) 
 
-/**
+/**ield
  * sc-pairing 스와이퍼
  */
 const pairSwiper = new Swiper ('.sc-pairing .swiper',{
     slidesPerView:"auto",
     spaceBetween: 4,
-}) 
+    // breakpoints:{
+    //     768:{
+    //         slidesPerView: 2,
+    //     },
+    // }
 
+}) 
 
 let a=0;
 pairSwiper.on("slideChange",function(){
@@ -42,6 +47,7 @@ pairSwiper.on("touchMove",function(){
 pairSwiper.on("touchEnd",function(){
     gsap.to('.live-clip',0.3,{left:0})
 })
+
 
 
 /**
@@ -76,7 +82,6 @@ $('.header .gnb .item').click(function(e){
         $('.header .gnb .item').removeClass('on');
         $(this).addClass('on');
     }
-
 })
 
 
@@ -96,9 +101,6 @@ $(window).scroll(function(){
     }else{
         $('.header').removeClass('off');
     }
-
-
- 
     lastScroll = curr;
 })
 
@@ -106,10 +108,9 @@ $(window).scroll(function(){
 
 
 
-fetch('/asset/data/newData.json')
+fetch('https://kimjongk.github.io/portfolio/tvN/asset/data/newData.json')
 .then(res=>res.json())
 .then(json=>{
-    // console.log(json);
     data=json.items;
 
     let html=`<div class="grid-sizer"></div>`;
@@ -133,20 +134,12 @@ fetch('/asset/data/newData.json')
      * sc-new 이미지 자동배열
      */
     $('.sc-new .grid').masonry({
-        // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.grid-item',
-        // use element for option
         columnWidth: '.grid-sizer',
         percentPosition: true
     })
 
 })
-
-
-
-
-
-
 
 
 /**
