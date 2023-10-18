@@ -1003,14 +1003,6 @@
         padding: 0 5px;
         margin-bottom: 10px;
     }
-    .sc-curr .swiper-slide a{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }
     .sc-curr .swiper-slide .img-wrap{
         position: relative;
         width: 100%;
