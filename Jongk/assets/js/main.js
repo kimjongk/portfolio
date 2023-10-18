@@ -211,7 +211,7 @@ gsap.set('[data-up]',{
 
 $('[data-up]').each(function(i,el){
   start = $(this).data('up');
-  startVal =(start)?start:"0% 100%";
+  startVal =(start)?start:"0% 130%";
   gsap.to($(this),{
       scrollTrigger:{
           trigger:$(this),
