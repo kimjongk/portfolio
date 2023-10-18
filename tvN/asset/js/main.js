@@ -15,18 +15,12 @@ const visualSwiper = new Swiper ('.sc-visual .swiper',{
     }
 }) 
 
-/**ield
+/**
  * sc-pairing 스와이퍼
  */
 const pairSwiper = new Swiper ('.sc-pairing .swiper',{
     slidesPerView:"auto",
     spaceBetween: 4,
-    // breakpoints:{
-    //     768:{
-    //         slidesPerView: 2,
-    //     },
-    // }
-
 }) 
 
 let a=0;
@@ -105,9 +99,6 @@ $(window).scroll(function(){
 })
 
 
-
-
-
 fetch('https://kimjongk.github.io/portfolio/tvN/asset/data/newData.json')
 .then(res=>res.json())
 .then(json=>{
@@ -116,14 +107,15 @@ fetch('https://kimjongk.github.io/portfolio/tvN/asset/data/newData.json')
     let html=`<div class="grid-sizer"></div>`;
     data.forEach(element => {
         html+=`<li class="grid-item">
-            <a href=""></a>
-            <div class="img-wrap">
-                <img src="${element.thumb}" alt="${element.title}">
-            </div>
-            <div class="text-wrap">
-                <p class="memo">${element.memo}</p>
-                <p class="title">${element.title}</p>
-            </div>
+            <a href="">
+                <div class="img-wrap">
+                    <img src="${element.thumb}" alt="${element.title}">
+                </div>
+                <div class="text-wrap">
+                    <p class="memo">${element.memo}</p>
+                    <p class="title">${element.title}</p>
+                </div>
+            </a>
         </li>`;
     });
 
