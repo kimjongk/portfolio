@@ -172,20 +172,20 @@ $('.sc-works .mo-works .item .btn').click(function(){
 // 
 
 getWorldTime(-8,'.us-time')
-getWorldTime(+9,'.br-time')
+getWorldTime(-3,'.br-time')
 getWorldTime(0,'.uk-time')
 getWorldTime(+8,'.ch-time')
 
 
-function getWorldTime(tzOffset, frame) { // 24시간제
+function getWorldTime(tzOffset, frame) {
     var now = new Date();
     var tz = now.getTime() + (now.getTimezoneOffset() * 60000) + (tzOffset * 3600000);
     now.setTime(tz);
   
     var hours = now.getHours();
-    var ampm = hours >= 12 ? 'PM' : 'AM';
+    var ampm = hours >= 12 ? 'pm' : 'am';
     hours = hours % 12;
-    hours = hours ? hours : 12; // 0시일 경우 12로 변경
+    hours = hours ? hours : 12;
   
     var s =
       leadingZeros(hours, 2) + ':' +
@@ -199,16 +199,43 @@ function getWorldTime(tzOffset, frame) { // 24시간제
     n = n.toString();
   
     if (n.length < digits) {
-      for (i = 0; i < digits - n.length; i++)
+      for (var i = 0; i < digits - n.length; i++)
         zero += '0';
     }
     return zero + n;
   }
-
-
+  
   /**
    * 1초마다 업데이트
    */
-  setInterval(function() {
-    getWorldTime(tzOffset, frameSelector); // tzOffset과 frameSelector는 필요한 값으로 대체해야 합니다.
-  }, 1000);
+  setInterval(function () {
+    var tzOffset = arguments[0]; // 필요한 값을 대체
+    var frameSelector = arguments[1]; // 필요한 값을 대체
+    var frameElement = document.querySelector(frameSelector);
+    getWorldTime(tzOffset, frameElement);
+  }.bind(null, -8, '.us-time'), 1000);
+  
+  setInterval(function () {
+    var tzOffset = arguments[0]; // 필요한 값을 대체
+    var frameSelector = arguments[1]; // 필요한 값을 대체
+    var frameElement = document.querySelector(frameSelector);
+    getWorldTime(tzOffset, frameElement);
+  }.bind(null, -3, '.br-time'), 1000);
+  
+  setInterval(function () {
+    var tzOffset = arguments[0]; // 필요한 값을 대체
+    var frameSelector = arguments[1]; // 필요한 값을 대체
+    var frameElement = document.querySelector(frameSelector);
+    getWorldTime(tzOffset, frameElement);
+  }.bind(null, 0, '.uk-time'), 1000);
+  
+  setInterval(function () {
+    var tzOffset = arguments[0]; // 필요한 값을 대체
+    var frameSelector = arguments[1]; // 필요한 값을 대체
+    var frameElement = document.querySelector(frameSelector);
+    getWorldTime(tzOffset, frameElement);
+  }.bind(null, 8, '.ch-time'), 1000);
+
+  
+  
+  
