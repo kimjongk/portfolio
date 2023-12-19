@@ -2,10 +2,6 @@
 @import './reset.css';
 @import './common.css';
 
-
-
-.banner-box .swiper{}
-.banner-box .swiper-wrapper{}
 .banner-box .swiper-slide{
     background: #000;
     width: 100%;
@@ -37,17 +33,13 @@
     height: 16px;
     background: url(https://m.andar.co.kr/iv/arrow_wh.png) no-repeat 20px center ,url(https://m.andar.co.kr/web/upload/appfiles/ZaReJam3QiELznoZeGGkMG/37f64fbfc314ed5d0d9d8cef21abf2c2.png) no-repeat 5px 0px ;;
 }
-.banner-box .swiper-slide .event1{}
-.banner-box .swiper-slide .event2{}
 
 .banner-box .swiper-slide .event2 span{
     color: #ee5728;
 }
-.banner-box .swiper-slide .event3{}
 .banner-box .swiper-slide span{
     font-weight: 700;
 }
-
 
 .header-inner{
     position: fixed;
@@ -60,7 +52,6 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    /* background: #00f; */
     padding: 0 3px;
     height: 56px;
 }
@@ -80,7 +71,6 @@
     align-items: center;
     padding: 0 10px;
 }
-
 
 .header-inner .gnb{
     display: none;
@@ -134,7 +124,6 @@
 .header-inner .group-nav #btnAll{
     position: absolute;
     top: 0;
-    /* transform: translateY(-50%); */
     right: 0;
     width: 46px;
     height: 46px;
@@ -142,7 +131,6 @@
 }
 .header-inner .group-nav .all-text{
     display: none;
-    /* display: flex; */
     align-items: center;
     padding-left: 15px;
     position: absolute;
@@ -170,10 +158,6 @@
 }
 
 
-
-
-
-
 .header-inner .group-all{
     background: #f6f6f6;
     display: none;
@@ -186,7 +170,6 @@
     flex-wrap: wrap;
     gap: 6px;
 }
-.header-inner .group-all .item{}
 .header-inner .group-all a{
     display: block;
     padding: 8px 17px;
@@ -199,7 +182,6 @@
     letter-spacing: -0.05em;
 }
 
-
 /* fixed됬을대 */
 
 .header-inner.fixed{
@@ -211,11 +193,9 @@
 .header-inner.fixed .group-flex svg path{fill:#000}
 .header-inner.fixed .gnb{ display: block; }
 
-.header-inner .gnb.on{}
 .header-inner .gnb.on .group-nav .list{ visibility: hidden; }
 .header-inner .gnb.on .group-nav .all-text{display: flex;}
 .header-inner .gnb.on .group-nav #btnAll{ transform: rotate(-180deg);}
-
 
 
 .footer{
@@ -224,7 +204,6 @@
     color: #555;
     line-height: 20px;
 }
-.footer .brand-area{}
 .footer .brand-area .f-logo a{
     display: block;
     width: 90px;
@@ -236,7 +215,6 @@
 .footer .brand-area .desc{
     font-size: 14px;
 }
-
 
 .footer .custom-area{
     padding-bottom: 20px;
@@ -258,7 +236,6 @@
 }
 
 
-.footer .sns-area{}
 .footer .sns-area .list{
     display: flex;
     gap: 25px;
@@ -280,7 +257,6 @@
     background: url(https://m.andar.co.kr/common/mo/icon_Instagram.png) no-repeat center / 100% auto;
 }
 
-
 .footer .link-area{
     padding: 20px 0;
 }
@@ -293,9 +269,6 @@
 }
 .footer .link-area .item{
     position: relative;
-
-    /* padding-right: 10px; */
-    /* margin-right: 6px; */
 }
 .footer .link-area .item+.item{
     padding-left: 20px;
@@ -311,14 +284,11 @@
     background: #ccc;
 }
 
-
-
 .footer .info-area{
     font-size: 11px;
     line-height: 21px;
     color: #777;
 }
-.footer .info-area .first{}
 .footer .info-area .company{
     font-weight: 400;
 }
@@ -333,10 +303,6 @@
     background: #ccc;
     margin: 0 8px 0 10px;
 }
-
-.footer .info-area .buisness{}
-.footer .info-area .addr{}
-.footer .info-area .tel{}
 
 .footer .info-area .use,
 .footer .info-area .marketing,
@@ -359,8 +325,6 @@
 .footer .copy-area em{
     font-weight: 700;
 }
-.footer .copy-area .copy-area{}
-
 
 .footer .mark-area{
     margin-top: 24px;
@@ -565,7 +529,6 @@
     height: auto;
     margin-bottom: 15px;
 }
-.side-nav .nav-item .list .item{}
 .side-nav .nav-item .list .item a{
     display: block;
     padding: 11px 0;
@@ -575,7 +538,6 @@
     letter-spacing: -0.5px;
     font-weight: 400;
 }
-
 
 .side-nav .nav-list{
     padding: 18px 0 11px;
@@ -650,14 +612,12 @@
     font-weight: 500;
     padding: 20px 0 16px;
 }
-.side-nav .event-list .shop-list{}
 .side-nav .event-list .shop-item{
     margin-bottom: 30px;
 }
 .side-nav .event-list .shop-item a{
     display: block;
 }
-.side-nav .event-list .shop-item .img-wrap{}
 .side-nav .event-list .shop-item .img-wrap img{
     border-radius: 3px;
 }

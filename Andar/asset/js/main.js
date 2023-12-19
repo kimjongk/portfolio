@@ -9,7 +9,6 @@ const headerSwiper = new Swiper ('.banner-box .swiper',{
         disableOnInteraction: false,
     }
 })
-
 /**
  * 메인 스와이퍼
  */
@@ -67,19 +66,6 @@ $(document).click(function(e){
 $('.group-list .title-btn').click(function(){
 
     $(this).toggleClass('on').siblings('.list').slideToggle();
-
-    // if($(this).siblings('.list').hasClass('on')){
-    //     $(this).siblings('.list').removeClass('on')
-    //     }else{
-    //     $(this).siblings('.list').addClass('on');
-    // }
-
-    // if($(this).siblings('.list').hasClass('on')){
-    //     $(this).siblings('.list').removeClass('on')
-    //     }else{
-    //         $('.group-list .list').removeClass('on')
-    //         $(this).siblings('.list').addClass('on');
-    // }
 })
 
 /**
@@ -116,60 +102,6 @@ $('.sc-best .lnb a').click(function(e){
     $(this).parent().addClass('on').siblings().removeClass('on')
     $(tabName).addClass('active').siblings().removeClass('active');
 })
-
-/**
- * 상단 서브메뉴 리스트 전체보기 버튼!
- */
-// $('.bottom-flex .more-btn').click(function(){
-//     $(this).siblings('.sub').slideToggle();
-// })
- 
-// $(window).on('mousewheel',function(delta){
-//     if(delta > 0){
-//         $('.side-btn').fadeOut();
-//     }else{
-//         $('.wrapper .side-btn').fadeIn();
-//     }
-// })
-
-/**
- * 애로우버튼 등장 및 사라지기(기존)
- */
-
-// $(window).scroll(function(){
-//     curr= $(this).scrollTop();
-//     if(curr > 10){
-//         $('.side-btn').addClass('show');
-//     }else{
-//         $('.side-btn').removeClass('show');
-//     }
-// })
-
-// $(window).on("wheel", function (event){    
-//     curr= $(this).scrollTop();
-//     if (event.originalEvent.deltaY < 0 && curr > 10) {
-//         $('.side-btn').addClass('show');
-//         // wheel up
-//     }
-//     else {
-//         $('.side-btn').removeClass('show');
-//         // wheel down
-//     }
-//   });
-
-// $('.a').click(function(){
-    
-// })
-// $('.a').on({
-//     click: function(){
-//         // 클릭 이벤트 핸들러
-//         // 원하는 동작을 여기에 작성합니다.
-//     },
-//     mouseenter: function(){
-//         // 호버(마우스 오버) 이벤트 핸들러
-//         // 원하는 동작을 여기에 작성합니다.
-//     }
-// });
 
 let lastScroll=0;
 $(window).scroll(function(){

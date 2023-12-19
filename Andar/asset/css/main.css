@@ -1,15 +1,6 @@
-
-
-
-
-
-
 .sc-visual{
     position: relative;
 }
-.sc-visual .swiper{}
-.sc-visual .swiper-wrapper{}
-.sc-visual .swiper-slide{}
 .sc-visual .swiper-slide a{
     display: block;
     position: relative;
@@ -45,7 +36,6 @@
 .sc-visual .pagination{
     display: flex;
     justify-content: center;
-    /* background: #f00; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -60,17 +50,10 @@
     margin: 0;
     border-radius: 0;
 }
-.sc-visual .pagination .swiper-pagination-bullet-active{
 
-}
-
-
-
-.sc-best{}
 .sc-best .headline{
     text-align: center;
 }
-.sc-best .lnb{}
 .sc-best .lnb .list{
     display: flex;
     padding: 0 16px;
@@ -101,12 +84,8 @@
     padding: 9px 10px;
     font-weight: 500;
 }
-
-
 .sc-best .tab-cont{display: none;}
 .sc-best .tab-cont.active{display: block;}
-
-
 .product .item{
     position: relative;
 }
@@ -114,10 +93,8 @@
     position: absolute;
     top: 0;left: 0;
     right: 0;bottom: 0;
-    /* background: #f00; */
     z-index: 2;
 }
-
 .product .img-wrap{
     position: relative;
 }
@@ -195,7 +172,6 @@
     font-weight: 500;
 }
 
-
 /* list1 */
 .product.list1{
     display: grid;
@@ -214,10 +190,6 @@
 .product.list2 .item+.item{ border-top: 1px solid #eee; }
 .product.list2 .img-wrap{ width: 110px; }
 .product.list2 .text-wrap{ flex: 1; padding: 0 28px; }
-
-
-
-
 
 .btn-all{
     display: block;
@@ -254,17 +226,10 @@
 .banner-wrap a img{
     width: 100%;
 }
-
-
-.sc-recom{}
-.sc-recom .swim-flex{}
-.sc-recom .group-top{}
-.sc-recom .group-top .img-wrap{}
 .sc-recom .group-top .img-wrap img{width: 100%;}
 .sc-recom .group-top .text-wrap{
     padding: 20px 16px 20px;
 }
-.sc-recom .group-top .text-wrap a{}
 .sc-recom .group-top .text-wrap a .title{
     font-size: 26px;
     line-height: 35px;
@@ -301,7 +266,6 @@
     top: 50%;
     width: 15px;
     height: 15px;
-    /* background: #f00; */
     transform: translateY(-50%);
     background: url(../images/Icon_move.png) no-repeat center/contain;
 }
@@ -309,20 +273,13 @@
 .sc-recom .tapered-flex{
     padding-top: 40px;
 }
-
-
-
-.sc-new{}
 .sc-new .headline{
     text-align: center;
 }
 
-
-
 .sc-brand{
     padding: 20px 0;
 }
-.sc-brand a{}
 .sc-brand .text-wrap{
     display: block;
     padding: 56px 20px;
@@ -369,7 +326,6 @@
     border: 1px solid #fff;
 }
 
-
 .sc-pdc{
     padding-left: 20px;
 }
@@ -400,7 +356,6 @@
     margin-bottom: 2px;
     width: 15px;
     height: 14px;
-    /* background: #f00; */
     top: 0;
     right: -20px;
     background: url(https://m.andar.co.kr/common/mo/icon-move-gr.png) no-repeat center/contain;
@@ -422,7 +377,6 @@
     margin-bottom: 2px;
     width: 15px;
     height: 14px;
-    /* background: #f00; */
     top: 0;
     right: -20px;
     background: url(https://m.andar.co.kr/common/mo/icon-move-gr.png) no-repeat center/contain;
@@ -444,7 +398,6 @@
     margin-bottom: 2px;
     width: 15px;
     height: 14px;
-    /* background: #f00; */
     top: 0;
     right: -20px;
     background: url(https://m.andar.co.kr/common/mo/icon-move-gr.png) no-repeat center/contain;
@@ -466,7 +419,6 @@
     margin-bottom: 2px;
     width: 15px;
     height: 14px;
-    /* background: #f00; */
     top: 0;
     right: -20px;
     background: url(https://m.andar.co.kr/common/mo/icon-move-gr.png) no-repeat center/contain;
@@ -477,8 +429,6 @@
 .sc-pdc .group-leg a{
     display: block;
 }
-
-
 
 .sc-banner.memebership{
     position: relative;
