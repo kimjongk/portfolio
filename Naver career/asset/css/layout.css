@@ -1,6 +1,7 @@
 @import './font.css';
 @import './reset.css';
 @import './common.css';
+
 body{
     padding-top: 64px;
 }
@@ -29,7 +30,6 @@ body{
     margin: 0 auto;
     max-width: 1920px;
 }
-.header .header-inner .logo{}
 .header .header-inner .logo a{
     display: block;
     width: 223px;
@@ -42,7 +42,6 @@ body{
     display: flex;
     margin-left: 29px;
 }
-.header .header-inner .nav-item{}
 
 .header .header-inner .nav-item:hover,
 .header .header-inner .sub .item:hover{
@@ -56,7 +55,6 @@ body{
     padding: 0 10px;
 }
 
-.header .header-inner .nav-item.teams{}
 .header .header-inner .sub-wrap{
     display: none;
     position: absolute;
@@ -88,7 +86,6 @@ body{
 }
 
 .header .header-inner .util-list{display: flex; margin-left: auto;}
-.header .header-inner .nav-item.lng{}
 .header .header-inner .nav-item .lng-btn{
     position: relative;
     font-size: 17px;
@@ -150,7 +147,6 @@ body{
     display: flex;
     align-items: center;
 }
-.footer .info-group a{}
 .footer .info-group a.corporation{
     display: block;
     font-size: 18px;
@@ -228,7 +224,6 @@ body{
     padding: 3 13px;
 }
 
-/* 지금까지잡았던소스 1230까지 잘나오아햐마 */
 
 
 /* 작은pc [1025px]까지만잡히면끝. */
@@ -360,15 +355,12 @@ body{
         position: relative;
         padding: 10px 0 11px 0;
     }
-    .header .side-nav .util-list::after{        
-
-    }
+  
     .header .side-nav .radio-box{
         display: flex;
         flex-direction: column;
         padding: 19px 22px 11px;
     }
-    .header .side-nav .radio-box .lng-btn{}
     .header .side-nav .radio-box .lng-btn input:checked+label::before{
         background: #000;
     }

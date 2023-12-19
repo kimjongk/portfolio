@@ -1,7 +1,3 @@
-.sc-visual{}
-.sc-visual .swiper{}
-.sc-visual .swiper-wrapper{}
-.sc-visual .swiper-slide{}
 
 .sc-visual .swiper-slide .video-wrap{
     position: relative;
@@ -38,8 +34,6 @@
     width: 100%;
     opacity: 1;
 }
-
-
 
 .sc-search{
     position: relative;
@@ -162,8 +156,6 @@
     position: relative;
 }
 
-
-.sc-cont{}
 .sc-cont.teams{
     background: #fafafa;
     padding-bottom: 89px;
@@ -208,7 +200,6 @@
 .sc-cont.teams .link-group .item:hover{
     background: #fafafa;
 }
-.sc-cont.teams .link-group .list{}
 .sc-cont.teams .link-group .item{
     width: 100%;
 }
@@ -264,7 +255,6 @@
     overflow: initial;
 }
 
-.sc-cont{}
 .sc-cont .swiper{
     position: relative;
 }
@@ -274,7 +264,6 @@
 .sc-cont .swiper-slide{
     position: relative;
     margin-top: 60px;
-    /* width: 1097px; */
 }
 
 .sc-cont .swiper-slide a{
@@ -287,7 +276,6 @@
     position: relative;
     width: 100%;
     padding-bottom: calc((520/1097)*100%);
-    /* 56.25% 16:9 */
 }
 .sc-cont .swiper-slide .img-wrap img{
     position: absolute;
@@ -305,7 +293,6 @@
     letter-spacing: -0.5px;
     font-weight: bold;
 }
-.sc-cont .swiper-slide .text-wrap p{}
 .sc-cont .swiper-slide .text-wrap .caption{
     font-size: 14px;
     line-height: 24px;
@@ -349,21 +336,12 @@
     opacity: 0.4;
 }
 
-
-.sc-cont .swiper-slide .text-wrap .company{}
-.sc-cont .swiper-slide .text-wrap .name{}
-
 .sc-cont.benefits{
     padding-top: 112px;
 }
-.sc-cont.benefits .swiper{}
-.sc-cont.benefits .swiper-wrapper{}
-.sc-cont.benefits .swiper-slide{}
 .sc-cont.benefits .swiper-slide .img-wrap{
     padding-bottom: 100%;
 }
-.sc-cont.benefits .swiper-slide img{}
-.sc-cont.benefits .swiper-slide .subtitle{}
 .sc-cont.benefits .swiper-slide .desc{
     margin-top: 20px;
     font-size: 18px;
@@ -372,12 +350,9 @@
 }
 
 
-
-
 .sc-board{
     padding: 95px 0 102px;
 }
-.sc-board .text-wrap{}
 .sc-board .text-wrap .subtitle{
     font-size: 25px;
 }
@@ -401,28 +376,20 @@
 }
 
 
-/* 지금까지잡았던소스 1230까지 잘나오아햐마 */
-
-
-/* 작은pc [1025px]까지만잡히면끝. */
+/* 작은pc  */
 @media (max-width:1229px) {
     .sc-visual .swiper-slide .text{
         font-size: 80px;
     }
-    
-
     .sc-cont .swiper-slide .text-wrap br{display: none;}
 }
 
 
-/* 모바일버전 [768px]까지만잡히면끝. */
+/* 모바일버전 */
 @media (max-width:1024px) {
     .sc-visual .swiper-slide .text{
         font-size: 60px;
     }
-    
-    .chk-wrap {}
-
     .chk-wrap input {
         position: absolute;
         width: 1px;
@@ -486,7 +453,6 @@
         text-align: left;
     }
 
-
     .sc-search .group-search2 .pop-search{
         display: none;
         position: fixed;
@@ -506,7 +472,6 @@
     .sc-search .group-search2 .pop-search .list{
         margin-bottom: 10px;
         padding: 0;
-        
     }
     .sc-search .group-search2 .pop-search .list .pop-title{
         font-size: 14px;
@@ -553,7 +518,6 @@
     .sc-search .group-search2 .btn-search::placeholder{
         color: #d0d0d0;
     }
-
 
     .sc-search .group-search2 .list{
         margin-top: 45px;
@@ -643,8 +607,6 @@
         background: url(https://recruit.navercorp.com/share/tmplat/naver/img/sp_mo.png) no-repeat -110px -28px;
         background-size: 195px 181px;
     }
-    
-
     .sc-cont .headline {
         padding-top: 60px;
         font-size: 36px;
@@ -660,11 +622,10 @@
     .sc-cont.teams .link-group {
         margin-top: 40px;
     }
-    
+} 
 
-/* 모바일버전 [320]까지만잡히면끝. */
+/* 모바일버전 [320] */
 @media (max-width:767px) {
-
     .sc-visual .swiper-slide .text{
         font-size: 40px;
     }
@@ -672,27 +633,20 @@
     .sc-visual .swiper-slide .text br{
         display: block;
     }
-
     .sc-visual .swiper-slide .video-wrap{
         position: relative;
         padding-bottom: calc((293/470)*100%);
     }
     .sc-visual .swiper-slide .video-wrap video{
         height: 100%;
-
         position: absolute;
         top: 0;left: 0;
     }
-
-
     .sc-cont.teams .link-group .content{
         flex-direction: column;
     }
-
-    
     .sc-cont.teams .link-group .left-area{
         padding: 30px 0 0 0;
-        
     }
     .sc-cont.teams .link-group .right-area{
         padding: 0 0 22px 0;
@@ -701,17 +655,10 @@
     .sc-cont.teams .link-group .left-area .title{
         line-height: 38px;
     }
-
-
-
-
     .sc-cont.teams .link-group .left-area .title{
         font-size: 24px;
     }
-    
-
-
     .sc-cont .swiper-slide .img-wrap{
         padding-bottom: 100%;
     }
-
+}

@@ -155,8 +155,6 @@ $('.depth-title label').click(function(){
 $('.depth3 .chk-wrap label').click(function(){
     parentName = $(this).parents('.depth2').data('parent');
 
-    // 체크와동시에 개수를파악 0,1,2,
-    // 체크와동시에 개수를파악 1,2,3,
     if($(this).siblings('input').is(':checked')){
         if($(`[data-parent="${parentName}"] input:checked`).length === 1){
             $(`#${parentName}`).prop('checked',false)
