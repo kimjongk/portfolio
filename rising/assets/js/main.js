@@ -20,11 +20,10 @@ const vibration = (target) => {
 
   marqeeTl =gsap.timeline({
     scrollTrigger:{
-      trigger:".sc-visual", //기준
-      start:"0% 100%", //트리거기준 //윈도으기준 둘이 만나면 실행
+      trigger:".sc-visual", 
+      start:"0% 100%", 
       end:"100% 0%",
       scrub:0,
-      // markers:true, // 표시자
     }
   });
 
@@ -39,11 +38,10 @@ $('.sc-page .bottom-group .content .img-wrap').hover(function(){
 
   bannerTl =gsap.timeline({
     scrollTrigger:{
-      trigger:".sc-banner", //기준
-      start:"0% 0%", //트리거기준 //윈도으기준 둘이 만나면 실행
+      trigger:".sc-banner", 
+      start:"0% 0%", 
       end:"100% 0%",
       scrub:0,
-      // markers:true,
     }
   });
   bannerTl
@@ -58,7 +56,7 @@ $('.sc-page .bottom-group .content .img-wrap').hover(function(){
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth' // 'smooth' 옵션을 추가하여 부드럽게 스크롤합니다.
+        behavior: 'smooth' 
     });
 });
 
@@ -66,8 +64,7 @@ gsap.set('.up-btn', {opacity: 0 });
 
 ScrollTrigger.create({
   trigger: '.sc-visual',
-  start: "50% 0%", // 수정된 스타트 값
-  // markers: true,
+  start: "50% 0%", 
   onEnter: () => {
     gsap.to('.up-btn', { opacity: 1 });
   },
@@ -78,7 +75,7 @@ ScrollTrigger.create({
 
 $('.sc-ui .img-wrap').mousemove(function (e) {
   const width = $(this).outerWidth() / 2;
-  const x = (e.clientX - $(this).offset().left - width) / 5; // 분모를 10으로 변경
+  const x = (e.clientX - $(this).offset().left - width) / 5; 
   gsap.to('.sc-ui .img-wrap img', { x: x });
 });
 

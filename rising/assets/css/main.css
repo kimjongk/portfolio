@@ -53,8 +53,6 @@
 .sc-visual .text-group .right-flex .link-btn{
     display: inline-block;
 }
-.sc-visual .text-group .right-flex .link-btn .arrow{}
-
 
 .sc-visual .marqee{
     margin-top: 4rem;
@@ -205,8 +203,6 @@
     flex-direction: column;
     gap: 3rem;
 }
-.samelay .bottom-group .top-area{}
-.samelay .bottom-group .top-area .content{}
 .samelay .bottom-group .top-area .content a{
     display: block;
     position: relative;
@@ -254,10 +250,6 @@
 }
 .sc-page .bottom-group .content .small-box.on{
     opacity: 1;
-}
-.samelay .bottom-group .top-area .content .small-box .img-box{}
-.samelay .bottom-group .top-area .content .small-box .img-box img{
-
 }
 
 .samelay .content .text-wrap{
@@ -345,19 +337,15 @@
     height: 10rem;
     pointer-events: none;
 }
-.samelay .bottom-group .bottom-area .left-flex .content .small-box .img-box{}
 .samelay .bottom-group .bottom-area .left-flex .content .small-box .img-box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-
 .samelay .bottom-group .bottom-area .right-flex{
     flex: 1;
 }
-.samelay .bottom-group .bottom-area .right-flex .content{}
 .samelay .bottom-group .bottom-area .right-flex .content a{
     position: relative;
 }
@@ -393,9 +381,6 @@
     height: 15rem;
     pointer-events: none;
 }
-.samelay .bottom-group .bottom-area .right-flex .content .small-box .img-box{}
-.samelay .bottom-group .bottom-area .right-flex .content .small-box .img-box img{}
-
 
 .sc-package{
     position: relative;
@@ -423,7 +408,7 @@
     line-height: .9;
 }
 .sc-package .brand-text{
-padding-top: 10rem;
+    padding-top: 10rem;
 }
 .sc-package .swiper{
     margin-top: 5rem;   
@@ -462,12 +447,10 @@ padding-top: 10rem;
     background: #141415;
     color: #fff;
 }
-.sc-package .swiper-wrapper{}
 .sc-package .swiper-slide{
     width: 100%;
     height: 30rem;
 }
-.sc-package .swiper-slide a{}
 .sc-package .swiper-slide .content:hover .text-wrap,
 .sc-package .swiper-slide .content:hover .img-wrap{
     border-radius: 5rem;
@@ -518,7 +501,6 @@ padding-top: 10rem;
 
 
 .sc-banner{
-    /* position: relative; */
     height: 600vh;
     padding-top: 8rem;
 }
@@ -528,13 +510,10 @@ padding-top: 10rem;
     left: 0;
     height: 120vh;
     overflow: hidden;
-    /* padding-top: 2rem; */
 }
-.sc-banner .top-group{}
 .sc-banner .top-group .title{
     padding-top: 5vw;
 }
-.sc-banner .top-group .link-btn{}
 
 .sc-banner .content{
     position: relative;
