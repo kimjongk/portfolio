@@ -11,9 +11,7 @@
     height: auto;
     display: flex;
 }
-.sc-visual .swiper-slide{
-}
-.sc-visual .swiper-slide a{}
+
 .sc-visual .swiper-slide a img{
     width: 100%;
     height: auto;
@@ -47,7 +45,6 @@
     opacity: 1;
 }
 
-.sc-visual .swiper .control-box{}
 .sc-visual .swiper .control-box i{
     font-size: 17px;
     color: #fff;
@@ -79,7 +76,6 @@
 
 .sc-marqee{
     height: 90px;
-    /* background: #f00; */
     overflow: hidden;
 }
 .sc-marqee a{display: block;}
@@ -115,18 +111,11 @@
     gap: 2px;
     
 }
-.sc-marqee .item .img-wrap{}
 .sc-marqee .item .img-wrap img{
     width: auto;
     height: 70px;
     object-fit: contain;
 }
-.sc-marqee .item .text{}
-
-
-
-
-
 .sc-pairing{
     padding-top: 12.5px;
     padding-bottom: 12.5px;
@@ -197,7 +186,6 @@
     right: 0;
     left: 0;
     bottom: 0;
-    /* background: #f00; */
 }
 
 .sc-pairing .time-flex .swiper .live-clip{
@@ -272,10 +260,6 @@
     display: flex;
     color: #fff;
     background: #000;
-}
-.sc-pairing .time-flex .swiper-slide.on .time{
-}
-.sc-pairing .time-flex .swiper-slide.on .name{
 }
 .sc-pairing .time-flex .swiper-slide.on .sect{
     opacity: 0.7;
@@ -376,7 +360,6 @@
     color: rgb(249, 2, 40);
     margin: 0 0 12px 5px;
 }
-.sc-curr .swiper{}
 .sc-curr .swiper-wrapper{
     display: flex;
 }
@@ -401,7 +384,6 @@
     border-radius: 4px;
     background: #fff;
 }
-.sc-curr .swiper-slide .img-wrap img{}
 .sc-curr .swiper-slide .text-wrap{
     padding: 14px 12px 16px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08), 0 0 8px 0 rgba(0, 0, 0, 0.08);
@@ -474,7 +456,6 @@
     transform: translate(-50%, -50%);
     background: url(https://poc-cf-image.cjenm.com/public/resources/MC010012/images/common/icon-play_72.png) no-repeat center/100%;
 }
-.sc-clip .swiper-slide .img-wrap img{}
 .sc-clip .swiper-slide .img-wrap .time{
     position: absolute;
     bottom: 5px;
@@ -628,9 +609,6 @@
         height: auto;
         display: flex;
     }
-    .sc-visual .swiper-slide{
-    }
-    .sc-visual .swiper-slide a{}
     .sc-visual .swiper-slide a img{
         width: 100%;
         height: auto;
@@ -663,8 +641,6 @@
         border-radius: 17px;
         opacity: 1;
     }
-    
-    .sc-visual .swiper .control-box{}
     .sc-visual .swiper .control-box i{
         font-size: 17px;
         color: #fff;
@@ -696,7 +672,6 @@
     
     .sc-marqee{
         height: 90px;
-        /* background: #f00; */
         overflow: hidden;
     }
     .sc-marqee a{display: block;}
@@ -732,18 +707,11 @@
         gap: 2px;
         
     }
-    .sc-marqee .item .img-wrap{}
     .sc-marqee .item .img-wrap img{
         width: auto;
         height: 70px;
         object-fit: contain;
     }
-    .sc-marqee .item .text{}
-    
-    
-    
-    
-    
     .sc-pairing{
         padding-top: 12.5px;
         padding-bottom: 12.5px;
@@ -814,7 +782,6 @@
         right: 0;
         left: 0;
         bottom: 0;
-        /* background: #f00; */
     }
     
     .sc-pairing .time-flex .swiper .live-clip{
@@ -889,10 +856,6 @@
         display: flex;
         color: #fff;
         background: #000;
-    }
-    .sc-pairing .time-flex .swiper-slide.on .time{
-    }
-    .sc-pairing .time-flex .swiper-slide.on .name{
     }
     .sc-pairing .time-flex .swiper-slide.on .sect{
         opacity: 0.7;
@@ -993,7 +956,6 @@
         color: rgb(249, 2, 40);
         margin: 0 0 12px 5px;
     }
-    .sc-curr .swiper{}
     .sc-curr .swiper-wrapper{
         display: flex;
     }
@@ -1010,7 +972,6 @@
         border-radius: 4px;
         background: #fff;
     }
-    .sc-curr .swiper-slide .img-wrap img{}
     .sc-curr .swiper-slide .text-wrap{
         padding: 14px 12px 16px;
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08), 0 0 8px 0 rgba(0, 0, 0, 0.08);
@@ -1083,7 +1044,6 @@
         transform: translate(-50%, -50%);
         background: url(https://poc-cf-image.cjenm.com/public/resources/MC010012/images/common/icon-play_72.png) no-repeat center/100%;
     }
-    .sc-clip .swiper-slide .img-wrap img{}
     .sc-clip .swiper-slide .img-wrap .time{
         position: absolute;
         bottom: 5px;
