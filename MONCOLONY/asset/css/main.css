@@ -28,7 +28,6 @@
     height: auto;
 }
 
-.sc-visual .img-wrap{}
 .sc-visual .visual-text{
     display: block;
     position: absolute;
@@ -40,10 +39,8 @@
     margin: 0 1.0416666667vw;
     line-height: 95%;
     font-weight: 400;
-
     animation: slide 1.85s cubic-bezier(.58,0,.01,1) forwards;
 }
-
 
 .sc-visual .project-wrap{
     display: flex;
@@ -124,10 +121,6 @@
     height: 1vw;
     transform: translate(-50%, -50%);
 }
-.btn-box .arrow svg{}
-
-
-
 
 .sc-about{
     padding-top: 4.1666666667vw;
@@ -146,8 +139,6 @@
 
 .sc-about .text-group{
     margin-right: 13.5416666667vw;
-}
-.text-group .title-text{
 }
 .text-group .title-text p{
     overflow: hidden;
@@ -171,7 +162,6 @@
     display: flex;
     align-items: baseline;
 }
-.sc-about .img-group .img-flex .item{}
 .sc-about .img-group .img-flex:nth-child(1) .item:nth-child(2){
     margin-right: 49.4791666667vw;
     margin-left: 1.0416666667vw;
@@ -237,7 +227,7 @@
     clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 100% 50%, 100% 100%, 0% 100%);
 }
 .sc-about .img-group .img-flex:nth-child(3) .item:nth-child(3){
-margin: 0 1.0417vw;
+    margin: 0 1.0417vw;
 }
 .sc-about .img-wrap:hover img{
     transform: scale(1.1);
@@ -315,9 +305,7 @@ margin: 0 1.0417vw;
     position: relative;
     line-height: 90%;
 }
-.sc-clients .title-text{}
-.sc-clients .title-text span{
-}
+
 .sc-clients .text-group {
     position: relative;
 }
@@ -333,7 +321,6 @@ margin: 0 1.0417vw;
     width: 100%;
     height: 100%;
 }
-
 
 .sc-clients .clients-group{
     padding-left: 14.0104166667vw;
@@ -479,7 +466,6 @@ margin: 0 1.0417vw;
     padding-top: 1.0416666667vw;
 }
 
-.sc-works .desc-group .list{}
 .sc-works .desc-group .item{
     font-size: 1.1458333333vw;
     letter-spacing: -.03em;
@@ -493,7 +479,6 @@ margin: 0 1.0417vw;
     display: block;
 }
 
-.sc-commu{}
 .sc-commu .content-group{
     position: relative;
 }
@@ -518,7 +503,6 @@ margin: 0 1.0417vw;
     position: absolute;
     left: 0;top: 0;
     height: 90vh;
-    /* width: 20vw; */
     background: #000;
 }
 .sc-commu .content-group .img-wrap .rightbg{
@@ -526,7 +510,6 @@ margin: 0 1.0417vw;
     top: 0;
     right: 0;
     height: 90vh;
-    /* width: 20vw; */
     background: #000;
 }
 
@@ -548,7 +531,6 @@ margin: 0 1.0417vw;
     font-size: 6.7708333333vw;
     overflow: hidden;
 }
-.sc-commu .content-group .text-wrap .desc-box{}
 .sc-commu .content-group .text-wrap .desc{
     font-size: 1.3541666667vw;
     letter-spacing: -.03em;
@@ -588,7 +570,6 @@ margin: 0 1.0417vw;
     height: 11.3020833333vw;
     margin-right: 1.0416666667vw;
 }
-.sc-find .find-group .ceo .img-wrap img{}
 
 .sc-find .find-group .ceo .name-wrap{display: flex;flex-direction: column;}
 .sc-find .find-group .ceo .name-wrap .name{
@@ -646,7 +627,6 @@ margin: 0 1.0417vw;
     margin-bottom: 5.2083333333vw;
 
 }
-.sc-time .time-group .time-area .time-wrap{}
 .sc-time .time-group .time-area .time-wrap .list{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -666,9 +646,6 @@ margin: 0 1.0417vw;
 .sc-time .time-group .time-area .time-wrap .city{
     color: #737373;
 }
-.sc-time .time-group .time-area .time-wrap .time{}
-
-
 
 
 
@@ -740,7 +717,6 @@ margin: 0 1.0417vw;
         line-height: 100%;
         font-weight: 400;
     }
-    .sc-visual .btn-box{}
     .btn-box .view-btn{
         font-size: .8125rem;
         letter-spacing: -.03em;
@@ -775,7 +751,6 @@ margin: 0 1.0417vw;
         padding-top: 3.75rem;
         padding-bottom: 3.75rem;
     }
-    .sc-about .img-group .img-flex{}
     .sc-about .img-group .img-flex .list{
         display: flex;
         align-items: inherit;
@@ -810,7 +785,6 @@ margin: 0 1.0417vw;
     .sc-about .img-group .img-flex:nth-child(3) .item {
         margin: 0;
     }
-    .sc-about .img-group .img-flex:nth-child(3){}
     .sc-about .img-group .img-flex:nth-child(3) .list{
         flex-wrap: wrap;
     } 
@@ -829,7 +803,6 @@ margin: 0 1.0417vw;
         margin-top: 5rem;
     }
    
-    .sc-about .img-group .img-flex .item .img-wrap img{}
     .sc-about .img-group .img-flex .item .title{
         font-size: 1.0625rem;
         letter-spacing: -.04em;
@@ -848,8 +821,6 @@ margin: 0 1.0417vw;
         width: 100%;
         padding-bottom: 1.5rem;
     }
-    .sc-clients .text-group{}
-    .sc-clients .text-group .content{}
 
     .sc-clients .text-group .img-wrap{
         width: 7.8125rem;
@@ -860,7 +831,6 @@ margin: 0 1.0417vw;
         width: 100%;
         height: 100%;
     }
-    .sc-clients .text-group .title-text{}
     .sc-clients .text-group .title-text span{
         display: inline-block;
     }
@@ -870,12 +840,10 @@ margin: 0 1.0417vw;
     .sc-service .title-text::after{
         right: 1.5625rem;
     }
-    .sc-service{}
     .sc-service .text-group{
         padding-left: 6.875rem;
         padding-right: 0;
     }
-    .sc-service .text-group .content{}
     .sc-service .text-group .title-text{
         font-size: 1.875rem;
         letter-spacing: -.05em;
@@ -931,15 +899,9 @@ margin: 0 1.0417vw;
     .sc-works .mo-works .item .text-box{
         display: none;
     }
-
-
-
-
     .sc-works .department-group{
         width: 100%;
     }
-    .sc-works .department-group .list{}
-    .sc-works .department-group .item{}
     .sc-works .department-group .item button{
         position: relative;
         font-size: 1.5625rem;
@@ -981,7 +943,6 @@ margin: 0 1.0417vw;
         width: 100%;
         font-size: 0.9rem;
     }
-    .sc-works .department-group .list{}
     .sc-works .department-group .item{
         font-size: 1rem;
         font-family: Messina Sans;
@@ -990,10 +951,6 @@ margin: 0 1.0417vw;
     .sc-works .department-group .item button:hover{
         transform: none;
     }
-
-    .sc-commu{}
-    .sc-commu .content-group{}
-    
     .sc-commu .content-group .img-wrap{
         height: 80vh;
     }
@@ -1006,7 +963,6 @@ margin: 0 1.0417vw;
     .sc-commu .content-group .text-wrap .title{
         font-size: 2.5rem;
     }
-    .sc-commu .content-group .text-wrap .desc-box{}
     .sc-commu .content-group .text-wrap .desc{
         width: 20.9375rem;
         font-size: 0.9rem;
@@ -1015,7 +971,6 @@ margin: 0 1.0417vw;
         font-weight: 400;
         padding: 2.5rem;
     }
-    .sc-commu .content-group .text-wrap .btn-box{}
     .sc-commu .content-group .text-wrap .btn-box a{
         width: auto;
     }
@@ -1026,7 +981,6 @@ margin: 0 1.0417vw;
     .sc-find .find-group{
         margin: 0;
     }
-    .sc-find .text-tilte{}
     .sc-find .find-group .text-title{
         margin-bottom: 3rem;
     }
@@ -1037,8 +991,6 @@ margin: 0 1.0417vw;
         line-height: 95%;
         font-weight: 400;
     }
-    .sc-find .ceo{}
-    .sc-find .ceo .name-wrap{}
     .sc-find .find-group .ceo .name-wrap .name{
         font-size: 1.0625rem;
         letter-spacing: -.04em;
@@ -1073,8 +1025,6 @@ margin: 0 1.0417vw;
         font-size: 30px;
         margin-top: 10px;
     }
-    .sc-time .time-group .text-title span{}
-
     .sc-time .time-group .time-area{
         display: flex;
         width: 60%;

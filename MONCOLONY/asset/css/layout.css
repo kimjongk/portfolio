@@ -2,7 +2,6 @@
 @import './reset.css';
 @import './common.css';
 
-.header{}
 .header .gnb{
     position: fixed;
     display: flex;
@@ -51,7 +50,6 @@
     display: flex;
     gap: 1.5625vw;
 }
-.header .gnb .item{}
 .header .gnb .item a{
     font-size: 1.25vw;
 }
@@ -59,11 +57,6 @@
 .header .snb{
     display: none;
 }
-.header .snb .list{}
-.header .snb .item{}
-.header .snb .item a{}
-
-
 
 
 .footer{
@@ -125,9 +118,7 @@
     font-weight: 400;
     margin-right: 5.8854166667vw;
 }
-.footer .link-wrap .link a{}
-.footer .link-wrap .link span{}
-.footer .link-wrap .sns-area{}
+
 .footer .link-wrap .sns-area .list{
     display: flex;
     align-items: center;
@@ -141,9 +132,6 @@
     width: 100%;
     height: 100%;
 }
-
-
-
 
 
 /* 모바일버전 [768px]까지만잡히면끝. */
@@ -172,15 +160,10 @@
     .header .btn-flex .sub-btn.off{
         display: none;
     }
-    .header .btn-flex .sub-btn svg{}
     .header .btn-flex .logo{
         width: 2.75rem;
         height: 2.75rem;
     }
-    .header .btn-flex .logo a{}
-    .header .btn-flex .logo svg{}
-   
-    
     .header .list-flex{
         display: none;
         background: #000;
@@ -261,7 +244,6 @@
         margin-bottom: 1.875rem;
         margin-top: 1.25rem;
     }
-    .footer-flex .logo-area .logo-wrap{}
     .footer .logo-wrap [class*='logo-'] {
         width: 2.5vw;
         height: 2.5vw;
@@ -273,7 +255,6 @@
         font-weight: 400;
         margin-bottom: 1.875rem;
     }
-    .footer-flex .policy{}
     .footer-flex .policy span{
         display: inline-block;
         width: auto;
@@ -293,12 +274,9 @@
         font-weight: 400;
         margin-bottom: 1.875rem;
     }
-    .footer-flex .link-wrap .link a{}
     .footer-flex .link-wrap .link span{
         display: inline;
     }
-    .footer-flex .link-wrap .sns-area{}
-    .footer-flex .link-wrap .sns-area a{}
     .footer .link-wrap .sns-area .item {
     width: 1.9vw;
     height: 1.9vw;
