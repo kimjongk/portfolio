@@ -14,7 +14,6 @@ visualTl=gsap.timeline({
         start:'0% 0%',
         end:'100% 0%',
         scrub:0,
-        // markers:true,
     },
     ease:'none'
 })
@@ -31,7 +30,6 @@ appealTl=gsap.timeline({
         start:'0% 0%',
         end:'100% 100%',
         scrub:1,
-        // markers:true,
     },
     ease:"none"
 })
@@ -41,7 +39,6 @@ appealTTl=gsap.timeline({
         start:'10% 100%',
         end:'80% 100%',
         scrub:1,
-        // markers:true,
     },
     ease:"none"
 })
@@ -85,8 +82,6 @@ $('.header .header-menu .menu-group .item a').click(function(e){
     $('.header .buy-group .btn-box').removeClass('on');
     lenis.start();
 });
-
-
 
 /**
  * buy 버튼 close버튼 클릭시 화면이동
@@ -167,7 +162,6 @@ sideTl=gsap.timeline({
         start:'100% 30%',
         end:'100% 0%',
         scrub:1,
-        // markers:true,
     }
 })
 
@@ -228,7 +222,6 @@ $('.sc-withU .card-flex .card-box').each(function(i,el){
             start: '0% 0%',
             end: '100% 0%',
             scrub: 1,
-            // markers:true,
         },
         scale:0.9,
         background:'#2f3f4c'
@@ -246,7 +239,6 @@ gsap.to('.sc-subvisual .contents .img-wrap img',{
         start: '0% 100%',
         end: '0% 0%',
         scrub: 1,
-        // markers:true,
     },
     ease:'none',
     objectPosition: '0% 70%',
@@ -260,7 +252,6 @@ gsap.to('.sc-subvisual .contents .img-wrap img',{
         start: '0% 0%',
         end: '100% 0%',
         scrub: 1,
-        // markers:true,
     },
     ease:'none',
     objectPosition: '0% 0%',
@@ -272,7 +263,6 @@ gsap.to('.sc-subvisual .content .top-group .marqee',{
         start: '0% 100%',
         end: '100% 0%',
         scrub: 1,
-        // markers:true,
     },
     xPercent:-100,
 })
@@ -287,7 +277,6 @@ gsap.to('.sc-effect .bottom-content .mid-flex .img-wrap', {
         start: '0% 90%', 
         end: '100% 0%', 
         scrub: 1, 
-        // markers: true, 
     },
     yPercent: 5,
 });
@@ -298,7 +287,6 @@ gsap.to('.sc-effect .caption-area',{
         start: '100% 95%',
         end: '100% 0%',
         scrub: 1,
-        // markers:true,
         pin:true,
     },
     yPercent:-100
@@ -310,7 +298,6 @@ gsap.to('.sc-effect .caption-area .img-wrap img',{
         start: '0% 95%',
         end: '100% 0%',
         scrub: 1,
-        // markers:true,
     },
     yPercent:-50
 })
@@ -321,7 +308,6 @@ gsap.to('.sc-using .bg-wrap .circle-slide .list',{
         start: '0% 0%',
         end: '100% 0%',
         scrub: 1,
-        // markers:true,
     },
     transform: 'translate(-50%, -50%) rotate(-20deg)'
 })
@@ -333,7 +319,6 @@ ScrollTrigger.create({
     trigger: ".sc-subvisual",
     start: "top top",
     end: "100% 70%",
-    // markers:true,
 });
 
 
@@ -344,9 +329,6 @@ ScrollTrigger.create({
     trigger: ".sc-setup",
     start: "top top",
     end: "100% 80%",
-    // pin: true,
-    // anticipatePin: 1,
-    // markers:true, 
 });
 
 setupTl =gsap.timeline({
@@ -355,7 +337,6 @@ setupTl =gsap.timeline({
         start:"0% 90%", 
         end:"100% 50%",
         scrub:1,
-        // markers:true, 
     }
 });
 
@@ -376,7 +357,6 @@ ScrollTrigger.create({
     start: '0% 0%',
     end: '100% 100%',
     scrub: 1,
-    // markers: true,
     onEnter: function (e) {
         setInterval(function () {
             vid1.currentTime = e.progress.toFixed(3) * 5.5;

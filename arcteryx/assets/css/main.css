@@ -30,7 +30,6 @@
     height: 120vh;
     object-fit: cover;
     object-position: top center;
-    /* transform: translateY(-130px); */
 }
 .sc-visual .title{
     position: absolute;
@@ -507,14 +506,11 @@
     font-size: 1.5vw;
     height: 200px;
 }
-.sc-effect .top-content .top-group .cont-flex .cont-area .left-wrap .icon-box{}
 .sc-effect .top-content .top-group .cont-flex .cont-area .left-wrap .icon-box svg{
     width: 3vw;
     height: 3vw;
     border: 0.1px solid #9d9896;
     border-radius: 50%;
-}
-.sc-effect .top-content .top-group .cont-flex .cont-area .left-wrap .text-box{
 }
 
 .sc-effect .top-content .top-group .cont-flex .cont-area .right-wrap{
@@ -609,12 +605,11 @@
     left: 0;
     width: 100%;
     padding: 0 10vw 5vw;
-    background: rgb(212),220,220);
+    background: rgb(212,220,220);
 }
 .sc-effect .bottom-group .bottom-flex .cont-flex{
     position: relative;
 }
-.sc-effect .bottom-group .bottom-flex .cont-flex .line-wrap{}
 .sc-effect .bottom-group .bottom-flex .cont-flex .line-wrap svg{
     color: #fff;
 }
@@ -742,7 +737,6 @@
     font-size: 6vw;
     line-height: 7vw;
 }
-.sc-using .bg-wrap{}
 .sc-using .bg-wrap svg{
     width: 100%;
     height: auto;
@@ -766,9 +760,6 @@
     filter: brightness(70%);
 }
 
-.sc-using .img-wrap .bg-wrap svg{}
-
-.sc-using .circle-slide{}
 .sc-using .circle-slide .list{
     display: flex;
     justify-content: center;
@@ -785,7 +776,6 @@
     background: #ede5e1;
     border-radius: 20px;
     overflow: hidden;
-    /* padding: 2vw 1vw; */
 }
 
 
@@ -964,7 +954,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.sc-setup .bottom-group .card-flex .icon-box{}
 
 .sc-setup .bottom-group .card-flex .slide-text{
     position: absolute;
@@ -978,7 +967,6 @@
     line-height: 1.1vw;
     font-family: 'Pretendard-Regular';
 }
-.sc-setup .bottom-group .card-flex .text-wrap{}
 .sc-setup .bottom-group .card-flex .text-wrap .title{
     color: #37384c;
     font-size: 2.2vw;
@@ -1137,7 +1125,6 @@
 .sc-details .title{
     position: relative;
     font-size: 1.5vw;
-    /* color: #37384c; */
     color: #fff;
     font-family:'founder' ;
     padding: 9vw 10vw;
@@ -1180,7 +1167,6 @@
     width: 50%;
     height: 100%;
 }
-.sc-details .detail-wrap .item{}
 
 .sc-details .detail-wrap .item .num{
     display: flex;
@@ -1220,7 +1206,6 @@
     visibility: visible;
 }
 
-.sc-details .detail-wrap .item .detail-box{}
 .sc-details .detail-wrap .item .detail-box .subtitle{
     display: block;
     font-size: 2vw;
@@ -1292,7 +1277,6 @@
     color: #ff3333;
     font-size: 3.5vw;
 }
-.sc-option .slide-flex{}
 .sc-option .slide-flex .list{
     display: flex;
     position: sticky;
@@ -1506,7 +1490,6 @@
     padding-left: 4vw;
     width: 30vw;
 }
-.sc-review .text-wrap .list{}
 .sc-review .text-wrap .item{
     display: none;
     color: rgb(48,44,43);
