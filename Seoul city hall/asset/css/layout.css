@@ -3,14 +3,12 @@
 @import './common.css';
 
 
-.header{}
 .header .group-top{
     display: flex;
     height: 48px;
     align-items: center;
 }
-.header .group-top .logo{
-}
+
 .header .group-top .logo a{
     width: 105px;
     height: 27px;
@@ -18,7 +16,6 @@
     padding-bottom: 5px;
     background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat -5px -165px;
 }
-.header .group-top .gnb{}
 .header .group-top .gnb .nav-list{
     display: flex;
     gap: 20px;
@@ -31,7 +28,6 @@
 .header .group-top .gnb .nav-item:hover{
     color: #2292e9;
 }
-.header .group-top .gnb .nav-item a{}
 
 .header .group-top .util-area{
     margin-left: auto;
@@ -47,11 +43,9 @@
 .header .group-top .util-area .item:hover{
     color: #2292e9;
 }
-.header .group-top .util-area .item a{}
 
 .group-bottom{
     display: flex;
-    /* background: #f00; */
     position: relative;
     height: 119px;
     align-items: center;
@@ -152,8 +146,6 @@
     font-size: 14px;
     color: #0068b7;
 } 
-.group-bottom .weather-area .text-wrap .dust .normal{} 
-.group-bottom .weather-area .text-wrap .dust .bad{} 
 
 .group-bottom  .lang-area{
     display: flex;
@@ -171,9 +163,6 @@
     padding-left: 2px;
 }
 
-.group-bottom  .lang-area #langList option{
-
-}
 .group-bottom  .lang-area .btn-go{
     background: #1E6CB3;
     width: 30px;
@@ -194,13 +183,10 @@
 }
 
 
-
-.footer{}
 .footer .link-area{
     position: relative;
     padding: 15px 0;
 }
-.footer .nav-area{}
 .footer .nav-area .list{
     display: flex;
 }
@@ -233,10 +219,6 @@
     color: #000;
     font-weight: 700;
 }
-
-
-
-
 .footer .sns-area{
     position: absolute;
     top: 50%;
@@ -251,7 +233,6 @@
     gap: 12px;
 
 }
-.footer .sns-area .item{}
 .footer .sns-area .item a{
     display: block;
     width: 24px;
@@ -313,11 +294,7 @@
     color: #636363;
     line-height: 1.35em;
 }
-.address-area .addr-area .addr{}
-.address-area .addr-area .tel{}
-.address-area .addr-area .copy{}
 
-.address-area .mark-area{}
 .address-area .mark-area a{
     display: block;
     width: 86px;

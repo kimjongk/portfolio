@@ -7,7 +7,6 @@
     display: flex;
     width: 770px;
     height: 350px;
-    /* background: #f00; */
 }
 
 .sc-visual .btn-area {
@@ -23,8 +22,6 @@
     height: 175px;
     background: #d2e1e9;
 }
-
-.sc-visual .btn-news {}
 
 .sc-visual .btn.on {
     position: relative;
@@ -56,8 +53,6 @@
     background: #fff url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png) no-repeat 0 0;
 }
 
-.sc-visual .btn-news p {}
-
 .sc-visual .btn-citizen {
     width: 80px;
     height: 175px;
@@ -74,22 +69,17 @@
     background: #fff url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png) no-repeat -50px 0;
 }
 
-.sc-visual .btn-citizen p {}
-
 .sc-visual .swiper {
     display: flex;
     justify-content: space-between;
     position: relative;
     width: 690px;
     height: 350px;
-    /* background: #0f0; */
 }
 
 .sc-visual .swiper .swiper-wrapper {
     position: relative;
 }
-
-.sc-visual .swiper .swiper-slide {}
 
 .sc-visual .swiper .swiper-slide a {
     display: flex;
@@ -129,7 +119,6 @@
     width: 120px;
     height: 40px;
     flex: 1;
-    /* background: #00f; */
     z-index: 1;
     color: #fff;
 }
@@ -264,8 +253,6 @@
     background: #f00;
 }
 
-.sc-visual .sub-group .sc-municipal .img-wrap {}
-
 .sc-visual .sub-group .sc-municipal .img-wrap img {
     width: 100%;
 }
@@ -283,8 +270,6 @@
     font-size: 14px;
     background: rgba(0, 0, 0, .7);
 }
-
-.sc-visual .sub-group .sc-municipal .text-wrap p {}
 
 .sc-visual .sub-group .sc-mayor {
     position: relative;
@@ -429,8 +414,6 @@
     font-size: 15px;
 }
 
-.sc-service .item {}
-
 .sc-service .item a {
     display: block;
 }
@@ -543,8 +526,6 @@
     content: '';
 }
 
-.sc-quick {}
-
 .sc-quick {
     background: #eff4f8;
     height: 110px;
@@ -556,8 +537,6 @@
     align-items: center;
     padding: 20px 0;
 }
-
-.sc-quick .item {}
 
 .sc-quick .item a {
     position: relative;
@@ -645,10 +624,6 @@
     background: url(https://www.seoul.go.kr/res_newseoul/images/icon_set_common.png) no-repeat -1px -1px;
 }
 
-.sc-board .list {}
-
-.sc-board .item {}
-
 .sc-board .item a {
     display: flex;
     font-size: 15px;
@@ -684,8 +659,6 @@
     white-space: nowrap;
     flex: 1;
 }
-
-.sc-board {}
 
 .sc-often{
     width: 360px;
@@ -735,8 +708,6 @@
 .sc-often .item span {
     padding-left: 10px;
 }
-
-
 
 .sc-part {
     padding-top: 40px;
@@ -832,7 +803,6 @@
     padding-bottom: 20px;
 }
 
-.sc-news .link-more{}
 .sc-news .link-more a{
     display: block;
     position: absolute;
@@ -856,7 +826,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 271px);
-    /* background: #f00; */
     gap: 20px;
 }
 
@@ -864,14 +833,10 @@
     width: 273px;
 }
 
-.sc-news .item a {}
-
 .sc-news .item a .img-wrap {
     position: relative;
     margin-bottom: 15px;
 }
-
-.sc-news .item a .img-wrap img {}
 
 .sc-news .item a .img-wrap .clip {
     position: absolute;
@@ -910,15 +875,10 @@
     background: #c35c3c;
 }
 
-.sc-news .item a .text-wrap {}
-
 .sc-news .item a .text-wrap .title {
     font-size: 16px;
     line-height: 1.5em;
 }
-
-
-
 
 .sc-seoul {
     display: flex;
@@ -937,18 +897,12 @@
     line-height: 1.35em;
 }
 
-.sc-seoul .group-video .list {}
-
-.sc-seoul .group-video .item {}
-
 .sc-seoul .group-video a {
     display: flex;
     flex-direction: column;
     width: 280px;
     position: relative;
 }
-
-.sc-seoul .group-video a .img-wrap {}
 
 .sc-seoul .group-video a .title {
     width: 240px;
@@ -964,8 +918,6 @@
     flex: 1;
     color: #fff;
 }
-
-.sc-seoul .group-news {}
 
 .sc-seoul .group-news .headline {
     font-size: 24px;
@@ -1027,10 +979,6 @@
     padding: 10px 15px 0 15px;
 }
 
-.sc-seoul .group-sns a {}
-
-.sc-seoul .group-sns a .img-wrap {}
-
 .sc-seoul .group-sns a .img-wrap img {
     width: 100%;
     height: 195px;
@@ -1046,8 +994,6 @@
     margin: 0 auto;
     width: 276px;
 }
-
-.sc-seoul .group-sns .item {}
 
 .sc-seoul .group-sns .item a {
     display: block;
@@ -1082,32 +1028,20 @@
 
 .sc-banner {
     height: 159px;
-    /* background: #f00; */
     padding: 50px 0;
     border-top: 2px solid #222;
 }
 
-.sc-banner .swiper {
-    /* padding-bottom: 50px; */
-}
-
-.sc-banner .swiper-wrapper {}
 
 .sc-banner .swiper-slide {
     width: 355px;
     height: 122px;
 }
 
-.sc-banner .swiper-slide a {}
-
-.sc-banner .swiper-slide img {}
-
-
 .sc-banner .control-area {
     display: flex;
     align-items: center;
     height: 32px;
-    /* background: #f00; */
     margin-top: 5px;
 }
 
@@ -1147,7 +1081,6 @@
 .sc-related {
     margin-bottom: 20px;
     height: 52.9px;
-    /* background: #f00; */
 }
 
 .sc-related .list {
