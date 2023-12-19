@@ -155,7 +155,6 @@ ScrollTrigger.create({
   trigger:".sc-video", //기준
   start:"0% 100%", //트리거기준 //윈도으기준 둘이 만나면 실행
   end:"100% 10%",
-  // markers:true, // 표시자
 
   onEnter:function(){ //도달시
     video.get(0).play()
@@ -170,7 +169,6 @@ $('.sc-video .video-wrap').click(function() {
   if (video.paused) {
     video.play();
   } else {
-    // video.pause();
     video.currentTime = 0; // 재생 위치를 처음으로 되돌림
   }
 
@@ -214,7 +212,6 @@ weareTl = gsap.timeline({
     trigger: ".sc-team", //기준
       start: "0% 60%", //트리거기준 //윈도우기준 둘이 만나면 실행
       end: "100% 10%",
-    // markers:true, // 표시자
   }
 })
 
@@ -236,7 +233,6 @@ weareTl
       start:"0% 100%", //트리거기준 //윈도으기준 둘이 만나면 실행
       end:"100% 0%",
       scrub:0,
-      // markers:true, // 표시자
     }
   });
 
@@ -256,7 +252,6 @@ recommTl = gsap.timeline({
     trigger: ".sc-recomm", //기준
       start: "0% 60%", //트리거기준 //윈도우기준 둘이 만나면 실행
       end: "100% 0%",
-    // markers:true, // 표시자
   }
 })
 recommTl
@@ -298,7 +293,6 @@ recommTl
       start: '0% 80%',
       end: '100% 0%%',
       scrub: 0,
-      // markers: true,
     },
   });
   
@@ -310,7 +304,7 @@ $('.thumb-box').plate({
   inverse: true
 });
 
-}); //end
+}); 
 
 
 

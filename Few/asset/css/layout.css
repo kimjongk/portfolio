@@ -230,7 +230,6 @@ body{
     z-index: 10;
     padding: 12vh 10vw 1rem;
     overflow: hidden;
-    
     visibility: hidden;
     opacity: 0;
 }
@@ -282,12 +281,6 @@ height: 100%;
 
 
 
-
-
-
-
-
-
 .snb{
     display: flex;
     position: relative;
@@ -309,7 +302,6 @@ height: 100%;
     padding-left: 60px;
 }
 .snb .list .item{
-    /* opacity: 0; */
     overflow: hidden;
 }
 .snb .list .item a{
@@ -422,7 +414,6 @@ height: 100%;
     z-index: 0;
     overflow: hidden;
 }
-.footer .fbg-group{}
 .footer .fbg-group .pink:nth-child(1){
     left: -40%;
     top: -10%;
@@ -486,9 +477,6 @@ height: 100%;
     display: block;
     text-align: center;
 }
-/* .footer .contact-group:hover{
-    cursor: url(https://few.io/images/hand-wave.png) 20 30, url(cursor2.png) 20 30, auto;
-} */
 
 .footer .contact-group a{
     display: flex;
@@ -507,7 +495,6 @@ height: 100%;
 .footer .contact-group a:hover{
     color: #fff;
     background: #ff008d;
-    /* cursor: url(https://few.io/images/hand-wave.png),auto; */
 }
 
 
@@ -653,4 +640,4 @@ height: 100%;
     100% {
         transform: rotate(0deg);
 }
-
+}
