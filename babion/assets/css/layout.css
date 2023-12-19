@@ -54,8 +54,7 @@
     justify-content: space-between;
     padding: 5rem 5rem;
 }
-.footer .top-group .left-flex{
-}
+
 .footer .top-group .left-flex .title{
     font-size: 2.75rem;
     font-weight: 500;
@@ -91,13 +90,10 @@
 .footer .top-group .right-flex .link-box a:hover{
     animation: vibration .1s infinite;
 }
-.footer .bottom-group{}
 .footer .bottom-group .img-wrap{
     transform:translateY(20%) scale(1.1);
     pointer-events: none;
 }
-.footer .bottom-group .img-wrap img{}
-
 .footer .other{
     width: 100%;
     position: relative;
@@ -125,7 +121,6 @@
     object-fit: cover;
     opacity: 0.2;
 }
-.footer .other .text-wrap{}
 .footer .other .text-wrap p{
     font-size: 1.5vw;
 }
