@@ -11,7 +11,6 @@ gsap.set('[data-up]',{
             trigger:$(this),
             start:"-100% 50%",
             end:"100% 0%",
-            // markers:true,
         },
         opacity:1,
         yPercent:0,
