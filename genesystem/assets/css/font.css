@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'suit';
+    src: url(../font/SUIT-Bold.woff2) format('woff2');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'suit';
+    src: url(../font/SUIT-Medium.woff2) format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'suit';
+    src: url(../font/SUIT-Regular.woff2) format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'suit';
+    src: url(../font/SUIT-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}

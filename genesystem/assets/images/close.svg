@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <path data-name="Rectangle 496" style="fill:none" d="M0 0h36v36H0z"/>
+    <g data-name="Group 473" transform="translate(4.474 4.335)">
+        <rect data-name="Rectangle 62" width="34.49" height="3.674" rx="1.837" transform="rotate(-45 29.659 11.667)" style="fill:#2f3435"/>
+        <rect data-name="Rectangle 63" width="19.304" height="3.674" rx="1.837" transform="rotate(45 1.299 3.136)" style="fill:#2f3435"/>
+        <rect data-name="Rectangle 64" width="11.638" height="3.674" rx="1.837" transform="rotate(45 -10.015 31.293)" style="fill:#2f3435"/>
+    </g>
+</svg>
