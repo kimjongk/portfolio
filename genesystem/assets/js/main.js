@@ -66,6 +66,7 @@ $('.header-inner').hover(
 
 /**menu 버튼 클릭스 all-menu창 등장 */
 $('.menu-btn').click(function(){
+    let body = $('body');
     $('.all-menu, .close-btn').addClass('on');
     $('.gnb, .util-btn,.line').css({
         opacity: 0,
@@ -74,9 +75,15 @@ $('.menu-btn').click(function(){
     $('.header-inner').addClass('click');
     $('.finder').hide();
     $('#fp-nav').addClass('blind');
+    body.on('scroll.hidden touchmove.hidden mousewheel.hidden', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
 });
 
 $('.close-btn').click(function(){
+    let body = $('body');
     $('.all-menu, .close-btn').removeClass('on');
     $('.gnb, .util-btn,.line').css({
         opacity: 1,
@@ -85,6 +92,7 @@ $('.close-btn').click(function(){
     $('.header-inner').removeClass('click');
     $('.finder').show();
     $('#fp-nav').removeClass('blind');
+    body.off('scroll.hidden touchmove.hidden mousewheel.hidden');
 });
 
 
