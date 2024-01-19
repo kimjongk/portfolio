@@ -6,20 +6,30 @@ window.onload = function() {
 };
 
 const solLeSwiper = new Swiper('.sc-solution .left-content .swiper', {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     spaceBetween : 10,
     navigation: {   // 버튼 사용자 지정
         nextEl: '.sc-solution .left-content .right-btn',
         prevEl: '.sc-solution .left-content .left-btn',
     },
+    breakpoints: {
+        1025: {
+          slidesPerView: 2,
+        },
+      },
 });
 const solRiSwiper = new Swiper('.sc-solution .right-content .swiper', {
-    slidesPerView: 'auto',
+    slidesPerView: 3,
     spaceBetween : 10,
     navigation: {   // 버튼 사용자 지정
         nextEl: '.sc-solution .right-content .right-btn',
         prevEl: '.sc-solution .right-content .left-btn',
     },
+    breakpoints: {
+        1025: {
+          slidesPerView: 2,
+        },
+      },
 });
 
 /**
@@ -44,7 +54,7 @@ $('.header-inner').hover(
         let gnbLi = $('.gnb .sub-list');
 
         $(gnbItem).stop().animate({
-            padding: '2vw 3.7rem'
+            padding: '2vw 2.6vw'
         }, 'slow');
 
         $(gnbLi).stop().fadeIn(1000);
@@ -56,7 +66,7 @@ $('.header-inner').hover(
 
         
         $(gnbItem).stop().animate({
-            padding: '1rem 2rem'
+            padding: '1rem 1.2vw'
         }, 'slow');
         $(gnbLi).stop().hide();
 
@@ -66,6 +76,7 @@ $('.header-inner').hover(
 
 /**menu 버튼 클릭스 all-menu창 등장 */
 $('.menu-btn').click(function(){
+    let body = $('body');
     $('.all-menu, .close-btn').addClass('on');
     $('.gnb, .util-btn,.line').css({
         opacity: 0,
@@ -74,9 +85,15 @@ $('.menu-btn').click(function(){
     $('.header-inner').addClass('click');
     $('.finder').hide();
     $('#fp-nav').addClass('blind');
+    body.on('scroll.hidden touchmove.hidden mousewheel.hidden', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+    });
 });
 
 $('.close-btn').click(function(){
+    let body = $('body');
     $('.all-menu, .close-btn').removeClass('on');
     $('.gnb, .util-btn,.line').css({
         opacity: 1,
@@ -85,6 +102,7 @@ $('.close-btn').click(function(){
     $('.header-inner').removeClass('click');
     $('.finder').show();
     $('#fp-nav').removeClass('blind');
+    body.off('scroll.hidden touchmove.hidden mousewheel.hidden');
 });
 
 
@@ -112,24 +130,14 @@ $('.gnb .sub-item>.icon').click(function(e){
 /**
  * fullpage.js 부분
  */
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		//options here
-		// autoScrolling:true, // 페이지의 자동 스크롤
-		// scrollHorizontally: true, //가로 스크롤을 활성화
-        // slidesNavigation: true, //각 섹션 내에서 슬라이드 네비게이션을 활성화
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
-        autoHeight: true,
-	});
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
-});
-
 new fullpage('#fullpage', {
     anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
     navigation: true,
+    responsiveWidth: 1025,
+    keyboardScrolling: true,
+    animateAnchor: true,
+    recordHistory: true,
+    autoHeight: false,
 
     afterRender: function () {
         var fpNav = document.querySelector('#fp-nav');
@@ -158,6 +166,13 @@ new fullpage('#fullpage', {
             $('.sc-stage .up-btn').fadeOut();
         }
     }, 
+    afterResponsive: function(isResponsive) {
+        if (isResponsive) {
+            $.fn.fullpage.setNavigation(false);
+        } else {
+            $.fn.fullpage.setNavigation(true);
+        }
+    }
 });
 
 // 페이지 인덱스를 업데이트하는 함수
