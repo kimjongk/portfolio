@@ -441,7 +441,6 @@
     position: relative;
     width: 10px;
     height: 10px;
-    background: #f00;
 }
 #fp-nav ul li a.active span,
 #fp-nav ul li:hover a span,
@@ -734,6 +733,10 @@
 }
 .finder .right-area .dep-item .file:hover::after{
     background: url('../images/finder-pdf.svg') no-repeat;
+}
+
+.finder .right-area .dep-item.mo-part{
+    display: none;
 }
 
 .finder .content .right-group{
@@ -1131,6 +1134,9 @@
         width: 190px;
         height: 32px;
     }
+    .header-inner.hover .logo a:after{
+        background:url(../images/logo-color.svg) no-repeat center 100%;
+    }
     .header .util-btn .lang-group .lang {
         font-size: 1rem;
     }
@@ -1148,7 +1154,7 @@
         padding: 0;
     }
     .finder .top-btn{
-        display: flex;
+        display: none;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
@@ -1163,47 +1169,284 @@
         padding-bottom: 3rem;
         position: relative;
     }
-    .finder .top-btn::after{
-        position: absolute;
-        top: 1rem;
-        display: block;
-        content: '';
-        width: 2.2727272727em;
-        height: 2.2727272727em;
-        background: url('../images/mo_finder_logo.svg') no-repeat 100%;
-    }
-    .finder .top-btn::before{
-        position: absolute;
-        bottom: -2.1rem;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background:linear-gradient(to right, #1bc0df, #32deb8);
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        z-index: -1;
-    }
+
     .finder .mo-btn-box{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
     }
+    .finder .mo-btn-box::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background:linear-gradient(to left, #1bc0df, #32deb8);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
     .finder .mo-btn-box .list{
         display: flex;
-        gap: 50%;
-        justify-content: center;
         align-items: center;
         height: 5.5rem;
         font-size: 1.4em;
         font-weight: 900;
     }
     .finder .mo-btn-box .item{
+        flex: 1;
         color: #fff;
+        text-align: center;
+        position: relative;
     }
+    .finder .mo-btn-box .up:after{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -130%);
+        display: block;
+        content: '';
+        width: 2.2727272727em;
+        height: 2.2727272727em;
+        background: url('../images/mo_finder_logo.svg') no-repeat 100%;
+    }
+    .finder .mo-btn-box .up::before{
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        background: url('../images/mo_finder_bg.svg') no-repeat;
+        background-size: 100% auto;
+        content: '';
+    }
+    .finder .mo-btn-box .up.click::after{
+        background: url('../images/close.svg') no-repeat 100%/2em;
+        filter: brightness(1000%);
+    }
+    
+    .finder .content{
+        position: absolute;
+        top: calc(-101vh + var(--header-height));
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        padding: 10em 1.5625rem;
+        transform: translateY(100%);
+        transition: .3s;
+    }
+    .finder .content.on{
+        transform: translateY(0%);
+    }
+    .finder .content .left-group{
+        height: auto;
+        width: 100%;
+    }
+    .finder .top-content{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .finder .right-area .default{
+        display: none;
+    }
+    .finder .right-area .item{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 65vw;
+        z-index: 50;
+        transform: translateX(100%);
+        transition: .3s;
+    }
+    .finder .right-area .item.on{
+        transform: translateX(0%);
+    }
+    .finder .content:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6.25em;
+        content: '';
+        background: #f6f8f8 url('../images/mo-finder.svg') no-repeat center/13em 2.625em ;
+    }
+    
+    .finder .content .left-area{
+        width: 100%;
+    }
+    .finder .content .left-area > .list{
+        max-width: none;
+        width: 100%;
+    }
+    .finder .content .check{
+        padding-right: 0;
+    }
+    .finder .content .title{
+        font-size: 2.3em;
+    }
+    .finder .content .left-area{
+        padding-bottom: 3.75em;
+    }
+    .finder .content .left-area > .list{
+        border-radius: 1.875em;
+    }
+    .finder .content .left-area .item .sub-title{
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+    .finder .content .left-area .item>.list .item{
+        margin: 1.6em 0;
+    }
+    .finder .content .left-area .item>.list .item a,
+    .finder .content .left-area .item>.list .item>span{
+        font-size: 1.3em;
+    }
+    .finder .content .left-area .item>.list .item .dep2{
+        font-size: 1.1em;
+        margin: 1em 0;
+    }
+    .finder .content .left-area .item>.list .item a:hover,
+    .finder .right-area .dep-item .name:hover{
+        color: #000;
+        text-decoration : none;
+    }
+    .finder .content .right-group::before{
+        display: none;
+    }
+    .finder .content .right-group{
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .finder .content .title-flex{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .finder .content .more{
+        width: 2em;
+        height: 2em;
+    }
+    .finder .content .more svg{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .finder .content .right-group .top-area{
+        height: 100%;
+    }
+    .finder .content .right-group .top-area .list{
+        flex-direction: column;
+        padding: 1.875em;
+        border: 1px solid var(--border-color3);
+        border-radius: 1.875em;
+    }
+    .finder .content .right-group .top-area .item:nth-child(1){
+        padding-right: 0;
+    }
+    .finder .content .right-group .top-area .item:nth-child(1),
+    .finder .content .right-group .top-area .item:nth-child(2){
+        display: flex;
+        width: 100%;
+    }
+    .finder .content .right-group .top-area .item:nth-child(2){
+        padding-left: 0;
+        height: 300px;
+    }
+    .finder .content .right-group .top-area .item a{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1.8em;
+    }
+    .finder .content .right-group .top-area .list .item + .item{
+        border-top: 1px solid #e5e5e5;
+    }
+    .finder .content .right-group .top-area .list .item{
+        padding: 1.875em 0;
+    }
+    .finder .content .right-group .top-area .item .img-wrap{
+        width: 50%;
+        height: auto;
+        border-radius: 1.25em;
+        margin-bottom: 0;
+    }
+    .finder .content .right-group .top-area .item .text-wrap{
+        width: calc(50% - 1.8em);
+        height: auto;
+    }
+    .finder .content .right-group .top-area .item .part{
+        font-size: 1.3em;
+        font-weight: 900;
+    }
+    .finder .content .right-group .top-area .item .sub-title{
+        font-size: 1.8em;
+        font-weight: 900;
+        text-overflow: inherit;
+        white-space: inherit;
+        line-height: 1.5em;
+        margin-top: 15px;
+    }
+    .finder .content .right-group .bottom-area .text-box{
+        padding: 3em 1.875em;
+    }
+    .finder .content .right-group .bottom-area .progress{
+        font-size: 1.5em;
+        padding: 0.2083333333em 0.6666666667em;
+    }
+    .finder .content .right-group .bottom-area .date{
+        font-size: 1.3rem;
+        margin-top: 2.5rem;
+    }
+    .finder .content .bottom-group{
+        display: none;
+    }
+    .finder .right-area .dep-list{
+        overflow-y: auto;
+        height: 100vh;
+        -ms-overflow-style: none; /* 인터넷 익스플로러 */
+        scrollbar-width: none; /* 파이어폭스 */
+    }
+    .finder .right-area .dep-list::-webkit-scrollbar{
+        display: none;
+    }
+    .finder .right-area .dep-item.mo-part{
+        display: flex;
+        position: relative;
+    }
+    .finder .right-area .dep-item.mo-part .name{
+        display: flex;
+        justify-content: center;
+        background: #f6f8f8;
+    }
+    .finder .right-area .dep-item:nth-child(1) .name::after{
+        display: none;
+    }
+    .finder .right-area .dep-item.mo-part .back-btn{
+        position: absolute;
+        top: 50%;
+        left: 1.5em;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+        background: url('../images/finder-link-b.svg') no-repeat center/3rem;
+        transform: rotate(-136deg);
+        transform-origin: 40% 29%;
+    }
+    .finder .right-area .dep-item .name{
+        font-size: 1.5em;
+    }
+    .finder .right-area .dep-item .file{
+        font-size: 1.4em;
+    }
+    .finder .right-area #human .dep-list{
+        padding-bottom: 5.5rem;
+    }
+
     .footer .common-inner{
         flex-direction: column;
         padding: 0 1.5625rem;
@@ -1217,8 +1460,99 @@
     .footer .right-content{
         margin-top: 2rem;
     }
+    .all-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5em 1.25em;
+        z-index: 10;
+    }
+    .all-menu .top-group .item{
+        flex-direction: column;
+        border-bottom: none;
+        padding-bottom: 2rem;
+    }
+    .all-menu .top-group .item:nth-child(4) .dep:nth-child(2){
+        border-bottom: 1px solid #2f3435;
+        padding-bottom: 1.5rem;
+    }
+    .all-menu .top-group .item .sub-list{
+        flex-direction: column;
+        margin-left: 0;
+        padding-top: 1em;
+        width: 100%;
+    }
+    .all-menu .top-group .item .sub-list .dep>a{
+        position: relative;
+    }
+    .all-menu .top-group .item .sub-list .dep>a:after{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1rem;
+        height: 1rem;
+        background: url('../images/black-arrow.svg') no-repeat 100%;
+        transform: translateY(-50%) scale(1.5);
+        content: '';
+    }
+    .all-menu .top-group .item .sub-item{
+        margin-top: 1rem;
+        width: 100%;
+        max-width: none;
+    }
+    .all-menu .top-group .item .sub-list .dep:nth-child(1){
+        border-bottom: 1px solid #2f3435;
+        padding-bottom: 1.5rem;
+    }
+    .all-menu .top-group .item>a{
+        margin-bottom: 0.75em;
+        position: relative;
+        font-size: 2.5em;
+    }
+    .all-menu .top-group .item>a::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: -0.75em;
+        width: 100%;
+        height: 3px;
+        background: #2f3435;
+    }
+    .all-menu .top-group .item .sub-item>a{
+        font-size: 1.7rem;
+    }
+    .all-menu .top-group .item .dep-item{
+        margin-top: 1.5rem;
+    }
+    .all-menu .top-group .item .dep-item a{
+        font-size: 1.5rem !important;
+    }
+    .all-menu .bot-group{
+        flex-direction: column-reverse;
+    }
+    .all-menu .bot-group .right-content .util-area .list .item{
+        font-size: 1.3em;
+    }
+    .all-menu .bot-group .left-content .sns-area{
+        gap: 2.5em;
+    }
+    .all-menu .bot-group .left-content .sns-area a{
+        transform: scale(1.5);
+    }
+    .all-menu .bot-group .left-content .sns-area a:last-child{
+        margin-left: 2.9em;
+    }
+    .all-menu .top-group .sub-list .dep-list{
+        display: none;
+    }
+    .all-menu .top-group .sub-item:hover>a{
+        text-decoration: none;
+        color: #2f3435;
+    }
 
-    
+
 }
 /* ----------------- 767px ----------------- */
 

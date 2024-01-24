@@ -225,3 +225,70 @@ $('.up-btn').click(function(){
     fullpage_api.moveTo(1); // 1은 이동하고자 하는 섹션의 인덱스입니다.
 });
 
+
+
+
+// 미디어 쿼리 js적용
+const mediaQueryString = '(max-width: 1024px)';
+const mediaQueryList = window.matchMedia(mediaQueryString);
+
+// 변경 감지 이벤트 등록
+function handleMediaChange(mq) {
+    const elements = $('.all-menu .top-group .item .sub-list .dep>a');
+    let upBtn = $('.sc-stage .up-btn .up');
+    let backBtn = $('.finder .right-area .back-btn');
+    let findItem = $('.finder .right-area .item');
+
+    if (mq.matches) {
+        elements.on('click', function(e){
+            e.preventDefault();
+            $(this).siblings('.dep-list').stop().slideToggle();	
+        });
+
+        upBtn.click(function(){
+            fullpage_api.moveTo(1);
+        });
+
+        backBtn.click(function(){
+            $('.finder .right-area .list>.item').removeClass('on');
+        });
+
+        $('.finder .mo-btn-box .item.up').click(function(e){
+            e.preventDefault()
+
+            if($('.finder .content').hasClass('on')){
+                $('.finder .content').removeClass('on');
+                $(this).removeClass('click');
+            }else{
+                $('.finder .content').addClass('on');
+                $(this).addClass('click');
+            }
+        });
+
+        $('.finder .content .left-area .item > .list .item a').click(function(e){
+            e.preventDefault();
+            
+            $('.finder .content').css('overflow', 'hidden');
+            $('body').css('overflow', 'hidden');
+        });
+
+        $('.finder .right-area .dep-item.mo-part .back-btn').click(function(e){
+            e.preventDefault();
+            
+            $('.finder .content').css('overflow', 'auto');
+            $('body').css('overflow', 'auto');
+        });
+        
+    } else {
+        elements.off('click');
+    }
+}
+
+// 변경 감지 이벤트 리스너 추가
+mediaQueryList.addListener(handleMediaChange);
+
+// 초기 실행
+handleMediaChange(mediaQueryList);
+
+
+
