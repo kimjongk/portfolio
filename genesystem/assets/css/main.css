@@ -912,6 +912,12 @@
         padding: 8.75em 0;
         height: auto;
     }
+    .sc-diagnose .content-wrap .item:hover{
+        background: none;
+    }
+    .sc-diagnose .content-wrap .item:hover .title{
+        display: none;
+}
     .sc-diagnose .content-wrap .list{
         display: flex;
         flex-direction: column;
@@ -926,47 +932,70 @@
         padding: 3.8em 2.5em;
         width: 100%;
         height: 11rem;
-        transition: .3s;
+        position: relative;
     }
+    .sc-diagnose .content-wrap .item:nth-child(-n+3):hover::before{
+        transform: scale(1);
+     }
     .sc-diagnose .content-wrap .item .title{
         position: relative;
         font-size: 2.8em;
     }
-    .sc-diagnose .content-wrap .item .title::before{
+    .sc-diagnose .content-wrap .item .down-btn{
         position: absolute;
         content: '';
-        right: 0;
-        top: 0;
+        right: 2.5em;
+        top: 3.8em;
         background: rgba(0, 0, 0, .5) url('../images/swiper-arrow.svg') no-repeat center;
-        width: 1.4222222222em;
-        height: 1.4222222222em;
+        width: 3.2em;
+        height: 3.2em;
         border-radius: 50%;
         transform: rotate(90deg);
     }
+    .sc-diagnose .content-wrap .item .down-btn.on{
+        transform: rotate(-90deg);
+    }
     .sc-diagnose .content-wrap .item .hide-wrap{
+        display: none;
         margin-top: 1.375em;
         opacity: 0;
-        transition: .3s;
-    }
-    .sc-diagnose .content-wrap .item:hover .hide-wrap{
-        opacity: 1;
     }
     .sc-diagnose .content-wrap .item .hide-wrap,
     .sc-diagnose .content-wrap .item:nth-child(1) .hide-wrap{
         display: flex;
         flex-direction: column;
     }
-    .sc-diagnose .content-wrap .item:hover{
+    .sc-diagnose .content-wrap .item:nth-child(1).on{
+        transition: .3s;
         height: 100%;
         background: linear-gradient(to bottom, rgba(49, 85, 123, 0.01), #31557b 31%, #31557b);
+    }
+    .sc-diagnose .content-wrap .item:nth-child(2).on{
+        transition: .3s;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(94, 100, 106, 0.01), #737c83 51%, #737c83);
+    }
+    .sc-diagnose .content-wrap .item:nth-child(3) .dep-list{
+        width: 100%;
+        margin-top: 3.75em;
+    }
+    .sc-diagnose .content-wrap .item:nth-child(3).on{
+        transition: .3s;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(65, 103, 100, 0.01), #416764 50%, #416764);
+    }
+    .sc-diagnose .content-wrap .item.on .hide-wrap{
+        opacity: 1;
     }
     .sc-diagnose .content-wrap .item .hide-wrap .top-box .sub-title{
         display: none;
         font-size: 2.8125em;
     }
+    
     .sc-diagnose .content-wrap .item .hide-wrap .top-box .desc,
     .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .grid-list .grid-item a,
     .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item a{
+        width: auto;
         font-size: 1.875em;
     }
     .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .grid-list,
@@ -982,10 +1011,8 @@
         font-size: 1.875em;
         padding-left: 0;
         height: 3em;
-        width: calc(100% - 0.3333333333em);
-        padding: 0 0.3em;
-        border: 1px solid #fff;
-        border-radius: 1.6666666667em;
+        width: auto;
+        border-bottom: 1px solid #fff;
     }
     .sc-diagnose .content-wrap .item:nth-child(2) .hide-wrap .bottom-box .dep-wrap{
         margin-top: 3.75em;
@@ -996,6 +1023,9 @@
     .sc-diagnose .content-wrap .item:nth-child(2) .hide-wrap .bottom-box .dep-list{
         flex: 1;
     }
+    .sc-diagnose .content-wrap .item:nth-child(2) .hide-wrap .bottom-box .dep-list + .dep-list{
+        margin-left: 1rem;
+    }
     .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-wrap .dep-list:nth-child(2){
         margin-top: 0;
     }
@@ -1004,12 +1034,6 @@
     }
     .sc-diagnose .content-wrap .item .title{
         align-items: baseline;
-    }
-    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item a{
-        background: #f00;
-    }
-    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item .part.active{
-        background: #28d1c9;
     }
     .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item .part::before{
         display: none;

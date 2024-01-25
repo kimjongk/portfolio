@@ -85,11 +85,7 @@ $('.menu-btn').click(function(){
     $('.header-inner').addClass('click');
     $('.finder').hide();
     $('#fp-nav').addClass('blind');
-    body.on('scroll.hidden touchmove.hidden mousewheel.hidden', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        return false;
-    });
+    $('body').css('overflow', 'hidden');
 });
 
 $('.close-btn').click(function(){
@@ -102,7 +98,7 @@ $('.close-btn').click(function(){
     $('.header-inner').removeClass('click');
     $('.finder').show();
     $('#fp-nav').removeClass('blind');
-    body.off('scroll.hidden touchmove.hidden mousewheel.hidden');
+    $('body').css('overflow', 'auto');
 });
 
 
@@ -237,7 +233,7 @@ function handleMediaChange(mq) {
     const elements = $('.all-menu .top-group .item .sub-list .dep>a');
     let upBtn = $('.sc-stage .up-btn .up');
     let backBtn = $('.finder .right-area .back-btn');
-    let findItem = $('.finder .right-area .item');
+    let hideWrap = $('.sc-diagnose .content-wrap .item .hide-wrap');
 
     if (mq.matches) {
         elements.on('click', function(e){
@@ -258,9 +254,11 @@ function handleMediaChange(mq) {
 
             if($('.finder .content').hasClass('on')){
                 $('.finder .content').removeClass('on');
+                $('body').css('overflow', 'auto');
                 $(this).removeClass('click');
             }else{
                 $('.finder .content').addClass('on');
+                $('body').css('overflow', 'hidden');
                 $(this).addClass('click');
             }
         });
@@ -276,9 +274,17 @@ function handleMediaChange(mq) {
             e.preventDefault();
             
             $('.finder .content').css('overflow', 'auto');
-            $('body').css('overflow', 'auto');
         });
         
+        $('.sc-diagnose .content-wrap .item .down-btn').click(function(){
+            if($(this).hasClass('on')){
+                $(this).removeClass('on');
+                $(this).parent('.item').removeClass('on');
+            }else{
+                $(this).addClass('on');
+                $(this).parent('.item').addClass('on');
+            }
+        })
     } else {
         elements.off('click');
     }
