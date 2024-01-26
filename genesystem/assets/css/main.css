@@ -1202,4 +1202,190 @@
 
 /* ----------------- 767px ----------------- */
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .sc-visual .title{
+        padding: 0 0.75em;
+        margin-bottom: 0;
+    }
+    .sc-visual .title span{
+        font-size: 2em;
+    }
+    .sc-visual .title .text{
+        font-size: 1rem;
+    }
+    .sc-visual .visual-bg{
+        background: no-repeat center/cover url(https://www.genesystem.co.kr/resource/images/main/main_visual_m_bg.jpg);
+    }
+    .sc-solution{
+        padding: 0 0.75em;
+        overflow: hidden;
+    }
+    .sc-solution .solution{
+        height: 100vh;
+        justify-content: start;
+    }
+    .sc-solution .title{
+        font-size: 1.7em;
+    }
+    .sc-solution .solution-bg{
+        background: no-repeat center/cover url(https://www.genesystem.co.kr/resource/images/main/con2_mob_bg.jpg);
+    }
+    .sc-solution .pro-group .content .swiper-slide{
+        height: 15em;
+        padding: 2em 1.5em;
+    }
+    .sc-solution .pro-group .content .swiper-slide .text-wrap .name{
+        font-size: 1.2rem;
+    }
+    .sc-solution .pro-group .content .swiper-slide a:after{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 5px;
+        background: url('../images/solution-arrow.svg') no-repeat center/1em;
+    }
+    .sc-solution .pro-group .content .swiper-slide .img-wrap img{
+        padding-top: 0;
+    }
+    .swiper{
+        overflow: initial;
+    }
+    .sc-solution .pro-group .content .control-box{
+        justify-content: flex-end;
+    }
+    .sc-solution .pro-group .content .control-box .btn{
+        width: 30px;
+        height: 30px;
+    }
+    .sc-solution .pro-group .content .sub-title{
+        font-size: 1.5rem;
+    }
+    .sc-solution .pro-group .content:nth-child(2){
+        margin-top: 3rem;
+    }
+    .sc-diagnose{
+        padding: 5em 0;
+    }
+    .sc-diagnose .content-wrap .list{
+        padding: 0 0.75em;
+    }
+    .sc-diagnose .content-wrap .item{
+        padding: 1.8em 1.5em;
+    }
+    .sc-diagnose .content-wrap .item .title{
+        display: flex;
+        align-items: center;
+        font-size: 1.8em;
+    }
+    .sc-diagnose .content-wrap .item .down-btn{
+        top: 4.4em;
+        right: 1.5em;
+        width: 2.2em;
+        height: 2.2em;
+    }
+    .sc-diagnose .content-wrap .item:hover .title{
+        display: flex;
+    }
+    .sc-diagnose .content-wrap .item .hide-wrap .top-box .desc{
+        font-size: 1.1rem;
+        width: 80%;
+        word-break: break-all;
+    }
+    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .grid-list,
+    .sc-diagnose .content-wrap .item:nth-child(3) .dep-list,{
+        margin-top: 1rem;
+    }
+    .sc-diagnose .content-wrap .item:nth-child(2) .hide-wrap .bottom-box .dep-wrap{
+        margin-top: 3.75rem;
+    }
+    .sc-diagnose .content-wrap .item:nth-child(2) .dep-item{
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .sc-diagnose .content-wrap .item:nth-child(2) .dep-item a{
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .grid-list .grid-item a,
+    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item a{
+        height: 3em;
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+    .sc-diagnose .content-wrap .item .hide-wrap .bottom-box .dep-item .part{
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+    .sc-appeal{
+        padding: 7rem 1.5625rem 5rem;
+    }
+    .sc-appeal::before{
+        height: 2500px;
+    }
+    .sc-appeal .title{
+        font-size: 1.3em;
+    }
+    .sc-appeal .line{
+        width: calc(100% - 1.5em);
+    }
+    .sc-skill .common-inner{
+        padding: 0 0.75em;
+    }
+    .sc-skill .item::after,
+    .sc-skill .item::before,
+    .sc-appeal .line::before,
+    .sc-skill .item .content::after,
+    .sc-appeal .line::after{
+        width: 6px;
+        height: 6px;
+    }
+    .sc-skill .item .content{
+        gap: 0;
+    }
+    .sc-skill .item .content .img-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .sc-skill .item .content svg{
+        width: 70%;
+    }
+    .sc-skill .item .content .text-wrap .title{
+        font-size: 1.3em;
+        font-weight: 900;
+    }
+    .sc-skill .item .content .text-wrap .desc{
+        font-size: 1rem;
+    }
+    .sc-stage{
+        padding: 0 0.75em 5rem;
+    }
+    .sc-stage .list{
+        gap: 1em;
+    }
+    .sc-stage .item .top-area,
+    .sc-stage .item .bottom-area{
+        padding: 1.5rem;
+    }
+    .sc-stage .item .top-area .stage,
+    .sc-stage .item .bottom-area .title,
+    .sc-stage .item .bottom-area .bot-item{
+        font-size: 1rem;
+    }
+    .sc-stage .item .top-area .date{
+        font-size: .9rem;
+    }
+    .sc-stage .item .bottom-area .bot-list{
+        margin-top: 1.5rem;
+    }
+    .sc-stage .up-btn .up{
+        right: 0.75em;
+        bottom: -4em;
+        
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
+

@@ -6,7 +6,7 @@ window.onload = function() {
 };
 
 const solLeSwiper = new Swiper('.sc-solution .left-content .swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1.6,
     spaceBetween : 10,
     navigation: {   // 버튼 사용자 지정
         nextEl: '.sc-solution .left-content .right-btn',
@@ -16,10 +16,13 @@ const solLeSwiper = new Swiper('.sc-solution .left-content .swiper', {
         1025: {
           slidesPerView: 2,
         },
+        768: {
+            slidesPerView: 3,
+          },
       },
 });
 const solRiSwiper = new Swiper('.sc-solution .right-content .swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1.6,
     spaceBetween : 10,
     navigation: {   // 버튼 사용자 지정
         nextEl: '.sc-solution .right-content .right-btn',
@@ -28,6 +31,9 @@ const solRiSwiper = new Swiper('.sc-solution .right-content .swiper', {
     breakpoints: {
         1025: {
           slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
         },
       },
 });

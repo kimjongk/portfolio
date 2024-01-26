@@ -1543,6 +1543,7 @@
     }
     .all-menu .bot-group .left-content .sns-area a:last-child{
         margin-left: 2.9em;
+        gap: .7em;
     }
     .all-menu .top-group .sub-list .dep-list{
         display: none;
@@ -1556,5 +1557,303 @@
 }
 /* ----------------- 767px ----------------- */
 
-@media (max-width:767px) {}
+@media (max-width:767px) {
+    .header-inner{
+        height: 3.75em;
+        padding: 0 0.75em;
+    }
+    .header .logo a{
+        width: 7.5rem;
+    }
+    .header .util-btn{
+        height: 3.75em;
+    }
+    .header .util-btn .menu-btn{
+        height: 2em;
+        width: 2em;
+    }
+    .header-inner .line{
+        top: 3.75em;
+        width: calc(100% - 1.5em);
+    }
+    .header-inner .line::after,
+    .header-inner .line::before{
+        width: 6px;
+        height: 6px;
+    }
+    .header .util-btn .lang-group .lang{
+        font-size: .8em;
+    }
+    .header-inner:hover .util-btn .menu-btn:after{
+        display: none;
+    }
+
+    .footer{
+        padding: 2em 0 5.75em;
+    }
+
+    .finder{
+        transform: translate(-50%, calc(100% - 2.5em));
+    }
+    .finder .mo-btn-box .list{
+        height: 2.5em;
+        font-size: 1em;
+    }
+    .finder .mo-btn-box .up:after{
+        background: url('../images/mo_finder_logo.svg') no-repeat center/1.1em;
+        transform: translate(-50%, -85%);
+    }
+    .finder .mo-btn-box .up::before{
+        top: -1.8em;
+        z-index: -1;
+    }    
+    .finder .mo-btn-box .up.click::after{
+        background: url('../images/close.svg') no-repeat center/1.1rem;
+    }
+    .finder .content{
+        top: calc(-101vh + 3em);
+        padding: 5em 1.5625rem;
+    }
+    .finder .content:before{
+        height: 3.75em;
+        background: #F6F8F7 url('../images/mo-finder.svg') no-repeat center/13em 1.2em;
+    }
+    .finder .content .title{
+        font-size: 1.3rem;
+    }
+    .finder .content .left-area .item .sub-title{
+        font-size: 1.2rem;
+    }
+    .finder .content .left-area > .list,
+    .finder .content .right-group .top-area .list{
+        border-radius: 0.875em;
+        padding: 1.5em 1em;
+    }
+    .finder .content .left-area .item>.list .item{
+        margin: 1rem 0;
+    }
+    .finder .content .left-area .item>.list .item a,
+    .finder .content .left-area .item>.list .item a, .finder .content .left-area .item>.list .item>span{
+        font-size: 1rem;
+    }
+    .finder .content .left-area .item:first-child{
+        margin-bottom: 2rem;
+    }
+
+
+    .footer .left-content .top-flex .logo a{
+        width: 9em;
+    }
+    .footer .left-content .top-flex .util-area .list{
+        gap: 0.875em;
+    }
+    .footer .left-content .top-flex .util-area .item a{
+        font-size: .8rem;
+    }
+    .footer .left-content .bottom-flex .sns-box{
+        gap: .5rem;
+    }
+    .footer .left-content .bottom-flex .sns-box a{
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 5px;
+    }
+    .footer .left-content .bottom-flex .sns-box a:last-child{
+        padding-left: 2em;
+    }
+    .footer .right-content .item{
+        flex-direction: column;
+    }
+    .footer .right-content .item .dep-list{
+        margin-top: .7rem;
+        font-size: 0.7em;
+    }
+    .footer .right-content .item .title,
+    .footer .right-content .item:nth-child(2), .copy{
+        font-size: .8rem;
+    }
+
+    .all-menu{
+        padding: 5em 0.75em 2em;
+    }
+    .all-menu .top-group .item .sub-list{
+        padding-top: .2rem;
+    }
+    .all-menu .top-group .item>a{
+        font-size: 1.3em;
+    }
+    .all-menu .top-group .item{
+        padding: 1em 0;
+    }
+    .all-menu .top-group .item .sub-item{
+        margin-top: 0;
+    }
+    .all-menu .top-group .item .sub-item>a{
+        font-size: 1em;
+    }
+    .all-menu .top-group .item .sub-list .dep:nth-child(1),
+    .all-menu .top-group .item:nth-child(4) .dep:nth-child(2){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .header-inner:hover .line{
+        top: 3.75em;
+        width: calc(100% - 1.5em);
+    }
+    .header-inner.click .logo a:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 7.5em;
+        height: 32px;
+        background:url(../images/logo-color.svg) no-repeat center/100%;
+    }
+    .all-menu .top-group .item .sub-list .dep>a:after{
+        width: 0.7em;
+        height: 0.7em;
+        background: url('../images/black-arrow.svg') no-repeat center/100%;
+    }
+    .all-menu .bot-group{
+        padding: 3rem 0;
+        row-gap: 1.5em;
+    }
+    .all-menu .bot-group .left-content{
+        display: flex;
+        justify-content: center;
+    }
+    .all-menu .bot-group .left-content .sns-area{
+        gap: 1.2rem;
+    }
+    .all-menu .bot-group .left-content .sns-area a{
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 3px;
+    }
+    .all-menu .bot-group .left-content .sns-area svg{
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .all-menu .bot-group .left-content .sns-area a:last-child{
+        height: 2.2em;
+        width: 8rem;
+        border-radius: 2px;
+    }
+    .all-menu .bot-group .left-content .sns-area:last-child a{
+        font-size: .4em;
+    }
+    .all-menu .bot-group .left-content .sns-area a:last-child::before{
+        width: 1em;
+        height: 1em;
+    }
+    .all-menu .bot-group .right-content .util-area .list{
+        gap: 1em;
+    }
+    .all-menu .bot-group .right-content .util-area .list .item{
+        font-size: .8em;
+    }.all-menu .top-group .item .dep-item{
+        margin-top: .2rem;
+    }
+    .all-menu .top-group .item .dep-item a{
+        font-size: 1rem !important;
+        margin-bottom: .4rem;
+    }
+    .finder .content .left-area{
+        padding-bottom: 2em;
+        width: 100%;
+        height: fit-content;
+    }
+    .finder .content .left-group{
+        height: 55vh;
+    }
+    .finder .content .left-group,
+    .finder .content .right-group .top-area{
+        gap: 1rem;
+    }
+    .finder .content .left-area .item>.list .item .dep2{
+        font-size: .8rem;
+    }
+    .finder .content .left-area .item>.list .item a::after{
+        background: url('../images/finder-arrow.svg') no-repeat center/70%;
+    }
+    .finder .content .right-group .top-area .list{
+        border-radius: 0.875em;
+    }
+    .finder .content .more{
+        width: 1.8em;
+        height: 1.8em;
+    }
+    .finder .content .more svg{
+        width: 1.2em;
+        height: 1.2em;
+    }
+    .finder .content .right-group .top-area .list .item{
+        padding: 0 0 1rem;
+    }
+    .finder .content .right-group .top-area .list .item:last-child{
+        padding: 1rem 0;
+        height: auto;
+    }
+    .finder .content .right-group .top-area .item:last-child .img-wrap{
+        height: 94.34px;
+    }
+    .finder .content .right-group .top-area .item .part{
+        font-size: .8rem;
+    }
+    .finder .content .right-group .top-area .item .sub-title{
+        font-size: 1em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .finder .content .right-group .top-area .item .img-wrap{
+        border-radius: 0.85em;
+    }
+    .finder .content .right-group .bottom-area{
+        margin-top: 2.5em;
+    }
+    .finder .content .right-group .bottom-area .text-box{
+        padding: 1.5em 1em;
+    }
+    .finder .content .right-group .bottom-area .progress{
+        font-size: 0.8em;
+        padding: 0.4em 0.7em;
+    }
+    .finder .content .right-group .bottom-area .date{
+        font-size: .8em;
+        margin-top: 1.5rem;
+    }
+    .finder .right-area .dep-item .name{
+        height: 3.5em;
+        padding: 1em;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .finder .right-area .dep-item .name::after{
+        background: url('../images/finder-link-b.svg') no-repeat center/1em;
+    }
+    .finder .right-area .item{
+        width: 100vw;
+    }
+    .finder .right-area .dep-item.mo-part .back-btn{
+        background: url('../images/finder-link-b.svg') no-repeat center/1.5rem;
+        transform-origin:  19% 35%;
+    }
+    .finder .right-area .dep-item .file{
+        padding: 1em;
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    .finder .right-area .dep-item .file::after{
+        background: url('../images/finder-pdf-b.svg') no-repeat center/1.5rem;
+    }
+    .finder .content .right-group .bottom-area .sub-title{
+        font-size: 1rem;
+    }
+}
 
