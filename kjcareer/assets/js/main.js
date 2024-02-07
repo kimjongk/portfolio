@@ -34,6 +34,13 @@ const newsSlide = new Swiper('.sc-news .swiper', {
 })
 
 $('.header .util-area .menu-btn').click(function(){
+    if($('body').hasClass('hidden')){
+        $('body').removeClass('hidden');
+    }else{
+        $('body').addClass('hidden');
+    }
+    
+
     if ($('.all-menu').hasClass('on')) {
         $('.all-menu').removeClass('on');
         $('.header .logo a').removeClass('logo');
