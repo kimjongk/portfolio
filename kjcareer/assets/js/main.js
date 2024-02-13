@@ -60,10 +60,10 @@ $('.header .util-area .menu-btn').click(function(){
     }
 })
 
-$('.header-inner .item a').hover(function(){
-    $(this).siblings('.dep-list').stop().slideDown();
+$('.header-inner .item').hover(function(){
+    $(this).find('.dep-list').stop().slideDown();
 },function(){
-    $(this).siblings('.dep-list').stop().slideUp();
+    $(this).find('.dep-list').stop().slideUp();
 })
 
 $('.all-menu .item a').click(function(e){
