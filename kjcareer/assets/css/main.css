@@ -100,7 +100,7 @@
     width: 930px;
     height: 606px;
     background: url(https://kjcareer.co.kr/img/main_sec02.png) no-repeat 100%;
-    z-index: 2;
+    z-index: 1;
 }
 .sc-find .common-inner::after{
     content: '';
@@ -111,7 +111,7 @@
     width: 1032px;
     height: 925px;
     background: url(https://kjcareer.co.kr/img/main_sec02bg.png) no-repeat 100%;
-    z-index: 1;
+    z-index: 0;
 }
 section .hash .list{
     display: flex;
@@ -175,6 +175,7 @@ section .content .link-box button:hover{
 section .content .link-box .detail-btn{
     background: #c2d0f2;
     color: #2149a6;
+    z-index: 2;
 }
 section .content .link-box .apply-btn{
     background: #2149a6;
