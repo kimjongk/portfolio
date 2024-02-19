@@ -508,7 +508,7 @@ section .content .link-box .apply-btn{
     height: 100px;
     right: 0;
     bottom: -130px;
-    z-index: 10;
+    z-index: 2;
 }
 .sc-news .control-box button{
     position: relative;
@@ -755,4 +755,17 @@ section .content .link-box .apply-btn{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media (max-width: 1800px){
+    .sc-visual .common-inner {
+        max-width: 100%;
+        width: 95%;
+    }
+    .sc-visual .control-box .next-btn{
+        right: -30px;
+    }
+    .sc-visual .control-box .prev-btn{
+        left: -30px;
+    }
 }
