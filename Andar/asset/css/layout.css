@@ -262,6 +262,7 @@
 }
 .footer .link-area .list{
     display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
     line-height: 1.7;
     color: #777;
