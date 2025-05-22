@@ -283,6 +283,15 @@
     height: 10px;
     background: #ccc;
 }
+.footer .link-area .item:nth-child(3){
+    width: 50%;
+}
+.footer .link-area .item:nth-child(4){
+    padding-left: 0;
+}
+.footer .link-area .item:nth-child(4):after{
+    display: none;
+}
 
 .footer .info-area{
     font-size: 11px;
