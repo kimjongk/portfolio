@@ -783,6 +783,9 @@
     .sc-project .text-item .link-box{
         width: 45%;
     }
+    .sc-project .video-list{
+        display: none;
+    }   
     .sc-project .video-list .item{
         top: 50%;
         left: 5%;
