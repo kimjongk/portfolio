@@ -171,9 +171,9 @@ $('.sc-works .mo-works .item .btn').click(function(){
 // console.log('UTC (세계 표준시):<br />',       getWorldTime(0),  '<br /><br />');
 // 
 
-getWorldTime(-8,'.us-time')
-getWorldTime(-3,'.br-time')
-getWorldTime(0,'.uk-time')
+getWorldTime(-7,'.us-time')
+getWorldTime(+9,'.br-time')
+getWorldTime(+1,'.uk-time')
 getWorldTime(+8,'.ch-time')
 
 
