@@ -504,14 +504,16 @@
 }
 
 .sc-event{
+    height:450px;
     padding-top: 12.5px;
     padding-bottom: 12.5px;
 }
 .sc-event .sc-title{
     padding-bottom: 18px;
 }
-.sc-event .swiepr{
+.sc-event .swiper{
     overflow: initial;
+    height:calc(100% - 50px);
 }
 .sc-event .swiper-wrapper{display: flex;}
 .sc-event .swiper-slide{
@@ -569,6 +571,10 @@
     letter-spacing: -0.02em ;
     padding-right: 40px ;
     color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 }
 .sc-event .swiper-slide .text-wrap span{
     display: block;
