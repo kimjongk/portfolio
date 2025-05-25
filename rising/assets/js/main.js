@@ -1,3 +1,10 @@
+/* alert modal */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    alertModal.style.display = 'none';
+});
+
 history.scrollRestoration = "manual"
 
 const packSwiper = new Swiper ('.sc-package .swiper',{
