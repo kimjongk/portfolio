@@ -8,7 +8,7 @@
 #alertModal .closeBtn svg{width:50px;}
 #alertModal .text-wrap{display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 20px;}
 #alertModal .text-wrap p{font-size: 1.1vw;}
-#alertModal .text-wrap strong{font-weight: bold;}
+#alertModal .text-wrap strong{font-weight: bold;font-family: 'Pretendard-Regular';}
 
 body {
     overflow-y: hidden;
