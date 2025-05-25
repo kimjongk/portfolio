@@ -1,3 +1,10 @@
+/* alert modal */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    alertModal.style.display = 'none';
+});
+
 window.onload = function() {
     $('.sc-visual .title').addClass('on');
     $('.sc-visual .visual-bg').css({
