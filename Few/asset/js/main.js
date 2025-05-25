@@ -1,4 +1,14 @@
 /**
+ * alert modal
+ */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    alertModal.style.display = 'none';
+});
+
+
+/**
  * 마우스 포인터
  */
 const mouse = $(".mouse");
