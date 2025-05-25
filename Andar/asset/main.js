@@ -1,4 +1,14 @@
 /**
+ * alert modal
+ */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    alertModal.style.display = 'none';
+});
+
+
+/**
  * 최상단 광고배너 스와이퍼
  */
 const headerSwiper = new Swiper ('.banner-box .swiper',{
