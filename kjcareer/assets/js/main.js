@@ -1,3 +1,10 @@
+/* alert modal */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    alertModal.style.display = 'none';
+});
+
 const mainSlide = new Swiper('.sc-visual .swiper', {
     slidesPerView : '1', 
     spaceBetween : 5, 
