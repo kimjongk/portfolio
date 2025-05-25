@@ -6,7 +6,7 @@
 #alertModal .closeBtn{position: absolute;top: 15px;right: 15px;transition: .5s;}
 #alertModal .closeBtn:hover{transform: scale(1.2);}
 #alertModal .closeBtn svg{width:50px;}
-#alertModal .text-wrap{display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 20px;}
+#alertModal .text-wrap{display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 20px;color:#000;}
 #alertModal .text-wrap p{font-size: 1.1vw;}
 #alertModal .text-wrap strong{font-weight: bold;}
 
