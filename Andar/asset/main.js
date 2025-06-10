@@ -1,8 +1,10 @@
-const alertModal = document.querySelector('#alertModal');
-const modalClose = document.querySelector('#alertModal .closeBtn');
-modalClose.addEventListener('click',()=>{
-    console.log('ddddddddddd');
-    alertModal.style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+    const alertModal = document.querySelector('#alertModal');
+    const modalClose = document.querySelector('#alertModal .closeBtn');
+    modalClose.addEventListener('click',()=>{
+        console.log('ddddddddddd');
+        alertModal.style.display = 'none';
+    });
 });
 
 
