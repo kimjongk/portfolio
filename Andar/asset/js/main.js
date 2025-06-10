@@ -1,4 +1,14 @@
 /**
+ * 모달창 컨트롤
+ */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    console.log('ddddddddddd');
+    alertModal.style.display = 'none';
+});
+
+/**
  * 최상단 광고배너 스와이퍼
  */
 const headerSwiper = new Swiper ('.banner-box .swiper',{
