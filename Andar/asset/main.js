@@ -1,6 +1,3 @@
-/**
- * alert modal
- */
 const alertModal = document.querySelector('#alertModal');
 const modalClose = document.querySelector('#alertModal .closeBtn');
 modalClose.addEventListener('click',()=>{
