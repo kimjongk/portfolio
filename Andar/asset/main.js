@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const alertModal = document.querySelector('#alertModal');
-    const modalClose = document.querySelector('#alertModal .closeBtn');
-    modalClose.addEventListener('click',()=>{
-        console.log('ddddddddddd');
-        alertModal.style.display = 'none';
-    });
-});
-
 
 /**
  * 최상단 광고배너 스와이퍼
@@ -51,6 +42,16 @@ $('.header .btn-menu').click(function(e){
     $('.side-nav').addClass('on');
     $('body').addClass('hidden');
 })
+
+/**
+ * 모달창 컨트롤
+ */
+const alertModal = document.querySelector('#alertModal');
+const modalClose = document.querySelector('#alertModal .closeBtn');
+modalClose.addEventListener('click',()=>{
+    console.log('ddddddddddd');
+    alertModal.style.display = 'none';
+});
 
 /**
  * gnb 메뉴에서 상단 X누르면 gnb 메뉴창 종료
